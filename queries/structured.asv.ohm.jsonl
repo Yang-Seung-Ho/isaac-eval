@@ -1,0 +1,11 @@
+{"qid": "A001", "text": "OHM_1_D0 샘플의 총 read 수(전체 ASV 합계)는 얼마인가?", "gold_ref": "gold.sample_total", "gold_args": {"sample": "OHM_1_D0"}}
+{"qid": "A002", "text": "12개 전 샘플을 합산했을 때 총 read 수가 가장 많은 Genus(속)는 무엇이며 그 합계는 얼마인가?", "gold_ref": "gold.top_taxon_by_total", "gold_args": {"rank": "Genus"}}
+{"qid": "A003", "text": "이 데이터셋에서 분류·명명된 서로 다른 Genus(속)는 몇 개인가?", "gold_ref": "gold.nunique_taxon", "gold_args": {"rank": "Genus"}}
+{"qid": "A004", "text": "Pseudomonas 속(Genus)에 속한 ASV들의 12개 전 샘플 합산 총 read 수는 얼마인가?", "gold_ref": "gold.taxon_total", "gold_args": {"rank": "Genus", "value": "Pseudomonas"}}
+{"qid": "A005", "text": "배양 0일차(D0) 3개 반복 시료(OHM_1_D0, OHM_2_D0, OHM_3_D0)의 합산 총 read 수는 얼마인가?", "gold_ref": "gold.day_total", "gold_args": {"day": "D0"}}
+{"qid": "A006", "text": "Proteobacteria 문(Phylum)에 속하는 ASV는 몇 개인가?", "gold_ref": "gold.count_rows_in_taxon", "gold_args": {"rank": "Phylum", "value": "Proteobacteria"}}
+{"qid": "A007", "text": "12개 전 샘플 합산 read 수가 가장 많은 Phylum(문)은 무엇이며 그 합계는 얼마인가?", "gold_ref": "gold.top_taxon_by_total", "gold_args": {"rank": "Phylum"}}
+{"qid": "A008", "text": "OHM_2_D12 샘플에서 read 수가 가장 큰 단일 ASV의 read 수는 얼마인가?", "gold_ref": "gold.sample_max", "gold_args": {"sample": "OHM_2_D12"}}
+{"qid": "A009", "text": "배양 12일차(D12) 3개 반복 시료의 합산 총 read 수는 얼마인가?", "gold_ref": "gold.day_total", "gold_args": {"day": "D12"}}
+{"qid": "A010", "text": "12개 전 샘플의 총 read 수 합계(grand total)는 얼마인가?", "gold_ref": "gold.grand_total", "gold_args": {}}
+{"qid": "A011", "text": "배양 12일차(D12) 합산 read 수에서 0일차(D0) 합산 read 수를 뺀 변화량은 얼마인가?", "gold_ref": "gold.day_diff", "gold_args": {"day_minuend": "D12", "day_subtrahend": "D0"}}

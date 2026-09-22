@@ -1,0 +1,20 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+data/catalog/
+data/corpus/
+results/
+*.egg-info/
+
+# --- security: exclude ALL env files incl backups ---
+.env*
+!.env.example
+# --- third-party copyrighted PDFs: do not publish ---
+data/papers/
+# --- clutter ---
+Claude outputs/
+_to_delete/
+.DS_Store
+.pytest_cache/
+*_log.txt

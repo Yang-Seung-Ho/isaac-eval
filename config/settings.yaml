@@ -1,0 +1,37 @@
+llm:
+  provider: gemini
+  model: gemini-3.5-flash
+  temperature: 0.0
+  top_p: 1.0
+  max_tokens: 4096
+  seed: 20260811
+embedding:
+  model: gemini-embedding-001
+  dim: 3072
+retrieval:
+  top_k: 3
+  backend: numpy_cosine   # 완전 탐색 — 근사 인덱스의 재현성 변수를 제거
+chunking:
+  size_words: 250
+  overlap_words: 0
+complexity:
+  version: v3             # v1 | v2 | v3 (v3 = 임베딩 코퍼스에 맞춰 재보정)
+  threshold: 14.6343      # 5.5절 캘리브레이션으로 확정 (dev F1 0.8696, test F1 0.80)
+  dim_weights: [1.0, 1.0, 1.0]
+sandbox:
+  mode: subprocess   # docker 미설치 환경 — subprocess만 구현
+  timeout_s: 10
+  memory_mb: 512
+  max_attempts: 3
+  network: false
+numeric:
+  match_policy: round   # exact | round
+  sigfig: 6
+  min_digits_for_leak_scan: 4
+paths:
+  dataset: data/datasets/jeju_phytoplankton.xlsx
+  sheet: "식.플 정량분석"
+  papers_dir: data/papers
+  results_dir: results
+  catalog_dir: data/catalog
+  queries_structured: queries/structured.jeju.jsonl

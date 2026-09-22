@@ -1,0 +1,6 @@
+{"qid": "ADV001", "text": "제9정점(station 9)의 전체 기간 평균 개체 수는?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J9"}}
+{"qid": "ADV002", "text": "스테이션 넘버 1의 전 기간 평균 셀 수를 알려줘", "gold_ref": "gold.station_mean", "gold_args": {"station": "J1"}}
+{"qid": "ADV003", "text": "4월(April) 모든 관측점 개체수 총합은?", "gold_ref": "gold.month_total", "gold_args": {"month": "Apr."}}
+{"qid": "ADV004", "text": "12번 관측지점의 평균 플랑크톤 수치는?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J12"}}
+{"qid": "ADV005", "text": "전 기간을 통틀어 가장 높은 단일 지점 관측치와 그 지점은?", "gold_ref": "gold.overall_max_station", "gold_args": {}}
+{"qid": "ADV006", "text": "오거스트(8월) 전체 정점 합계 셀카운트는?", "gold_ref": "gold.month_total", "gold_args": {"month": "Aug."}}

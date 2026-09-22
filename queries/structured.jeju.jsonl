@@ -1,0 +1,30 @@
+{"qid": "S001", "text": "봄철(3~5월) 데이터 중 식물플랑크톤이 가장 많이 발생한 달과 가장 심각했던 정점은?", "gold_ref": "gold.spring_peak", "gold_args": {}}
+{"qid": "S002", "text": "정점 J9의 전체 기간 평균 개체 수는 얼마인가?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J9"}}
+{"qid": "S003", "text": "4월(Apr.) 전체 정점의 개체 수 합계는 얼마인가?", "gold_ref": "gold.month_total", "gold_args": {"month": "Apr."}}
+{"qid": "S004", "text": "전체 관측 기간을 통틀어 단일 정점에서 관측된 최댓값은 어느 정점에서 얼마인가?", "gold_ref": "gold.overall_max_station", "gold_args": {}}
+{"qid": "S005", "text": "정점 J1의 전체 기간 평균 개체 수는 얼마인가?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J1"}}
+{"qid": "S006", "text": "8월(Aug.) 전체 정점의 개체 수 합계는 얼마인가?", "gold_ref": "gold.month_total", "gold_args": {"month": "Aug."}}
+{"qid": "S007", "text": "정점 J12의 전체 기간 평균 개체 수는 얼마인가?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J12"}}
+{"qid": "S008", "text": "3월(Mar.) 전체 정점의 개체 수 합계는 얼마인가?", "gold_ref": "gold.month_total", "gold_args": {"month": "Mar."}}
+{"qid": "S009", "text": "정점 J5의 전체 기간 평균 개체 수는 얼마인가?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J5"}}
+{"qid": "S010", "text": "11월(Nov.) 전체 정점의 개체 수 합계는 얼마인가? (결측 정점은 제외하고 계산)", "gold_ref": "gold.month_total", "gold_args": {"month": "Nov."}}
+{"qid": "S011", "text": "정점 J2의 전체 기간 평균 개체 수는 얼마인가?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J2"}}
+{"qid": "S012", "text": "정점 J3의 전체 기간 평균 개체 수는 얼마인가?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J3"}}
+{"qid": "S013", "text": "정점 J4의 전체 기간 평균 개체 수는 얼마인가?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J4"}}
+{"qid": "S014", "text": "정점 J6의 전체 기간 평균 개체 수는 얼마인가?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J6"}}
+{"qid": "S015", "text": "정점 J7의 전체 기간 평균 개체 수는 얼마인가?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J7"}}
+{"qid": "S016", "text": "정점 J8의 전체 기간 평균 개체 수는 얼마인가?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J8"}}
+{"qid": "S017", "text": "정점 J10의 전체 기간 평균 개체 수는 얼마인가?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J10"}}
+{"qid": "S018", "text": "정점 J11의 전체 기간 평균 개체 수는 얼마인가?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J11"}}
+{"qid": "S019", "text": "5월(May) 전체 정점의 개체 수 합계는 얼마인가?", "gold_ref": "gold.month_total", "gold_args": {"month": "May"}}
+{"qid": "S020", "text": "6월(Jun.) 전체 정점의 개체 수 합계는 얼마인가?", "gold_ref": "gold.month_total", "gold_args": {"month": "Jun."}}
+{"qid": "S021", "text": "7월(Jul.) 전체 정점의 개체 수 합계는 얼마인가?", "gold_ref": "gold.month_total", "gold_args": {"month": "Jul."}}
+{"qid": "S022", "text": "10월(Oct.) 전체 정점의 개체 수 합계는 얼마인가?", "gold_ref": "gold.month_total", "gold_args": {"month": "Oct."}}
+{"qid": "S023", "text": "4월(Apr.)의 전 정점 평균값(데이터에 기재된 '평균' 열 값)은 얼마인가?", "gold_ref": "gold.month_field", "gold_args": {"month": "Apr.", "field": "평균"}}
+{"qid": "S024", "text": "8월(Aug.)의 클로로필-a 평균 농도('Chl. 평균' 열 값)는 얼마인가?", "gold_ref": "gold.month_field", "gold_args": {"month": "Aug.", "field": "Chl. 평균"}}
+{"qid": "S025", "text": "3월(Mar.)의 전 정점 표준편차('표준편차' 열 값)는 얼마인가?", "gold_ref": "gold.month_field", "gold_args": {"month": "Mar.", "field": "표준편차"}}
+{"qid": "S026", "text": "7월(Jul.)의 클로로필-a 표준편차('Chl. 표준편차' 열 값)는 얼마인가?", "gold_ref": "gold.month_field", "gold_args": {"month": "Jul.", "field": "Chl. 표준편차"}}
+{"qid": "S027", "text": "전체 관측 기간을 통틀어 단일 정점에서 관측된 최솟값은 어느 정점에서 얼마인가?", "gold_ref": "gold.overall_min_station", "gold_args": {}}
+{"qid": "S028", "text": "정점 J1이 가장 높은 개체 수를 기록한 달은 언제이며 그 값은 얼마인가?", "gold_ref": "gold.station_extreme_month", "gold_args": {"station": "J1", "mode": "max"}}
+{"qid": "S029", "text": "정점 J12가 가장 낮은 개체 수를 기록한 달은 언제이며 그 값은 얼마인가?", "gold_ref": "gold.station_extreme_month", "gold_args": {"station": "J12", "mode": "min"}}
+{"qid": "S030", "text": "전체 정점 중 개체 수가 500000을 초과한 관측값은 몇 건인가?", "gold_ref": "gold.count_above_threshold", "gold_args": {"threshold": 500000}}
