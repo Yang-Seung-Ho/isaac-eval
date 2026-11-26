@@ -1,0 +1,27 @@
+{
+  "qid": "S030",
+  "query": "전체 정점 중 개체 수가 500000을 초과한 관측값은 몇 건인가?",
+  "generated_code": "import json\nimport pandas as pd\n\nstations = [\"J1\", \"J2\", \"J3\", \"J4\", \"J5\", \"J6\", \"J7\", \"J8\", \"J9\", \"J10\", \"J11\", \"J12\"]\ncount = int((df[stations] > 500000).sum().sum())\n\nresult = {\"개수\": count}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 338
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "개수": 8
+  },
+  "final_response": "계산 결과는 8건입니다.",
+  "gold_value": {
+    "count": 8
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

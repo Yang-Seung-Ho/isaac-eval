@@ -1,0 +1,29 @@
+{
+  "qid": "S004",
+  "query": "전체 관측 기간을 통틀어 단일 정점에서 관측된 최댓값은 어느 정점에서 얼마인가?",
+  "generated_code": "import json\nimport pandas as pd\n\nstation_cols = [\"J1\", \"J2\", \"J3\", \"J4\", \"J5\", \"J6\", \"J7\", \"J8\", \"J9\", \"J10\", \"J11\", \"J12\"]\nmax_values = df[station_cols].max()\nmax_station = max_values.idxmax()\nmax_val = float(max_values.max())\n\nresult = {\n    \"정점\": max_station,\n    \"최댓값\": max_val\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 389
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "정점": "J9",
+    "최댓값": 1675954.7738693468
+  },
+  "final_response": "정점 J9에서 최댓값은 1675954.7738693468입니다.",
+  "gold_value": {
+    "station": "J9",
+    "value": 1675955
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

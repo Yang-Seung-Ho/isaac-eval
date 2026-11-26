@@ -1,0 +1,18 @@
+{
+  "qid": "ADV024",
+  "system": "proposed",
+  "query": "첫 번째 정점의 평균 개체 수는?",
+  "final_response": "첫 번째 정점의 평균 개체 수는 158396.15808899346입니다.",
+  "sandbox_value": {
+    "첫 번째 정점 평균 개체 수": 158396.15808899346
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J1",
+    "mean": 158396.16
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

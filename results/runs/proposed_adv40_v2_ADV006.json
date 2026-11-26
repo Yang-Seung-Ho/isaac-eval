@@ -1,0 +1,18 @@
+{
+  "qid": "ADV006",
+  "system": "proposed",
+  "query": "오거스트(8월) 전체 정점 합계 셀카운트는?",
+  "final_response": "8월 전체 정점 합계 셀카운트는 3,434,839.6378입니다.",
+  "sandbox_value": {
+    "8월 전체 정점 합계 셀카운트": 3434839.6378
+  },
+  "final_ok": true,
+  "gold_value": {
+    "month": "Aug.",
+    "total": 3434840
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

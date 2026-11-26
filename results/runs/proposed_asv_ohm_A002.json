@@ -1,0 +1,32 @@
+{
+  "qid": "A002",
+  "query": "12개 전 샘플을 합산했을 때 총 read 수가 가장 많은 Genus(속)는 무엇이며 그 합계는 얼마인가?",
+  "generated_code": "import json\nimport pandas as pd\n\nsample_cols = [col for col in df.columns if col.startswith(\"OHM_\")]\ndf[\"Total_Reads\"] = df[sample_cols].sum(axis=1)\n\ngenus_sum = df.groupby(\"Genus\")[\"Total_Reads\"].sum()\ntop_genus = genus_sum.idxmax()\ntop_sum = genus_sum.max()\n\nresult = {\"Genus\": top_genus, \"Total_Reads\": float(top_sum)}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 501
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "Genus": "Pseudomonas",
+    "Total_Reads": 429225.0
+  },
+  "final_response": "12개 샘플의 총 read 수가 가장 많은 속(Genus)은 슈도모나스(Pseudomonas)이며, 총 합계는 429,225.0입니다.",
+  "gold_value": {
+    "rank": "Genus",
+    "taxon": "Pseudomonas",
+    "total": 429225
+  },
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_ohm.xlsx",
+    "sheet": "OHM"
+  }
+}

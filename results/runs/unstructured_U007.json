@@ -1,0 +1,35 @@
+{
+  "qid": "U007",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "적조(harmful algal bloom)는 어떤 현상인가?",
+  "gold_route": "literature",
+  "gold_paper_route": "A",
+  "complexity_label": "low",
+  "paper_route": "B",
+  "complexity": {
+    "dim1": 2.0,
+    "dim2": 5.1895,
+    "dim3": 10.0,
+    "total": 17.1895
+  },
+  "top1_cos": 0.6943,
+  "degraded": true,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "kim2024_hakashiwo",
+    "kang2026_algae_restoration",
+    "plhn_dermal_penetration"
+  ],
+  "sources": [],
+  "final_response": "질의의 복잡도가 임계값을 초과하여 직접 요약을 생성하지 않았습니다. 대신 관련성이 높은 등록 논문을 추천합니다.\n- kim2024_hakashiwo (관련도 0.6682)\n- kang2026_algae_restoration (관련도 0.5724)\n- plhn_dermal_penetration (관련도 0.4811)",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "qid": "A009",
+  "query": "배양 12일차(D12) 3개 반복 시료의 합산 총 read 수는 얼마인가?",
+  "generated_code": "d12_cols = ['OHM_1_D12', 'OHM_2_D12', 'OHM_3_D12']\ntotal_reads_d12 = int(df[d12_cols].sum().sum())\nresult = {\"total_reads_D12\": total_reads_d12}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 510
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "total_reads_D12": 262682
+  },
+  "final_response": "배양 12일차(D12) 3개 반복 시료의 합산 총 read 수는 262,682입니다.",
+  "gold_value": {
+    "day": "D12",
+    "total": 262682
+  },
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_ohm.xlsx",
+    "sheet": "OHM"
+  }
+}

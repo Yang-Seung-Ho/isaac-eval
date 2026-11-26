@@ -1,0 +1,35 @@
+{
+  "qid": "H004",
+  "system": "proposed",
+  "kind": "hybrid",
+  "query": "전체 기간 중 최댓값이 관측된 정점을 찾고, 수직 이동 연구가 정점 간 편차를 어떻게 설명하는지 서술하라.",
+  "gold_route": "hybrid",
+  "decomposition": {
+    "data_subquery": "전체 기간 중 최댓값이 관측된 정점을 찾는다.",
+    "literature_subquery": "수직 이동 연구가 정점 간 편차를 어떻게 설명하는지 서술한다."
+  },
+  "expected_data_subquery": "전체 최댓값 정점",
+  "expected_literature_subquery": "수직 이동과 정점 간 편차",
+  "generated_code": "import pandas as pd\nimport json\n\nstations = [f\"J{i}\" for i in range(1, 13)]\nmax_val = df[stations].max().max()\nmax_stations = [col for col in stations if df[col].max() == max_val]\nmax_station = max_stations[0]\n\nresult = {\n    \"정점\": max_station,\n    \"최댓값\": float(max_val)\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "정점": "J9",
+    "최댓값": 1675954.7738693468
+  },
+  "gold_value": {
+    "station": "J9",
+    "value": 1675955
+  },
+  "literature_sources": [
+    "kim2024_hakashiwo::0018",
+    "kim2024_hakashiwo::0017",
+    "kim2024_hakashiwo::0002"
+  ],
+  "final_response": "제공된 계산 결과와 문헌 근거를 바탕으로 질의에 대한 답변은 다음과 같습니다.\n\n1. **최댓값이 관측된 정점**\n   * 계산 결과 전체 기간 중 최댓값은 **J9** 정점에서 **1675954.7738693468**로 관측되었습니다.\n\n2. **수직 이동 연구가 정점 간 편차를 설명하는 방식**\n   * 문헌([kim2024_hakashiwo::0018])에 따르면, *H. akashiwo*와 같은 식물플랑크톤은 짝짓기 및 생애주기 전환을 위해 수직 이동(SVM 또는 개체발생적 수직 이동) 행동을 조절할 수 있습니다. \n   * 연구 간(본 연구와 Nagasaki 등 1996년 연구)의 결과 편차 및 바닥 집적 양상의 차이는 **관측된 세포 밀도의 차이**에 기인할 수 있습니다. 고밀도 환경에서는 잦은 세포 간 상호작용으로 인해 바닥 집적의 필요성이 감소할 수 있으며, 이러한 세포 밀도의 차이가 수직 이동 행동에 영향을 미쳐 정점 및 층별 분포 편차를 설명하는 요인이 됩니다.",
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

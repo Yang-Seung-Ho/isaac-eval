@@ -1,0 +1,35 @@
+{
+  "qid": "U017",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "ETV4 소실이 PPM1E 하향조절과 AMPK-ULK1 의존적 자가포식을 거쳐 트라메티닙 내성으로 이어지는 신호 전달 경로를 단계별로 설명하고, 각 단계에서 제시된 실험적 근거를 함께 제시하라.",
+  "gold_route": "literature",
+  "gold_paper_route": "B",
+  "complexity_label": "high",
+  "paper_route": "B",
+  "complexity": {
+    "dim1": 10.0,
+    "dim2": 0.0,
+    "dim3": 10.0,
+    "total": 20.0
+  },
+  "top1_cos": 0.8689,
+  "degraded": true,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "etv4_breast_cancer",
+    "rebamipide_ibd_nanoformulation",
+    "plhn_dermal_penetration"
+  ],
+  "sources": [],
+  "final_response": "질의의 복잡도가 임계값을 초과하여 직접 요약을 생성하지 않았습니다. 대신 관련성이 높은 등록 논문을 추천합니다.\n- etv4_breast_cancer (관련도 0.8561)\n- rebamipide_ibd_nanoformulation (관련도 0.5325)\n- plhn_dermal_penetration (관련도 0.5235)",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

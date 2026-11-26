@@ -1,0 +1,18 @@
+{
+  "qid": "ADV019",
+  "system": "pot_pal",
+  "query": "5월달 모든 지점 합계 셀 수?",
+  "final_response": "5월 모든 지점 합계는 1310587.39입니다.",
+  "sandbox_value": {
+    "5월 모든 지점 합계": 1310587.39
+  },
+  "final_ok": true,
+  "gold_value": {
+    "month": "May",
+    "total": 1310587
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

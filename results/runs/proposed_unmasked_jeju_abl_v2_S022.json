@@ -1,0 +1,18 @@
+{
+  "qid": "S022",
+  "system": "proposed_unmasked",
+  "query": "10월(Oct.) 전체 정점의 개체 수 합계는 얼마인가?",
+  "final_response": "10월 전체 정점의 개체 수 합계는 921292.6177566022입니다.",
+  "sandbox_value": {
+    "합계": 921292.6177566022
+  },
+  "final_ok": true,
+  "gold_value": {
+    "month": "Oct.",
+    "total": 921293
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

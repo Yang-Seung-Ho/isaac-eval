@@ -1,0 +1,202 @@
+{
+  "C01": {
+    "qid": "U005",
+    "claim_index": 1,
+    "llm_verdict": "supported"
+  },
+  "C02": {
+    "qid": "U001",
+    "claim_index": 8,
+    "llm_verdict": "unsupported"
+  },
+  "C03": {
+    "qid": "U003",
+    "claim_index": 14,
+    "llm_verdict": "supported"
+  },
+  "C04": {
+    "qid": "U002",
+    "claim_index": 11,
+    "llm_verdict": "supported"
+  },
+  "C05": {
+    "qid": "U008",
+    "claim_index": 0,
+    "llm_verdict": "generic"
+  },
+  "C06": {
+    "qid": "U002",
+    "claim_index": 9,
+    "llm_verdict": "supported"
+  },
+  "C07": {
+    "qid": "U013",
+    "claim_index": 1,
+    "llm_verdict": "supported"
+  },
+  "C08": {
+    "qid": "U003",
+    "claim_index": 6,
+    "llm_verdict": "supported"
+  },
+  "C09": {
+    "qid": "U013",
+    "claim_index": 4,
+    "llm_verdict": "supported"
+  },
+  "C10": {
+    "qid": "U013",
+    "claim_index": 5,
+    "llm_verdict": "supported"
+  },
+  "C11": {
+    "qid": "U019",
+    "claim_index": 0,
+    "llm_verdict": "generic"
+  },
+  "C12": {
+    "qid": "U021",
+    "claim_index": 3,
+    "llm_verdict": "supported"
+  },
+  "C13": {
+    "qid": "U008",
+    "claim_index": 5,
+    "llm_verdict": "supported"
+  },
+  "C14": {
+    "qid": "U001",
+    "claim_index": 4,
+    "llm_verdict": "supported"
+  },
+  "C15": {
+    "qid": "U004",
+    "claim_index": 5,
+    "llm_verdict": "supported"
+  },
+  "C16": {
+    "qid": "U003",
+    "claim_index": 0,
+    "llm_verdict": "generic"
+  },
+  "C17": {
+    "qid": "U005",
+    "claim_index": 3,
+    "llm_verdict": "supported"
+  },
+  "C18": {
+    "qid": "U019",
+    "claim_index": 15,
+    "llm_verdict": "generic"
+  },
+  "C19": {
+    "qid": "U005",
+    "claim_index": 6,
+    "llm_verdict": "supported"
+  },
+  "C20": {
+    "qid": "U021",
+    "claim_index": 0,
+    "llm_verdict": "generic"
+  },
+  "C21": {
+    "qid": "U003",
+    "claim_index": 4,
+    "llm_verdict": "generic"
+  },
+  "C22": {
+    "qid": "U002",
+    "claim_index": 1,
+    "llm_verdict": "supported"
+  },
+  "C23": {
+    "qid": "U012",
+    "claim_index": 0,
+    "llm_verdict": "generic"
+  },
+  "C24": {
+    "qid": "U013",
+    "claim_index": 2,
+    "llm_verdict": "supported"
+  },
+  "C25": {
+    "qid": "U004",
+    "claim_index": 0,
+    "llm_verdict": "generic"
+  },
+  "C26": {
+    "qid": "U019",
+    "claim_index": 12,
+    "llm_verdict": "supported"
+  },
+  "C27": {
+    "qid": "U002",
+    "claim_index": 0,
+    "llm_verdict": "generic"
+  },
+  "C28": {
+    "qid": "U003",
+    "claim_index": 5,
+    "llm_verdict": "supported"
+  },
+  "C29": {
+    "qid": "U001",
+    "claim_index": 0,
+    "llm_verdict": "supported"
+  },
+  "C30": {
+    "qid": "U021",
+    "claim_index": 10,
+    "llm_verdict": "unsupported"
+  },
+  "C31": {
+    "qid": "U003",
+    "claim_index": 2,
+    "llm_verdict": "generic"
+  },
+  "C32": {
+    "qid": "U021",
+    "claim_index": 9,
+    "llm_verdict": "unsupported"
+  },
+  "C33": {
+    "qid": "U001",
+    "claim_index": 6,
+    "llm_verdict": "supported"
+  },
+  "C34": {
+    "qid": "U013",
+    "claim_index": 0,
+    "llm_verdict": "generic"
+  },
+  "C35": {
+    "qid": "U005",
+    "claim_index": 12,
+    "llm_verdict": "supported"
+  },
+  "C36": {
+    "qid": "U021",
+    "claim_index": 6,
+    "llm_verdict": "unsupported"
+  },
+  "C37": {
+    "qid": "U003",
+    "claim_index": 8,
+    "llm_verdict": "supported"
+  },
+  "C38": {
+    "qid": "U004",
+    "claim_index": 12,
+    "llm_verdict": "supported"
+  },
+  "C39": {
+    "qid": "U005",
+    "claim_index": 0,
+    "llm_verdict": "generic"
+  },
+  "C40": {
+    "qid": "U004",
+    "claim_index": 13,
+    "llm_verdict": "supported"
+  }
+}

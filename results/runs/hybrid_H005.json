@@ -1,0 +1,35 @@
+{
+  "qid": "H005",
+  "system": "proposed",
+  "kind": "hybrid",
+  "query": "8월의 클로로필-a 평균 농도를 확인하고, 클로로필 농도와 식물플랑크톤 생물량의 관계를 문헌에 근거해 설명하라.",
+  "gold_route": "hybrid",
+  "decomposition": {
+    "data_subquery": "8월의 클로로필-a 평균 농도",
+    "literature_subquery": "클로로필 농도와 식물플랑크톤 생물량의 관계"
+  },
+  "expected_data_subquery": "8월 Chl. 평균",
+  "expected_literature_subquery": "클로로필과 생물량의 관계",
+  "generated_code": "import pandas as pd\nimport json\n\nval = df.loc[df['Month'].str.contains('Aug', case=False, na=False), 'Chl. 평균'].values[0]\nresult = {\"august_chlorophyll_mean\": float(val)}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "august_chlorophyll_mean": 2.055
+  },
+  "gold_value": {
+    "month": "Aug.",
+    "field": "Chl. 평균",
+    "value": 2.055
+  },
+  "literature_sources": [
+    "kim2024_hakashiwo::0002",
+    "kim2024_hakashiwo::0005",
+    "kim2024_hakashiwo::0006"
+  ],
+  "final_response": "제공된 데이터 계산 결과와 문헌 발췌 내용을 바탕으로 한 답변은 다음과 같습니다.\n\n* **8월의 클로로필-a 평균 농도:** \n  데이터 계산 결과에 따르면, 8월의 클로로필-a 평균 농도(`august_chlorophyll_mean`)는 **2.055**입니다.\n\n* **클로로필 농도와 식물플랑크톤 생물량의 관계에 대한 문헌 근거:**\n  제공된 문헌(`kim2024_hakashiwo::0002`, `0005`, `0006`)에는 클로로필-a 측정 방법과 식물플랑크톤(예: *H. akashiwo*)의 현존량(abundances) 및 세포 집단 분석에 대한 실험 과정이 기술되어 있으나, **클로로필 농도와 식물플랑크톤 생물량 간의 직접적인 상관관계나 생태학적 관계를 수치나 이론으로 설명한 내용은 발췌문에 포함되어 있지 않습니다.** \n\n따라서 계산 결과에 없는 수치나 문헌에 근거하지 않은 설명을 지어낼 수 없으므로, 문헌 내용에 기반한 관계 설명은 생략합니다.",
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

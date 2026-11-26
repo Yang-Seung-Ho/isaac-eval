@@ -1,0 +1,16 @@
+{
+  "qid": "ADV005",
+  "system": "standard_rag",
+  "query": "전 기간을 통틀어 가장 높은 단일 지점 관측치와 그 지점은?",
+  "final_response": "제공된 데이터셋을 바탕으로 전 기간을 통틀어 가장 높은 단일 지점 관측치와 해당 지점은 다음과 같습니다.\n\n* **가장 높은 관측치:** 1.67595e+06 (1,675,950)\n* **지점:** J9 (4월, Apr. 관측치)",
+  "sandbox_value": null,
+  "final_ok": true,
+  "gold_value": {
+    "station": "J9",
+    "value": 1675955
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

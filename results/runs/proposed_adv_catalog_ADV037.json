@@ -1,0 +1,18 @@
+{
+  "qid": "ADV037",
+  "system": "proposed",
+  "query": "여섯번 스테이션의 평균 셀수?",
+  "final_response": "여섯번 스테이션의 평균 셀수는 162785.27입니다.",
+  "sandbox_value": {
+    "여섯번 스테이션 평균": 162785.27
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J6",
+    "mean": 162785.27
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

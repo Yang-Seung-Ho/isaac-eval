@@ -1,0 +1,30 @@
+{
+  "qid": "A005",
+  "query": "배양 0일차(D0) 3개 반복 시료(OHM_1_D0, OHM_2_D0, OHM_3_D0)의 합산 총 read 수는 얼마인가?",
+  "generated_code": "import json\nimport pandas as pd\n\nd0_cols = [\"OHM_1_D0\", \"OHM_2_D0\", \"OHM_3_D0\"]\ntotal_reads = int(df[d0_cols].sum().sum())\n\nresult = {\"total_reads_D0\": total_reads}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 507
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "total_reads_D0": 375117
+  },
+  "final_response": "배양 0일차(D0) 3개 반복 시료의 합산 총 read 수는 375,117입니다.",
+  "gold_value": {
+    "day": "D0",
+    "total": 375117
+  },
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_ohm.xlsx",
+    "sheet": "OHM"
+  }
+}

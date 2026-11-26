@@ -1,0 +1,18 @@
+{
+  "qid": "S018",
+  "system": "pot_pal",
+  "query": "정점 J11의 전체 기간 평균 개체 수는 얼마인가?",
+  "final_response": "정점 J11의 전체 기간 평균 개체 수는 411881.54입니다.",
+  "sandbox_value": {
+    "정점 J11의 전체 기간 평균 개체 수": 411881.54
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J11",
+    "mean": 411881.54
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "qid": "H002",
+  "system": "proposed",
+  "kind": "hybrid",
+  "query": "정점 J9의 평균 개체 수를 계산하고, 이 수준의 개체 밀도가 문헌에서 보고된 유해 조류 대발생 기준과 어떻게 비교되는지 논하라.",
+  "gold_route": "hybrid",
+  "decomposition": {
+    "data_subquery": "정점 J9의 평균 개체 수를 계산한다.",
+    "literature_subquery": "이 수준의 개체 밀도가 문헌에서 보고된 유해 조류 대발생 기준과 어떻게 비교되는지 논한다."
+  },
+  "expected_data_subquery": "J9 평균 개체 수",
+  "expected_literature_subquery": "유해 조류 대발생 개체 밀도 기준",
+  "generated_code": "import pandas as pd\nimport json\n\nmean_val = float(df['J9'].mean())\nresult = {\"J9_mean\": round(mean_val, 4)}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "J9_mean": 279118.5128
+  },
+  "gold_value": {
+    "station": "J9",
+    "mean": 279118.51
+  },
+  "literature_sources": [
+    "kim2024_hakashiwo::0019",
+    "kim2024_hakashiwo::0023",
+    "kim2024_hakashiwo::0025"
+  ],
+  "final_response": "제공된 데이터 계산 결과와 문헌 발췌 내용을 바탕으로 질의에 대한 답변은 다음과 같습니다.\n\n* **정점 J9의 평균 개체 수:** \n  제공된 계산 결과(`{'J9_mean': 279118.5128}`)에 따르면, 정점 J9의 평균 개체 수는 **279,118.5128** (cells 또는 개체/mL 등 단위 미포함)입니다.\n\n* **유해 조류 대발생 기준과의 비교:**\n  제공된 문헌 발췌 내용(`kim2024_hakashiwo` 관련 본문)에서는 수직 이동(vertical migration), 적조(bloom)의 소멸 및 재출현, 영양염류 수준, 생활사 등에 대한 논의가 포함되어 있으나, **정점 J9의 평균 개체 수(279,118.5128)와 직접적으로 비교할 수 있는 구체적인 유해 조류 대발생(harmful algal bloom)의 수치적 기준이나 임계값은 제시되어 있지 않습니다.** \n\n따라서 계산된 개체 수 밀도가 문헌상에 보고된 특정 대발생 기준치와 어떻게 비교되는지는 제공된 문헌 범위 내에서 확정하여 논할 수 없습니다.",
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

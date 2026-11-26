@@ -1,0 +1,31 @@
+{
+  "qid": "A006",
+  "query": "Proteobacteria 문(Phylum)에 속하는 ASV는 몇 개인가?",
+  "generated_code": "import json\nimport pandas as pd\n\ncount = int((df[\"Phylum\"] == \"Proteobacteria\").sum())\nresult = {\"Proteobacteria_count\": count}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 501
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "Proteobacteria_count": 1931
+  },
+  "final_response": "Proteobacteria 문(Phylum)에 속하는 ASV는 총 1,931개입니다.",
+  "gold_value": {
+    "rank": "Phylum",
+    "value": "Proteobacteria",
+    "count": 1931
+  },
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_ohm.xlsx",
+    "sheet": "OHM"
+  }
+}

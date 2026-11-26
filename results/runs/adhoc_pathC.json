@@ -1,0 +1,27 @@
+{
+  "query": "Heterosigma akashiwo 대발생과 Ecklonia cava 복원 연구들의 목적과 방법을 비교해줘",
+  "model": "gemini-3.5-flash",
+  "paper_route": "C",
+  "complexity": {
+    "dim1": 4.0,
+    "dim2": 3.8593,
+    "dim3": 10.0,
+    "total": 17.8593
+  },
+  "response": "제시된 발췌록을 바탕으로 *Ecklonia cava*(감태) 복원 연구와 *Heterosigma akashiwo*(헤테로시그마 아카시보) 대발생 연구의 목적과 방법을 비교한 내용은 다음과 같습니다.\n\n---\n\n### 1. Ecklonia cava 복원 연구 (kang2026_algae_restoration)\n\n*   **연구 목적**\n    *   인류 활동과 기후 변화로 인해 위협받고 있는 온대 해역의 주요 캐노피 형성 갈조류인 *Ecklonia cava*(및 *Sargassum macrocarpum*)의 서식지를 복원하기 위함입니다.\n    *   이를 위해 어린 개체를 자연 암반에 성공적으로 이식할 수 있는 새로운 에폭시 기반 이식 기술을 개발하고 그 효과를 검증하는 것을 목적으로 합니다.\n*   **연구 방법**\n    *   **이식 대상 및 위치**: 1년 미만의 어린(juvenile) *E. cava* 개체를 수심 5m의 아조대 암반(subtidal rocky reefs)에 이식하였습니다.\n    *   **이식 기법**: 개체의 부착기(holdfast)를 순간접착제를 사용해 소형 에폭시 패널에 붙인 후, 이 패널을 나사(screws)를 이용해 암반에 고정하였습니다. 이 방식은 부착기 발달을 통한 자연스러운 부착을 유도합니다.\n    *   **모니터링**: 이식된 개체들의 형태학적 특성(엽상체 길이 등)과 생존율을 매월 모니터링하여 태풍 등의 물리적 교란 및 초식 동물에 의한 영향을 분석하였습니다.\n\n---\n\n### 2. Heterosigma akashiwo 대발생 연구 (kim2024_hakashiwo)\n\n*   **연구 목적**\n    *   전 세계적으로 대규모 적조(massive blooms)를 일으켜 해양 생태계에 영향을 미치는 단세포 침편모조류인 *Heterosigma akashiwo*의 일주기 수직 이동(Diel Vertical Migration, DVM) 메커니즘을 규명하고자 합니다.\n    *   특히 이들의 수직 이동 행동이 가진 가소성(plasticity)과 환경 적응 능력을 명확히 이해하여 대발생 원인을 밝히는 것을 목적으로 합니다.\n*   **연구 방법**\n    *   **행동 분석**: 낮에는 광합성을 위해 상승하고, 밤에는 심층의 영양염을 흡수하기 위해 하강하는 일주기 수직 이동(DVM) 특성을 분석합니다.\n    *   **관찰 및 검증**: 자연 환경(field/natural settings)에서의 수직 이동 행동을 확인하기 위해 현장 관찰(in situ)과 실험실 관찰(in vitro)을 통합하여 연구를 수행합니다.\n\n---\n\n### 3. 두 연구의 목적 및 방법 비교·종합\n\n| 구분 | Ecklonia cava 복원 연구 (`kang2026`) | Heterosigma akashiwo 대발생 연구 (`kim2024`) |\n| :--- | :--- | :--- |\n| **연구 대상** | 다세포 대형 갈조류 (해조류) | 단세포 미세조류 (유해 침편모조류) |\n| **연구 목적** | **생태계 복원 및 보전**: 기후변화 등으로 훼손된 해조류 서식지를 복원하기 위한 실용적 기술 개발 | **재해 원인 규명 및 생태 이해**: 대발생을 일으키는 미세조류의 생태적 행동 특성(수직 이동) 규명 |\n| **연구 방법** | **물리적 이식 및 현장 실험**: 에폭시 패널과 나사를 이용해 인위적으로 이식한 후, 생존율과 형태 성장을 장기 모니터링 | **생물학적 관찰 및 분석**: 현장(in situ) 및 실험실(in vitro) 관찰을 통합하여 일주기 수직 이동(DVM) 행동 패턴을 분석 |\n\n**요약하자면,** *Ecklonia cava* 연구는 훼손된 연안 생태계를 직접 복원하기 위해 인위적인 이식 기술을 개발하고 현장에 적용하는 **공학적·실용적 연구**인 반면, *Heterosigma akashiwo* 연구는 적조를 유발하는 미세조류의 생존 전략인 수직 이동 행동을 규명하기 위해 현장과 실험실 관찰을 병행하는 **기초 생태학적 연구**라는 점에서 차이가 있습니다.",
+  "sources": [
+    "kang2026_algae_restoration::0000",
+    "kang2026_algae_restoration::0024",
+    "kim2024_hakashiwo::0025",
+    "kim2024_hakashiwo::0003"
+  ],
+  "selected_papers": [
+    "kang2026_algae_restoration",
+    "kim2024_hakashiwo",
+    "etv4_breast_cancer"
+  ],
+  "degraded": false,
+  "scope_kw_multi": true,
+  "scope_llm_multi": true,
+  "top1_cos": 0.7342
+}

@@ -1,0 +1,16 @@
+{
+  "qid": "S004",
+  "system": "standard_rag",
+  "query": "전체 관측 기간을 통틀어 단일 정점에서 관측된 최댓값은 어느 정점에서 얼마인가?",
+  "final_response": "제시된 데이터셋을 바탕으로 전체 관측 기간 동안 단일 정점에서 관측된 최댓값과 해당 정점은 다음과 같습니다.\n\n* **정점:** J9 (4월)\n* **최댓값:** 1.67595e+06 (1,675,950)",
+  "sandbox_value": null,
+  "final_ok": true,
+  "gold_value": {
+    "station": "J9",
+    "value": 1675955
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

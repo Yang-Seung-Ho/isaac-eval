@@ -1,0 +1,35 @@
+{
+  "qid": "U019",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "양이온성 코로나 공학이 기존 계면활성제의 세포독성 한계를 극복하면서 동시에 피부 침투를 향상시키는 물리화학적 기작을 표면 전하·입자 크기·지질 조성의 상호작용 관점에서 종합하라.",
+  "gold_route": "literature",
+  "gold_paper_route": "B",
+  "complexity_label": "high",
+  "paper_route": "B",
+  "complexity": {
+    "dim1": 9.2,
+    "dim2": 2.4323,
+    "dim3": 10.0,
+    "total": 21.6323
+  },
+  "top1_cos": 0.777,
+  "degraded": true,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "plhn_dermal_penetration",
+    "rebamipide_ibd_nanoformulation",
+    "kang2026_algae_restoration"
+  ],
+  "sources": [],
+  "final_response": "질의의 복잡도가 임계값을 초과하여 직접 요약을 생성하지 않았습니다. 대신 관련성이 높은 등록 논문을 추천합니다.\n- plhn_dermal_penetration (관련도 0.7752)\n- rebamipide_ibd_nanoformulation (관련도 0.6039)\n- kang2026_algae_restoration (관련도 0.4952)",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

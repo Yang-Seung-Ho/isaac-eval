@@ -1,0 +1,30 @@
+{
+  "qid": "ADV001",
+  "query": "제9정점(station 9)의 전체 기간 평균 개체 수는?",
+  "generated_code": "import json\n\nmean_j9 = df[\"J9\"].mean()\nresult = {\"제9정점 평균 개체 수\": round(mean_j9, 2)}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 321
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "제9정점 평균 개체 수": 279118.51
+  },
+  "final_response": "제9정점의 전체 기간 평균 개체 수는 279118.51입니다.",
+  "gold_value": {
+    "station": "J9",
+    "mean": 279118.51
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/jeju_phytoplankton.xlsx",
+    "sheet": "식.플 정량분석"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "qid": "A010",
+  "query": "12개 전 샘플의 총 read 수 합계(grand total)는 얼마인가?",
+  "generated_code": "sample_cols = [c for c in df.columns if c.startswith('OHM_')]\ngrand_total = int(df[sample_cols].sum().sum())\nresult = {\"grand_total\": grand_total}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 567
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "grand_total": 1548379
+  },
+  "final_response": "12개 전 샘플의 총 read 수 합계(grand total)는 1,548,379입니다.",
+  "gold_value": {
+    "total": 1548379
+  },
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_ohm.xlsx",
+    "sheet": "OHM"
+  }
+}

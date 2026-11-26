@@ -1,0 +1,28 @@
+{
+  "qid": "S009",
+  "query": "정점 J5의 전체 기간 평균 개체 수는 얼마인가?",
+  "generated_code": "import json\nimport pandas as pd\n\nmean_j5 = round(df[\"J5\"].mean(), 2)\nresult = {\"정점 J5 평균 개체 수\": mean_j5}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 364
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "정점 J5 평균 개체 수": 211050.65
+  },
+  "final_response": "정점 J5의 전체 기간 평균 개체 수는 211050.65입니다.",
+  "gold_value": {
+    "station": "J5",
+    "mean": 211050.65
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "qid": "H001",
+  "system": "proposed",
+  "kind": "hybrid",
+  "query": "제주 연안 데이터에서 식물플랑크톤이 가장 많이 발생한 달과 정점을 찾고, Heterosigma akashiwo 연구에 비추어 그 시기에 적조가 발생하기 쉬운 이유를 설명하라.",
+  "gold_route": "hybrid",
+  "decomposition": {
+    "data_subquery": "제주 연안 데이터에서 식물플랑크톤이 가장 많이 발생한 달과 정점 찾기",
+    "literature_subquery": "Heterosigma akashiwo 연구를 바탕으로 해당 시기에 적조가 발생하기 쉬운 이유 설명"
+  },
+  "expected_data_subquery": "봄철 최대 발생 월과 정점",
+  "expected_literature_subquery": "적조 발생 기작",
+  "generated_code": "import json\nimport pandas as pd\n\nstation_cols = [f\"J{i}\" for i in range(1, 13)]\n\nmax_val = df[station_cols].max().max()\nmax_row_idx, max_col = (\n    df[station_cols] == max_val\n).stack().idxmax()\nmax_month = df.loc[max_row_idx, \"Month\"]\n\nresult = {\n    \"Month\": max_month,\n    \"Station\": max_col,\n    \"Value\": float(max_val)\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "Month": "Apr.",
+    "Station": "J9",
+    "Value": 1675954.7738693468
+  },
+  "gold_value": {
+    "max_month": "Apr.",
+    "max_site": "J9",
+    "max_value": 1675955
+  },
+  "literature_sources": [
+    "kim2024_hakashiwo::0003",
+    "kim2024_hakashiwo::0026",
+    "kim2024_hakashiwo::0028"
+  ],
+  "final_response": "제주 연안 데이터 계산 결과와 문헌 근거를 통합하여 답변드립니다.\n\n**1. 식물플랑크톤이 가장 많이 발생한 달과 정점(Station)**\n* **발생 월:** 4월 (`Apr.`)\n* **정점:** J9\n* **값(Value):** 1,675,954.77 (`1675954.7738693468`)\n\n**2. Heterosigma akashiwo 연구에 비추어 그 시기에 적조가 발생하기 쉬운 이유**\n제공된 계산 결과에 없는 수치나 내용은 지어낼 수 없으므로, 문헌에 언급된 *Heterosigma akashiwo*의 생태적 특성(`kim2024_hakashiwo::0003`)을 바탕으로 설명합니다. \n\n문헌에 따르면, 단세포 raphidophyte 조류인 *Heterosigma akashiwo*는 활발한 **일주 연직 이동(Diel Vertical Migration, DVM)** 능력을 지니고 있습니다. 이들은 강한 수직 성층이 형성되는 시기에 낮에는 광합성을 위해 위로 이동하고 밤에는 깊은 곳으로 이동하여 영양염을 섭취함으로써, 비운동성 독립영양 생물들에 비해 경쟁적 우위를 차지하게 됩니다(`kim2024_hakashiwo::0003`). 이러한 수직 이동 행동과 영양염 섭취 전략은 전 세계적으로 대규모 적조(massive blooms)를 형성하는 요인으로 작용합니다(`kim2024_hakashiwo::0003`).",
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

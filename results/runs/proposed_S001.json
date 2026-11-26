@@ -1,0 +1,31 @@
+{
+  "qid": "S001",
+  "query": "봄철(3~5월) 데이터 중 식물플랑크톤이 가장 많이 발생한 달과 가장 심각했던 정점은?",
+  "generated_code": "import json\nimport pandas as pd\n\nspring_df = df[df[\"Month\"].str.lower().str.startswith((\"mar\", \"apr\", \"may\", \"3\", \"4\", \"5\"), na=False)]\nj_cols = [f\"J{i}\" for i in range(1, 13)]\n\nstacked = spring_df[j_cols].stack()\nmax_idx = stacked.idxmax()\n\nmax_month = spring_df.loc[max_idx[0], \"Month\"]\nmax_station = max_idx[1]\nmax_value = stacked[max_idx]\n\nresult = {\n    \"Month\": str(max_month),\n    \"Station\": str(max_station),\n    \"Value\": round(float(max_value), 2)\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 373
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "Month": "Apr.",
+    "Station": "J9",
+    "Value": 1675954.77
+  },
+  "final_response": "식물플랑크톤이 가장 많이 발생한 달은 Apr.이며, 가장 심각했던 정점은 J9(값: 1675954.77)입니다.",
+  "gold_value": {
+    "max_month": "Apr.",
+    "max_site": "J9",
+    "max_value": 1675955
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

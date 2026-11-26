@@ -1,0 +1,31 @@
+{
+  "qid": "S028",
+  "query": "정점 J1이 가장 높은 개체 수를 기록한 달은 언제이며 그 값은 얼마인가?",
+  "generated_code": "import json\n\nidx = df['J1'].idxmax()\nmax_month = df.loc[idx, 'Month']\nmax_val = df.loc[idx, 'J1']\n\nresult = {\n    \"Month\": str(max_month),\n    \"Value\": float(max_val)\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 371
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "Month": "Apr.",
+    "Value": 372691.7475728155
+  },
+  "final_response": "정점 J1이 가장 높은 개체 수를 기록한 달은 Apr.이며, 그 값은 372691.7475728155입니다.",
+  "gold_value": {
+    "station": "J1",
+    "mode": "max",
+    "month": "Apr.",
+    "value": 372692
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

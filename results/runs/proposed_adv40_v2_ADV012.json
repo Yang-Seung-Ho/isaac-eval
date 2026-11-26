@@ -1,0 +1,18 @@
+{
+  "qid": "ADV012",
+  "system": "proposed",
+  "query": "스테이션 7의 전 기간 평균은?",
+  "final_response": "스테이션 7의 전 기간 평균은 177237.41222862958입니다.",
+  "sandbox_value": {
+    "스테이션 7 평균": 177237.41222862958
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J7",
+    "mean": 177237.41
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

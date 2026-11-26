@@ -1,0 +1,19 @@
+{
+  "qid": "S027",
+  "system": "pot_pal",
+  "query": "전체 관측 기간을 통틀어 단일 정점에서 관측된 최솟값은 어느 정점에서 얼마인가?",
+  "final_response": "전체 관측 기간을 통틀어 단일 정점에서 관측된 최솟값은 **J8** 정점에서 **7425.74**입니다.",
+  "sandbox_value": {
+    "정점": "J8",
+    "최솟값": 7425.74
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J8",
+    "value": 7426
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

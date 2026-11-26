@@ -1,0 +1,30 @@
+{
+  "qid": "ADV002",
+  "query": "스테이션 넘버 1의 전 기간 평균 셀 수를 알려줘",
+  "generated_code": "import json\n\nmean_j1 = df[\"J1\"].mean()\nresult = {\"평균\": mean_j1}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 326
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "평균": 158396.15808899346
+  },
+  "final_response": "스테이션 넘버 1의 전 기간 평균 셀 수는 158396.15808899346입니다.",
+  "gold_value": {
+    "station": "J1",
+    "mean": 158396.16
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/jeju_phytoplankton.xlsx",
+    "sheet": "식.플 정량분석"
+  }
+}

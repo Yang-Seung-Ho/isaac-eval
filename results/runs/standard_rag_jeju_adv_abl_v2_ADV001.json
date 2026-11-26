@@ -1,0 +1,16 @@
+{
+  "qid": "ADV001",
+  "system": "standard_rag",
+  "query": "제9정점(station 9)의 전체 기간 평균 개체 수는?",
+  "final_response": "제9정점(J9)의 월별 개체 수는 다음과 같습니다.\n\n* **3월 (Mar.):** 23,267.3\n* **4월 (Apr.):** 1,675,950 ($1.67595 \\times 10^6$)\n* **5월 (May):** 123,057\n* **6월 (Jun.):** 125,228\n* **7월 (Jul.):** 53,500\n* **8월 (Aug.):** 84,010.2\n* **10월 (Oct.):** 106,144\n* **11월 (Nov.):** 41,786.8\n\n이 값들의 총합은 **2,232,943.3**이며, 데이터가 존재하는 8개월 동안의 평균 개체 수는 **279,117.9125**입니다.",
+  "sandbox_value": null,
+  "final_ok": true,
+  "gold_value": {
+    "station": "J9",
+    "mean": 279118.51
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

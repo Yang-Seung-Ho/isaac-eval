@@ -1,0 +1,32 @@
+{
+  "qid": "A007",
+  "query": "12개 전 샘플 합산 read 수가 가장 많은 Phylum(문)은 무엇이며 그 합계는 얼마인가?",
+  "generated_code": "import json\nimport pandas as pd\n\nsample_cols = [\n    \"BG11_1_D0\",\n    \"BG11_2_D0\",\n    \"BG11_3_D0\",\n    \"BG11_1_D4\",\n    \"BG11_2_D4\",\n    \"BG11_3_D4\",\n    \"BG11_1_D8\",\n    \"BG11_2_D8\",\n    \"BG11_3_D8\",\n    \"BG11_1_D12\",\n    \"BG11_2_D12\",\n    \"BG11_3_D12\",\n]\n\nphylum_sums = df.groupby(\"Phylum\")[sample_cols].sum().sum(axis=1)\ntop_phylum = phylum_sums.idxmax()\ntop_sum = int(phylum_sums.max())\n\nresult = {\"Phylum\": top_phylum, \"Total_Reads\": top_sum}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 622
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "Phylum": "Proteobacteria",
+    "Total_Reads": 1257885
+  },
+  "final_response": "합산 read 수가 가장 많은 Phylum은 Proteobacteria이며, 그 합계는 1257885입니다.",
+  "gold_value": {
+    "rank": "Phylum",
+    "taxon": "Proteobacteria",
+    "total": 1257885
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_bg11.xlsx",
+    "sheet": "BG11"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "qid": "ADV032",
+  "system": "pot_pal",
+  "query": "아홉째 정점의 평균은?",
+  "final_response": "279118.51280057227입니다.",
+  "sandbox_value": {
+    "아홉째 정점의 평균": 279118.51280057227
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J9",
+    "mean": 279118.51
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

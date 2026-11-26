@@ -1,0 +1,18 @@
+{
+  "qid": "ADV008",
+  "system": "proposed",
+  "query": "정점 넘버3의 평균 개체수 알려줘",
+  "final_response": "정점 3의 평균 개체수는 91865.04입니다.",
+  "sandbox_value": {
+    "정점 3 평균 개체수": 91865.04
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J3",
+    "mean": 91865.04
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

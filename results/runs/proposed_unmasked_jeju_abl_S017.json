@@ -1,0 +1,18 @@
+{
+  "qid": "S017",
+  "system": "proposed_unmasked",
+  "query": "정점 J10의 전체 기간 평균 개체 수는 얼마인가?",
+  "final_response": "정점 J10의 전체 기간 평균 개체 수는 350319.8869773246입니다.",
+  "sandbox_value": {
+    "정점 J10의 전체 기간 평균 개체 수": 350319.8869773246
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J10",
+    "mean": 350319.89
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

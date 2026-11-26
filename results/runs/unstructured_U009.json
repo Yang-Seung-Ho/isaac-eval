@@ -1,0 +1,37 @@
+{
+  "qid": "U009",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "염증성 장질환(IBD)이란 무엇인가?",
+  "gold_route": "literature",
+  "gold_paper_route": "A",
+  "complexity_label": "low",
+  "paper_route": "A",
+  "complexity": {
+    "dim1": 1.6,
+    "dim2": 6.2955,
+    "dim3": 6.6667,
+    "total": 14.5622
+  },
+  "top1_cos": 0.6611,
+  "degraded": false,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "rebamipide_ibd_nanoformulation"
+  ],
+  "sources": [
+    "rebamipide_ibd_nanoformulation::0042",
+    "rebamipide_ibd_nanoformulation::0048",
+    "rebamipide_ibd_nanoformulation::0051"
+  ],
+  "final_response": "제시된 발췌문에 근거하여 염증성 장질환(IBD)의 정의와 관련 연구의 목적, 방법, 주요 발견을 요약하면 다음과 같습니다.\n\n### 1. 염증성 장질환(IBD)의 정의 및 특징\n염증성 장질환(IBD)은 소아 및 청소년을 포함한 다양한 연령대에서 발생할 수 있는 장내 염증성 질환으로, 궤양성 대장염(ulcerative colitis) 등을 포함합니다 [rebamipide_ibd_nanoformulation::0042, 0048]. 이는 숙주와 장내 미생물군집 간의 상호작용, 면역 반응 및 장내 염증과 밀접하게 연관되어 있습니다 [rebamipide_ibd_nanoformulation::0048].\n\n### 2. 연구 목적 및 방법\n*   **치료법 및 약물 전달 기술 개발:** IBD 치료를 위해 국소 약물 전달용 염증 표적 하이드로겔 개발, 경구 투여를 통해 염증과 장내 미생물군집을 조절하는 프로그래밍 가능한 프로바이오틱스 연구, IL-12 및 IL-23 경로 억제 기전 연구, 장내 염증 해소 과정에서 대식세포(macrophages)를 표적으로 하는 치료법 등이 연구되고 있습니다 [rebamipide_ibd_nanoformulation::0042, 0048].\n*   **병태생리 기전 규명:** 임상 전(preclinical) 단계의 IBD 분석, 대장염에서 활성 호산구(eosinophils)의 숙주 방어 및 면역 반응 조절 역할 규명, 궤양성 대장염에서 상피세포의 HLA-DP가 NKp44+ 자연살해(NK) 세포에 의한 조직 손상을 유도하는 기전 등을 규명하고자 합니다 [rebamipide_ibd_nanoformulation::0048, 0051].\n*   **동물 모델을 통한 평가:** DSS 유도 대장염 마우스 모델 등을 활용하여 신규 치료제(예: M@D@Re-SCNPs)를 투여한 후, 마우스에서 적출한 심장, 신장, 간, 폐, 비장 등의 장기 단면을 H&E 염색법으로 시각화하여 독성 및 치료 효과를 평가합니다 [rebamipide_ibd_nanoformulation::0042].\n\n### 3. 주요 발견\n*   **면역 세포의 작용:** 대장염에서 활성 호산구는 숙주 방어와 면역 반응을 조절하며, 장내 염증 해소 과정에서 대식세포가 잠재적인 치료 표적이 될 수 있음이 확인되었습니다 [rebamipide_ibd_nanoformulation::0048]. 또한, 궤양성 대장염 환자의 상피세포에 발현된 HLA-DP는 NKp44+ 자연살해세포에 의한 조직 손상을 가능하게 합니다 [rebamipide_ibd_nanoformulation::0051].\n*   **치료적 가능성:** 프로그래밍된 프로바이오틱스의 효과적인 경구 전달을 통해 장내 미생물군집과 염증을 조절할 수 있으며, 염증 표적 하이드로겔을 통해 국소적으로 약물을 전달하는 방식이 유효한 치료 대안으로 제시되었습니다 [rebamipide_ibd_nanoformulation::0042].",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

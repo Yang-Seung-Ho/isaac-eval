@@ -1,0 +1,18 @@
+{
+  "qid": "ADV009",
+  "system": "proposed",
+  "query": "네번째 스테이션의 전체 평균 셀 수는?",
+  "final_response": "네번째 스테이션의 전체 평균 셀 수는 132901.79420021697입니다.",
+  "sandbox_value": {
+    "네번째 스테이션 전체 평균 셀 수": 132901.79420021697
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J4",
+    "mean": 132901.79
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

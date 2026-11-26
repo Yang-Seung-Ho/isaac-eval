@@ -1,0 +1,21 @@
+{
+  "qid": "S028",
+  "system": "proposed",
+  "query": "정점 J1이 가장 높은 개체 수를 기록한 달은 언제이며 그 값은 얼마인가?",
+  "final_response": "정점 J1이 가장 높은 개체 수를 기록한 달은 Apr.이며, 그 값은 372691.7475728155입니다.",
+  "sandbox_value": {
+    "Month": "Apr.",
+    "Value": 372691.7475728155
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J1",
+    "mode": "max",
+    "month": "Apr.",
+    "value": 372692
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

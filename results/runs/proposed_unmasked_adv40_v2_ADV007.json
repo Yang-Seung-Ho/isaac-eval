@@ -1,0 +1,18 @@
+{
+  "qid": "ADV007",
+  "system": "proposed_unmasked",
+  "query": "두 번째 관측 정점의 전 기간 평균 세포 수는?",
+  "final_response": "두 번째 관측 정점의 전 기간 평균 세포 수는 74914.16668722914(약 74,914.17)입니다.",
+  "sandbox_value": {
+    "두 번째 관측 정점 평균 세포 수": 74914.16668722914
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J2",
+    "mean": 74914.17
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

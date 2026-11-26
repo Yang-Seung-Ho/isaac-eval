@@ -1,0 +1,16 @@
+{
+  "qid": "S008",
+  "system": "pot_pal",
+  "query": "3월(Mar.) 전체 정점의 개체 수 합계는 얼마인가?",
+  "final_response": "코드 실행에 3회 시도 후 실패: execution failed",
+  "sandbox_value": null,
+  "final_ok": false,
+  "gold_value": {
+    "month": "Mar.",
+    "total": 337339
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

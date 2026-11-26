@@ -1,0 +1,16 @@
+{
+  "qid": "ADV003",
+  "system": "proposed_unmasked",
+  "query": "4월(April) 모든 관측점 개체수 총합은?",
+  "final_response": "코드 실행에 3회 시도 후 실패: execution failed",
+  "sandbox_value": null,
+  "final_ok": false,
+  "gold_value": {
+    "month": "Apr.",
+    "total": 9074686
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

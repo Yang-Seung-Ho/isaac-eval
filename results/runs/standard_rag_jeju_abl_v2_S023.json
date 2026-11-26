@@ -1,0 +1,17 @@
+{
+  "qid": "S023",
+  "system": "standard_rag",
+  "query": "4월(Apr.)의 전 정점 평균값(데이터에 기재된 '평균' 열 값)은 얼마인가?",
+  "final_response": "제공된 컨텍스트에 따르면, 4월(Apr.)의 '평균' 열 값은 **756224**입니다.",
+  "sandbox_value": null,
+  "final_ok": true,
+  "gold_value": {
+    "month": "Apr.",
+    "field": "평균",
+    "value": 756223.8132
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

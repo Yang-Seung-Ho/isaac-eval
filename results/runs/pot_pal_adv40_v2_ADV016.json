@@ -1,0 +1,18 @@
+{
+  "qid": "ADV016",
+  "system": "pot_pal",
+  "query": "마지막 정점(12번)의 평균 세포 수는?",
+  "final_response": "마지막 정점(12번)의 평균 세포 수는 168136.5382385178입니다.",
+  "sandbox_value": {
+    "마지막 정점(12번) 평균 세포 수": 168136.5382385178
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J12",
+    "mean": 168136.54
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

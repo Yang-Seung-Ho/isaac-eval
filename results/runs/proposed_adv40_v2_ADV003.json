@@ -1,0 +1,18 @@
+{
+  "qid": "ADV003",
+  "system": "proposed",
+  "query": "4월(April) 모든 관측점 개체수 총합은?",
+  "final_response": "4월 모든 관측점 개체수 총합은 9074685.757896103입니다.",
+  "sandbox_value": {
+    "4월 모든 관측점 개체수 총합": 9074685.757896103
+  },
+  "final_ok": true,
+  "gold_value": {
+    "month": "Apr.",
+    "total": 9074686
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "qid": "ADV039",
+  "system": "pot_pal",
+  "query": "모든 지점·전 기간 중 최고 관측치가 나온 정점은?",
+  "final_response": "모든 지점·전 기간 중 최고 관측치가 나온 정점은 J9입니다.",
+  "sandbox_value": {
+    "정점": "J9"
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J9",
+    "value": 1675955
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

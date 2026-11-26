@@ -1,0 +1,19 @@
+{
+  "qid": "S004",
+  "system": "proposed_unmasked",
+  "query": "전체 관측 기간을 통틀어 단일 정점에서 관측된 최댓값은 어느 정점에서 얼마인가?",
+  "final_response": "단일 정점에서 관측된 최댓값은 **J9** 정점에서 **1675954.7738693468**입니다.",
+  "sandbox_value": {
+    "정점": "J9",
+    "최댓값": 1675954.7738693468
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J9",
+    "value": 1675955
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

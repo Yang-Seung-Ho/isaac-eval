@@ -1,0 +1,762 @@
+{
+  "accuracy": 0.746031746031746,
+  "n": 63,
+  "records": [
+    {
+      "qid": "S001",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.7325,
+        "asv_bg11": 0.5716,
+        "asv_nies": 0.5699,
+        "asv_ohm": 0.5622
+      }
+    },
+    {
+      "qid": "S002",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6676,
+        "asv_bg11": 0.5491,
+        "asv_nies": 0.5491,
+        "asv_ohm": 0.5442
+      }
+    },
+    {
+      "qid": "S003",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6653,
+        "asv_bg11": 0.5732,
+        "asv_nies": 0.5684,
+        "asv_ohm": 0.5646
+      }
+    },
+    {
+      "qid": "S004",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.5879,
+        "asv_bg11": 0.5006,
+        "asv_nies": 0.4995,
+        "asv_ohm": 0.4913
+      }
+    },
+    {
+      "qid": "S005",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6661,
+        "asv_bg11": 0.5491,
+        "asv_nies": 0.5448,
+        "asv_ohm": 0.5383
+      }
+    },
+    {
+      "qid": "S006",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6672,
+        "asv_bg11": 0.591,
+        "asv_nies": 0.5856,
+        "asv_ohm": 0.5838
+      }
+    },
+    {
+      "qid": "S007",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6627,
+        "asv_bg11": 0.5528,
+        "asv_nies": 0.5591,
+        "asv_ohm": 0.552
+      }
+    },
+    {
+      "qid": "S008",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6735,
+        "asv_bg11": 0.5925,
+        "asv_nies": 0.5903,
+        "asv_ohm": 0.5858
+      }
+    },
+    {
+      "qid": "S009",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6578,
+        "asv_bg11": 0.555,
+        "asv_nies": 0.5641,
+        "asv_ohm": 0.5489
+      }
+    },
+    {
+      "qid": "S010",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.7205,
+        "asv_bg11": 0.6514,
+        "asv_nies": 0.6311,
+        "asv_ohm": 0.6242
+      }
+    },
+    {
+      "qid": "S011",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.652,
+        "asv_bg11": 0.5272,
+        "asv_nies": 0.5344,
+        "asv_ohm": 0.5243
+      }
+    },
+    {
+      "qid": "S012",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6585,
+        "asv_bg11": 0.5508,
+        "asv_nies": 0.5614,
+        "asv_ohm": 0.5464
+      }
+    },
+    {
+      "qid": "S013",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6575,
+        "asv_bg11": 0.5437,
+        "asv_nies": 0.5501,
+        "asv_ohm": 0.5407
+      }
+    },
+    {
+      "qid": "S014",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6563,
+        "asv_bg11": 0.538,
+        "asv_nies": 0.543,
+        "asv_ohm": 0.5351
+      }
+    },
+    {
+      "qid": "S015",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6514,
+        "asv_bg11": 0.5362,
+        "asv_nies": 0.5414,
+        "asv_ohm": 0.5316
+      }
+    },
+    {
+      "qid": "S016",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6568,
+        "asv_bg11": 0.5468,
+        "asv_nies": 0.5523,
+        "asv_ohm": 0.5463
+      }
+    },
+    {
+      "qid": "S017",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6508,
+        "asv_bg11": 0.5487,
+        "asv_nies": 0.5494,
+        "asv_ohm": 0.5434
+      }
+    },
+    {
+      "qid": "S018",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6654,
+        "asv_bg11": 0.5846,
+        "asv_nies": 0.5398,
+        "asv_ohm": 0.53
+      }
+    },
+    {
+      "qid": "S019",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6547,
+        "asv_bg11": 0.5729,
+        "asv_nies": 0.5712,
+        "asv_ohm": 0.5686
+      }
+    },
+    {
+      "qid": "S020",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6761,
+        "asv_bg11": 0.5842,
+        "asv_nies": 0.5821,
+        "asv_ohm": 0.5814
+      }
+    },
+    {
+      "qid": "S021",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6724,
+        "asv_bg11": 0.5775,
+        "asv_nies": 0.5754,
+        "asv_ohm": 0.5748
+      }
+    },
+    {
+      "qid": "S022",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6563,
+        "asv_bg11": 0.5704,
+        "asv_nies": 0.5726,
+        "asv_ohm": 0.5778
+      }
+    },
+    {
+      "qid": "S023",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6979,
+        "asv_bg11": 0.5738,
+        "asv_nies": 0.5728,
+        "asv_ohm": 0.5628
+      }
+    },
+    {
+      "qid": "S024",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.7724,
+        "asv_bg11": 0.6154,
+        "asv_nies": 0.6109,
+        "asv_ohm": 0.6074
+      }
+    },
+    {
+      "qid": "S025",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6876,
+        "asv_bg11": 0.5546,
+        "asv_nies": 0.5527,
+        "asv_ohm": 0.5497
+      }
+    },
+    {
+      "qid": "S026",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.7793,
+        "asv_bg11": 0.6018,
+        "asv_nies": 0.5992,
+        "asv_ohm": 0.5997
+      }
+    },
+    {
+      "qid": "S027",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.5921,
+        "asv_bg11": 0.5224,
+        "asv_nies": 0.522,
+        "asv_ohm": 0.5124
+      }
+    },
+    {
+      "qid": "S028",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6526,
+        "asv_bg11": 0.5094,
+        "asv_nies": 0.5043,
+        "asv_ohm": 0.5007
+      }
+    },
+    {
+      "qid": "S029",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6513,
+        "asv_bg11": 0.532,
+        "asv_nies": 0.5373,
+        "asv_ohm": 0.5318
+      }
+    },
+    {
+      "qid": "S030",
+      "gold": "jeju",
+      "pred": "jeju",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6311,
+        "asv_bg11": 0.5992,
+        "asv_nies": 0.5918,
+        "asv_ohm": 0.5911
+      }
+    },
+    {
+      "qid": "A001",
+      "gold": "asv_bg11",
+      "pred": "asv_bg11",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6371,
+        "asv_bg11": 0.8142,
+        "asv_nies": 0.7605,
+        "asv_ohm": 0.7437
+      }
+    },
+    {
+      "qid": "A002",
+      "gold": "asv_bg11",
+      "pred": "asv_bg11",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6508,
+        "asv_bg11": 0.7344,
+        "asv_nies": 0.7265,
+        "asv_ohm": 0.7172
+      }
+    },
+    {
+      "qid": "A003",
+      "gold": "asv_bg11",
+      "pred": "asv_bg11",
+      "correct": true,
+      "scores": {
+        "jeju": 0.5967,
+        "asv_bg11": 0.6638,
+        "asv_nies": 0.659,
+        "asv_ohm": 0.6528
+      }
+    },
+    {
+      "qid": "A004",
+      "gold": "asv_bg11",
+      "pred": "asv_nies",
+      "correct": false,
+      "scores": {
+        "jeju": 0.6324,
+        "asv_bg11": 0.7609,
+        "asv_nies": 0.7633,
+        "asv_ohm": 0.7525
+      }
+    },
+    {
+      "qid": "A005",
+      "gold": "asv_bg11",
+      "pred": "asv_bg11",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6526,
+        "asv_bg11": 0.7857,
+        "asv_nies": 0.7473,
+        "asv_ohm": 0.7257
+      }
+    },
+    {
+      "qid": "A006",
+      "gold": "asv_bg11",
+      "pred": "asv_nies",
+      "correct": false,
+      "scores": {
+        "jeju": 0.5805,
+        "asv_bg11": 0.7303,
+        "asv_nies": 0.7361,
+        "asv_ohm": 0.7339
+      }
+    },
+    {
+      "qid": "A007",
+      "gold": "asv_bg11",
+      "pred": "asv_bg11",
+      "correct": true,
+      "scores": {
+        "jeju": 0.674,
+        "asv_bg11": 0.7319,
+        "asv_nies": 0.7291,
+        "asv_ohm": 0.7251
+      }
+    },
+    {
+      "qid": "A008",
+      "gold": "asv_bg11",
+      "pred": "asv_bg11",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6106,
+        "asv_bg11": 0.7962,
+        "asv_nies": 0.7571,
+        "asv_ohm": 0.7424
+      }
+    },
+    {
+      "qid": "A009",
+      "gold": "asv_bg11",
+      "pred": "asv_nies",
+      "correct": false,
+      "scores": {
+        "jeju": 0.6375,
+        "asv_bg11": 0.7383,
+        "asv_nies": 0.7454,
+        "asv_ohm": 0.7284
+      }
+    },
+    {
+      "qid": "A010",
+      "gold": "asv_bg11",
+      "pred": "asv_nies",
+      "correct": false,
+      "scores": {
+        "jeju": 0.6524,
+        "asv_bg11": 0.6882,
+        "asv_nies": 0.6933,
+        "asv_ohm": 0.6801
+      }
+    },
+    {
+      "qid": "A011",
+      "gold": "asv_bg11",
+      "pred": "asv_nies",
+      "correct": false,
+      "scores": {
+        "jeju": 0.619,
+        "asv_bg11": 0.7,
+        "asv_nies": 0.7056,
+        "asv_ohm": 0.6938
+      }
+    },
+    {
+      "qid": "A001",
+      "gold": "asv_nies",
+      "pred": "asv_nies",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6217,
+        "asv_bg11": 0.7556,
+        "asv_nies": 0.8123,
+        "asv_ohm": 0.7446
+      }
+    },
+    {
+      "qid": "A002",
+      "gold": "asv_nies",
+      "pred": "asv_bg11",
+      "correct": false,
+      "scores": {
+        "jeju": 0.6508,
+        "asv_bg11": 0.7344,
+        "asv_nies": 0.7265,
+        "asv_ohm": 0.7172
+      }
+    },
+    {
+      "qid": "A003",
+      "gold": "asv_nies",
+      "pred": "asv_bg11",
+      "correct": false,
+      "scores": {
+        "jeju": 0.5967,
+        "asv_bg11": 0.6638,
+        "asv_nies": 0.659,
+        "asv_ohm": 0.6528
+      }
+    },
+    {
+      "qid": "A004",
+      "gold": "asv_nies",
+      "pred": "asv_nies",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6324,
+        "asv_bg11": 0.7609,
+        "asv_nies": 0.7633,
+        "asv_ohm": 0.7525
+      }
+    },
+    {
+      "qid": "A005",
+      "gold": "asv_nies",
+      "pred": "asv_nies",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6333,
+        "asv_bg11": 0.7265,
+        "asv_nies": 0.7699,
+        "asv_ohm": 0.7061
+      }
+    },
+    {
+      "qid": "A006",
+      "gold": "asv_nies",
+      "pred": "asv_nies",
+      "correct": true,
+      "scores": {
+        "jeju": 0.5805,
+        "asv_bg11": 0.7303,
+        "asv_nies": 0.7361,
+        "asv_ohm": 0.7339
+      }
+    },
+    {
+      "qid": "A007",
+      "gold": "asv_nies",
+      "pred": "asv_bg11",
+      "correct": false,
+      "scores": {
+        "jeju": 0.674,
+        "asv_bg11": 0.7319,
+        "asv_nies": 0.7291,
+        "asv_ohm": 0.7251
+      }
+    },
+    {
+      "qid": "A008",
+      "gold": "asv_nies",
+      "pred": "asv_nies",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6054,
+        "asv_bg11": 0.7462,
+        "asv_nies": 0.7977,
+        "asv_ohm": 0.7412
+      }
+    },
+    {
+      "qid": "A009",
+      "gold": "asv_nies",
+      "pred": "asv_nies",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6375,
+        "asv_bg11": 0.7383,
+        "asv_nies": 0.7454,
+        "asv_ohm": 0.7284
+      }
+    },
+    {
+      "qid": "A010",
+      "gold": "asv_nies",
+      "pred": "asv_nies",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6524,
+        "asv_bg11": 0.6882,
+        "asv_nies": 0.6933,
+        "asv_ohm": 0.6801
+      }
+    },
+    {
+      "qid": "A011",
+      "gold": "asv_nies",
+      "pred": "asv_nies",
+      "correct": true,
+      "scores": {
+        "jeju": 0.619,
+        "asv_bg11": 0.7,
+        "asv_nies": 0.7056,
+        "asv_ohm": 0.6938
+      }
+    },
+    {
+      "qid": "A001",
+      "gold": "asv_ohm",
+      "pred": "asv_ohm",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6173,
+        "asv_bg11": 0.7553,
+        "asv_nies": 0.7659,
+        "asv_ohm": 0.8187
+      }
+    },
+    {
+      "qid": "A002",
+      "gold": "asv_ohm",
+      "pred": "asv_bg11",
+      "correct": false,
+      "scores": {
+        "jeju": 0.6508,
+        "asv_bg11": 0.7344,
+        "asv_nies": 0.7265,
+        "asv_ohm": 0.7172
+      }
+    },
+    {
+      "qid": "A003",
+      "gold": "asv_ohm",
+      "pred": "asv_bg11",
+      "correct": false,
+      "scores": {
+        "jeju": 0.5967,
+        "asv_bg11": 0.6638,
+        "asv_nies": 0.659,
+        "asv_ohm": 0.6528
+      }
+    },
+    {
+      "qid": "A004",
+      "gold": "asv_ohm",
+      "pred": "asv_nies",
+      "correct": false,
+      "scores": {
+        "jeju": 0.6324,
+        "asv_bg11": 0.7609,
+        "asv_nies": 0.7633,
+        "asv_ohm": 0.7525
+      }
+    },
+    {
+      "qid": "A005",
+      "gold": "asv_ohm",
+      "pred": "asv_ohm",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6243,
+        "asv_bg11": 0.7194,
+        "asv_nies": 0.7245,
+        "asv_ohm": 0.7635
+      }
+    },
+    {
+      "qid": "A006",
+      "gold": "asv_ohm",
+      "pred": "asv_nies",
+      "correct": false,
+      "scores": {
+        "jeju": 0.5805,
+        "asv_bg11": 0.7303,
+        "asv_nies": 0.7361,
+        "asv_ohm": 0.7339
+      }
+    },
+    {
+      "qid": "A007",
+      "gold": "asv_ohm",
+      "pred": "asv_bg11",
+      "correct": false,
+      "scores": {
+        "jeju": 0.674,
+        "asv_bg11": 0.7319,
+        "asv_nies": 0.7291,
+        "asv_ohm": 0.7251
+      }
+    },
+    {
+      "qid": "A008",
+      "gold": "asv_ohm",
+      "pred": "asv_ohm",
+      "correct": true,
+      "scores": {
+        "jeju": 0.6047,
+        "asv_bg11": 0.7469,
+        "asv_nies": 0.7573,
+        "asv_ohm": 0.8036
+      }
+    },
+    {
+      "qid": "A009",
+      "gold": "asv_ohm",
+      "pred": "asv_nies",
+      "correct": false,
+      "scores": {
+        "jeju": 0.6375,
+        "asv_bg11": 0.7383,
+        "asv_nies": 0.7454,
+        "asv_ohm": 0.7284
+      }
+    },
+    {
+      "qid": "A010",
+      "gold": "asv_ohm",
+      "pred": "asv_nies",
+      "correct": false,
+      "scores": {
+        "jeju": 0.6524,
+        "asv_bg11": 0.6882,
+        "asv_nies": 0.6933,
+        "asv_ohm": 0.6801
+      }
+    },
+    {
+      "qid": "A011",
+      "gold": "asv_ohm",
+      "pred": "asv_nies",
+      "correct": false,
+      "scores": {
+        "jeju": 0.619,
+        "asv_bg11": 0.7,
+        "asv_nies": 0.7056,
+        "asv_ohm": 0.6938
+      }
+    }
+  ]
+}

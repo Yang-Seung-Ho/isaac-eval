@@ -1,0 +1,18 @@
+{
+  "qid": "ADV015",
+  "system": "proposed_unmasked",
+  "query": "정점 11의 전 기간 평균 개체수?",
+  "final_response": "정점 11의 전 기간 평균 개체수는 411881.54입니다.",
+  "sandbox_value": {
+    "정점 11 전 기간 평균 개체수": 411881.54
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J11",
+    "mean": 411881.54
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

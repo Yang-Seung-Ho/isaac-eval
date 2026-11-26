@@ -1,0 +1,41 @@
+{
+  "qid": "H010",
+  "system": "proposed_e2e",
+  "query": "정점 J11의 전체 기간 평균을 계산하고, 연안 정점의 개체 수 변동을 다루는 문헌 논의와 연결하라.",
+  "gold_value": {
+    "station": "J11",
+    "mean": 411881.54
+  },
+  "gold_route": "hybrid",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "routed_to": "hybrid",
+  "decomposition": {
+    "data_subquery": "정점 J11의 전체 기간 평균 계산",
+    "literature_subquery": "연안 정점의 개체 수 변동을 다루는 문헌 논의 검색"
+  },
+  "selected_dataset": "jeju",
+  "generated_code": "import pandas as pd\nimport json\n\nj11_mean = float(df['J11'].mean())\nresult = {\"J11 전체 기간 평균\": j11_mean}\nprint(json.dumps(result, ensure_ascii=False))",
+  "final_ok": true,
+  "sandbox_value": {
+    "J11 전체 기간 평균": 411881.54096920404
+  },
+  "paper_route": "C",
+  "complexity": {
+    "dim1": 3.6,
+    "dim2": 5.8556,
+    "dim3": 10.0,
+    "total": 19.4556
+  },
+  "literature_response": "제공된 발췌문에서 연안 정점의 개체 수 변동 및 개체군 형성에 대해 논의된 내용을 논문별로 제시하고 종합한 결과는 다음과 같습니다.\n\n---\n\n### 1. 논문별 근거\n\n#### **`kim2024_hakashiwo`**\n* **식물플랑크톤 대발생(Bloom) 및 수직 이동**: 식물플랑크톤의 일주 수직 이동(DVM) 행동이 대발생 형성에 미치는 영향을 논의합니다. 1968년에 제안된 가설에 따르면, 독자적 영양을 취하는 편모조류(autotrophic flagellates)는 낮 동안 표층의 빛에 접근하기 위해 수직 이동하여 매우 조밀한 대발생(blooms)을 형성합니다 [`kim2024_hakashiwo::0002`].\n* **영양염 변동 및 축적 단계**: 정기적인 대발생 기간(regular bloom period)과 바닥 축적 단계(bottom accumulation phase) 동안의 4가지 영양염(질소원 및 인산염 포함) 수준을 주성분 분석(PCA)을 통해 특성화했습니다 [`kim2024_hakashiwo::0023`].\n\n#### **`kang2026_algae_restoration`**\n* **해조류 개체군 구조 및 성숙 패턴**: 제공된 발췌문은 주로 참고문헌 목록으로 구성되어 있으며, 연안 해조류(예: *Sargassum macrocarpum*, *Ecklonia cava*)의 생장·성숙 패턴, 개체군 구조 및 보충(recruitment and population structure), 바이오매스 산정 및 이식에 관한 연구 문헌들을 다루고 있습니다 [`kang2026_algae_restoration::0024`, `kang2026_algae_restoration::0025`].\n\n---\n\n### 2. 종합 분석\n제공된 문헌 발췌를 종합하면, 연안 환경에서의 개체 수 변동 및 집단 형성 논의는 두 가지 측면에서 언급됩니다:\n1. **미세조류/식물플랑크톤**: 일주 수직 이동(DVM) 메커니즘과 영양염(질소원 및 인산염)의 변화 및 바닥 축적 단계가 표층의 조밀한 대발생(개체 수 급증)을 유발하는 요인으로 논의됩니다.\n2. **거대해조류**: 제주도 등 연안 환경에서 주요 해조류의 생장 및 성숙 패턴, 바이오매스, 개체군 보충 및 구조 변화가 관련 참고문헌을 통해 언급됩니다.\n\n*※ 참고: 제시된 발췌문에는 특정 연안 정점에 대한 구체적인 시계열 개체 수 변동 수치 데이터는 포함되어 있지 않습니다.*",
+  "literature_sources": [
+    "kim2024_hakashiwo::0002",
+    "kim2024_hakashiwo::0023",
+    "kang2026_algae_restoration::0024",
+    "kang2026_algae_restoration::0025"
+  ],
+  "recommendations": null,
+  "final_response": "정점 J11의 전체 기간 평균 계산 결과는 다음과 같습니다.\n\n* **정점 J11 전체 기간 평균:** 411,881.54 (정확한 값: 411881.54096920404)\n\n(※ 지침에 따라 제공된 데이터 계산 결과만을 바탕으로 답하며, 별도로 제공된 문헌 내용이 없으므로 문헌 논의에 대한 추정이나 지어낸 주장은 포함하지 않습니다.)\n\n[문헌 리뷰(경로 C)]\n제공된 발췌문에서 연안 정점의 개체 수 변동 및 개체군 형성에 대해 논의된 내용을 논문별로 제시하고 종합한 결과는 다음과 같습니다.\n\n---\n\n### 1. 논문별 근거\n\n#### **`kim2024_hakashiwo`**\n* **식물플랑크톤 대발생(Bloom) 및 수직 이동**: 식물플랑크톤의 일주 수직 이동(DVM) 행동이 대발생 형성에 미치는 영향을 논의합니다. 1968년에 제안된 가설에 따르면, 독자적 영양을 취하는 편모조류(autotrophic flagellates)는 낮 동안 표층의 빛에 접근하기 위해 수직 이동하여 매우 조밀한 대발생(blooms)을 형성합니다 [`kim2024_hakashiwo::0002`].\n* **영양염 변동 및 축적 단계**: 정기적인 대발생 기간(regular bloom period)과 바닥 축적 단계(bottom accumulation phase) 동안의 4가지 영양염(질소원 및 인산염 포함) 수준을 주성분 분석(PCA)을 통해 특성화했습니다 [`kim2024_hakashiwo::0023`].\n\n#### **`kang2026_algae_restoration`**\n* **해조류 개체군 구조 및 성숙 패턴**: 제공된 발췌문은 주로 참고문헌 목록으로 구성되어 있으며, 연안 해조류(예: *Sargassum macrocarpum*, *Ecklonia cava*)의 생장·성숙 패턴, 개체군 구조 및 보충(recruitment and population structure), 바이오매스 산정 및 이식에 관한 연구 문헌들을 다루고 있습니다 [`kang2026_algae_restoration::0024`, `kang2026_algae_restoration::0025`].\n\n---\n\n### 2. 종합 분석\n제공된 문헌 발췌를 종합하면, 연안 환경에서의 개체 수 변동 및 집단 형성 논의는 두 가지 측면에서 언급됩니다:\n1. **미세조류/식물플랑크톤**: 일주 수직 이동(DVM) 메커니즘과 영양염(질소원 및 인산염)의 변화 및 바닥 축적 단계가 표층의 조밀한 대발생(개체 수 급증)을 유발하는 요인으로 논의됩니다.\n2. **거대해조류**: 제주도 등 연안 환경에서 주요 해조류의 생장 및 성숙 패턴, 바이오매스, 개체군 보충 및 구조 변화가 관련 참고문헌을 통해 언급됩니다.\n\n*※ 참고: 제시된 발췌문에는 특정 연안 정점에 대한 구체적인 시계열 개체 수 변동 수치 데이터는 포함되어 있지 않습니다.*"
+}

@@ -4,3 +4,37 @@
 {"qid": "ADV004", "text": "12번 관측지점의 평균 플랑크톤 수치는?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J12"}}
 {"qid": "ADV005", "text": "전 기간을 통틀어 가장 높은 단일 지점 관측치와 그 지점은?", "gold_ref": "gold.overall_max_station", "gold_args": {}}
 {"qid": "ADV006", "text": "오거스트(8월) 전체 정점 합계 셀카운트는?", "gold_ref": "gold.month_total", "gold_args": {"month": "Aug."}}
+{"qid": "ADV007", "text": "두 번째 관측 정점의 전 기간 평균 세포 수는?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J2"}}
+{"qid": "ADV008", "text": "정점 넘버3의 평균 개체수 알려줘", "gold_ref": "gold.station_mean", "gold_args": {"station": "J3"}}
+{"qid": "ADV009", "text": "네번째 스테이션의 전체 평균 셀 수는?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J4"}}
+{"qid": "ADV010", "text": "5번 관측지점의 기간 평균 개체 수?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J5"}}
+{"qid": "ADV011", "text": "여섯 번째 정점의 평균 세포 밀도는?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J6"}}
+{"qid": "ADV012", "text": "스테이션 7의 전 기간 평균은?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J7"}}
+{"qid": "ADV013", "text": "8번째 관측점의 평균 개체 수를 구해줘", "gold_ref": "gold.station_mean", "gold_args": {"station": "J8"}}
+{"qid": "ADV014", "text": "열 번째 정점의 평균 셀 수는?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J10"}}
+{"qid": "ADV015", "text": "정점 11의 전 기간 평균 개체수?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J11"}}
+{"qid": "ADV016", "text": "마지막 정점(12번)의 평균 세포 수는?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J12"}}
+{"qid": "ADV017", "text": "전체에서 개체 수가 가장 적었던 관측 정점은 어디?", "gold_ref": "gold.overall_min_station", "gold_args": {}}
+{"qid": "ADV018", "text": "삼월 전 정점 개체 수 총합은?", "gold_ref": "gold.month_total", "gold_args": {"month": "Mar."}}
+{"qid": "ADV019", "text": "5월달 모든 지점 합계 셀 수?", "gold_ref": "gold.month_total", "gold_args": {"month": "May"}}
+{"qid": "ADV020", "text": "유월 전체 관측점 총 개체수?", "gold_ref": "gold.month_total", "gold_args": {"month": "Jun."}}
+{"qid": "ADV021", "text": "칠월 전 정점 합계는?", "gold_ref": "gold.month_total", "gold_args": {"month": "Jul."}}
+{"qid": "ADV022", "text": "시월 전체 정점 셀카운트 합?", "gold_ref": "gold.month_total", "gold_args": {"month": "Oct."}}
+{"qid": "ADV023", "text": "십일월 모든 지점 총합?", "gold_ref": "gold.month_total", "gold_args": {"month": "Nov."}}
+{"qid": "ADV024", "text": "첫 번째 정점의 평균 개체 수는?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J1"}}
+{"qid": "ADV025", "text": "정점 2번의 평균 셀 수?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J2"}}
+{"qid": "ADV026", "text": "세 번째 관측지의 평균은?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J3"}}
+{"qid": "ADV027", "text": "4번 정점의 평균 세포수?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J4"}}
+{"qid": "ADV028", "text": "다섯째 정점의 평균 개체 수?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J5"}}
+{"qid": "ADV029", "text": "6번째 관측점의 평균 개체수?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J6"}}
+{"qid": "ADV030", "text": "일곱 번째 정점의 평균 셀?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J7"}}
+{"qid": "ADV031", "text": "여덟 번 지점의 평균 개체수?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J8"}}
+{"qid": "ADV032", "text": "아홉째 정점의 평균은?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J9"}}
+{"qid": "ADV033", "text": "10번 관측지의 평균 개체수?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J10"}}
+{"qid": "ADV034", "text": "열한 번째 정점의 평균 셀 수?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J11"}}
+{"qid": "ADV035", "text": "십이번 정점의 평균 개체 수?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J12"}}
+{"qid": "ADV036", "text": "제1관측점의 전 기간 평균 세포수는?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J1"}}
+{"qid": "ADV037", "text": "여섯번 스테이션의 평균 셀수?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J6"}}
+{"qid": "ADV038", "text": "제9관측점의 전기간 평균 개체수?", "gold_ref": "gold.station_mean", "gold_args": {"station": "J9"}}
+{"qid": "ADV039", "text": "모든 지점·전 기간 중 최고 관측치가 나온 정점은?", "gold_ref": "gold.overall_max_station", "gold_args": {}}
+{"qid": "ADV040", "text": "전 구간에서 세포 수가 최저였던 조사 지점?", "gold_ref": "gold.overall_min_station", "gold_args": {}}

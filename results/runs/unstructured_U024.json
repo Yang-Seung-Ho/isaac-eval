@@ -1,0 +1,35 @@
+{
+  "qid": "U024",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "나노입자의 세포 생체이용률 향상과 세포독성 저감이라는 상충하는 두 목표를 동시에 달성하기 위해 이 연구가 채택한 설계 전략과 그 트레이드오프를 정량 근거와 함께 평가하라.",
+  "gold_route": "literature",
+  "gold_paper_route": "B",
+  "complexity_label": "high",
+  "paper_route": "B",
+  "complexity": {
+    "dim1": 8.8,
+    "dim2": 4.4529,
+    "dim3": 10.0,
+    "total": 23.2529
+  },
+  "top1_cos": 0.7164,
+  "degraded": true,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "plhn_dermal_penetration",
+    "rebamipide_ibd_nanoformulation",
+    "etv4_breast_cancer"
+  ],
+  "sources": [],
+  "final_response": "질의의 복잡도가 임계값을 초과하여 직접 요약을 생성하지 않았습니다. 대신 관련성이 높은 등록 논문을 추천합니다.\n- plhn_dermal_penetration (관련도 0.6927)\n- rebamipide_ibd_nanoformulation (관련도 0.6355)\n- etv4_breast_cancer (관련도 0.5259)",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

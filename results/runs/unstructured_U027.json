@@ -1,0 +1,40 @@
+{
+  "qid": "U027",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "이 코퍼스의 해양 생물 연구들(적조 및 갈조류)이 다루는 연안 생태계 문제를 비교하고, 두 연구가 제시하는 관측·개입 접근의 차이를 서술하라.",
+  "gold_route": "literature",
+  "gold_paper_route": "C",
+  "complexity_label": "high",
+  "paper_route": "C",
+  "complexity": {
+    "dim1": 8.0,
+    "dim2": 4.822,
+    "dim3": 10.0,
+    "total": 22.822
+  },
+  "top1_cos": 0.7053,
+  "degraded": false,
+  "degraded_reason": null,
+  "scope_kw_multi": true,
+  "scope_llm_multi": true,
+  "selected_papers": [
+    "kang2026_algae_restoration",
+    "kim2024_hakashiwo",
+    "plhn_dermal_penetration"
+  ],
+  "sources": [
+    "kang2026_algae_restoration::0021",
+    "kang2026_algae_restoration::0022",
+    "kim2024_hakashiwo::0026",
+    "kim2024_hakashiwo::0028"
+  ],
+  "final_response": "제시된 발췌록을 바탕으로 두 연구군(`kang2026_algae_restoration` 및 `kim2024_hakashiwo`)이 다루는 연안 생태계 문제와 이들이 제시하는 관측·개입 접근 방식의 차이를 비교·종합한 내용은 다음과 같습니다.\n\n---\n\n### 1. 다루는 연안 생태계 문제 비교\n\n*   **`kang2026_algae_restoration` (갈조류 및 바다숲 복원 연구)**\n    *   **주요 문제:** 연안 해역의 **갯녹음(Algal whitening)** 현상과 기후 변화 및 해양 열파(Marine heatwaves)로 인한 **켈프/갈조류 숲(Kelp forests, Fucoids)의 세계적인 감소 및 유전적 다양성 상실**을 다룹니다. \n    *   **환경적 요인:** 해양 열파와 부영양화(Eutrophication)의 상호작용이 대형조류의 생리생태에 미치는 부정적 영향과 기후 변화 신호에 주목합니다.\n*   **`kim2024_hakashiwo` (적조 및 유해 조류 연구)**\n    *   **주요 문제:** 마산-진해만, 오사카만, 파타고니아 피오르드 등 전 세계 연안 및 에스추어리에서 발생하는 **유해 조류 대발생(HABs) 및 적조(Red tide)** 문제를 다룹니다. 특히 *Heterosigma akashiwo* 및 *Cochlodinium polykrikoides*와 같은 종에 의한 **어류 폐사(Fish-killing) 사건**을 다룹니다.\n    *   **환경적 요인:** 부영양화와 기후 변화가 유해 조류의 발생을 촉진하는 주요 동력으로 작용함을 지적합니다.\n\n---\n\n### 2. 관측 및 개입 접근 방식의 차이\n\n두 연구는 연안 생태계 문제를 해결하기 위해 서로 다른 패러다임의 접근 방식을 제시합니다.\n\n#### (1) `kang2026_algae_restoration`: 물리적·생태적 '개입 및 복원' 접근\n이 연구군은 훼손된 해양 생태계를 직접 재건하기 위한 **적극적인 이식 및 조성 기술**에 초점을 맞춥니다.\n*   **인공 구조물 및 이식:** 파도 작용에 저항할 수 있는 인공어초(Artificial reefs)의 무게를 산정하고, 대형조류(Ecklonia radiata 등)를 성공적으로 이식(Transplantation)하기 위한 핵심 요인을 식별합니다.\n*   **바다숲 조성(Marine Afforestation):** 한국수산자원공단(FIRA)의 보고서를 바탕으로, 바다숲 조성을 위해 새로운 대형조류 종을 탐색·생산하고 이를 실제 해역에 적용하는 실행 중심의 개입을 제시합니다.\n*   **시너지 활용:** 켈프숲 복원을 강화하기 위해 생태적 촉진 연쇄(Facilitation cascades) 및 시너지 효과를 활용하는 방안을 모색합니다.\n\n#### (2) `kim2024_hakashiwo`: 생물학적·메커니즘적 '관측 및 분석' 접근\n이 연구군은 적조 생물의 생리적 특성, 이동 패턴, 그리고 자연적 소멸 메커니즘을 **정밀하게 관측하고 규명**하는 데 초점을 맞춥니다.\n*   **수직 이동 및 행동 관측:** 적조를 유발하는 와편모조류의 일주기 수직 이동(Diel vertical migration)과 온도 자극에 따른 이동(Thermotaxic migration)을 현장 및 실험실 연구를 결합하여 정밀 관측합니다.\n*   **종간 상호작용 및 발생 동인 분석:** *Prorocentrum minimum*과 *Heterosigma akashiwo* 간의 상호작용이 적조 형성에 미치는 역할 등 미세조류 간의 관계를 분석합니다.\n*   **자연적 소멸 메커니즘 규명:** 바이러스 유사 입자(Virus-like particles)가 *Heterosigma akashiwo* 적조를 붕괴시키는 메커니즘을 분석하여, 적조의 자연적 소멸 과정을 과학적으로 이해하고자 합니다.\n\n---\n\n### 종합 요약\n\n*   **생태계 문제 측면:** `kang2026`은 대형 갈조류 유실(갯녹음)로 인한 **'해양림 소실'**을 다루는 반면, `kim2024`는 미세 플랑크톤 급증으로 인한 **'유해 적조 및 어류 폐사'**를 다룹니다.\n*   **접근 방식 측면:** `kang2026`은 인공어초 설치, 신품종 개발, 이식 등 인위적 노력을 통해 생태계를 재건하는 **'적극적 복원·개입(Restoration)'**을 지향합니다. 반면, `kim2024`는 적조 생물의 수직 이동 행동, 종간 상호작용, 바이러스에 의한 소멸 메커니즘 등을 미세한 규모에서 규명하는 **'생물·생태학적 관측 및 메커니즘 규명(Observation & Mechanism)'**에 집중합니다.",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

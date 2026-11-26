@@ -1,0 +1,18 @@
+{
+  "qid": "ADV034",
+  "system": "pot_pal",
+  "query": "열한 번째 정점의 평균 셀 수?",
+  "final_response": "411881.54096920404입니다.",
+  "sandbox_value": {
+    "열한 번째 정점의 평균 셀 수": 411881.54096920404
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J11",
+    "mean": 411881.54
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

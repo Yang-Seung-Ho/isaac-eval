@@ -1,0 +1,18 @@
+{
+  "qid": "ADV018",
+  "system": "pot_pal",
+  "query": "삼월 전 정점 개체 수 총합은?",
+  "final_response": "삼월 전 정점 개체 수 총합은 337339.41입니다.",
+  "sandbox_value": {
+    "삼월 전 정점 개체 수 총합": 337339.41
+  },
+  "final_ok": true,
+  "gold_value": {
+    "month": "Mar.",
+    "total": 337339
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

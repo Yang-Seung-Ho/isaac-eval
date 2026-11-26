@@ -1,0 +1,40 @@
+{
+  "qid": "H003",
+  "system": "proposed_e2e",
+  "query": "4월 전체 정점의 개체 수 합계를 구하고, 봄철 대발생의 생물학적 배경을 문헌으로 뒷받침하라.",
+  "gold_value": {
+    "month": "Apr.",
+    "total": 9074686
+  },
+  "gold_route": "hybrid",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "routed_to": "hybrid",
+  "decomposition": {
+    "data_subquery": "4월 전체 정점의 개체 수 합계 계산",
+    "literature_subquery": "봄철 대발생의 생물학적 배경에 대한 문헌 조사"
+  },
+  "selected_dataset": "jeju",
+  "generated_code": "import json\nimport pandas as pd\n\napril_df = df[df['Month'].str.contains('Apr', case=False, na=False)]\nstations = [f'J{i}' for i in range(1, 13)]\ntotal_sum = float(april_df[stations].sum().sum())\n\nresult = {\"4월 전체 정점 개체 수 합계\": total_sum}\nprint(json.dumps(result, ensure_ascii=False))",
+  "final_ok": true,
+  "sandbox_value": {
+    "4월 전체 정점 개체 수 합계": 9074685.757896103
+  },
+  "paper_route": "A",
+  "complexity": {
+    "dim1": 2.4,
+    "dim2": 4.9875,
+    "dim3": 3.3333,
+    "total": 10.7208
+  },
+  "literature_response": "제공된 문헌 발췌를 바탕으로 식물플랑크톤의 대발생(bloom formation) 및 관련 생물학적 메커니즘에 대한 연구 내용을 정리한 결과는 다음과 같습니다. (※ 제공된 발췌문에서는 '봄철 대발생'이라는 명시적 단어 대신 식물플랑크톤의 **대발생 형성 및 생물학적·환경적 배경**을 다루고 있습니다.)\n\n---\n\n### 1. 연구 목적\n* **식물플랑크톤 대발생 및 수직 이동 행동 이해**: 독립영양 편모조류 등 식물플랑크톤의 일주 수직 이동(Diel Vertical Migration, DVM)과 생애 주기 전이가 고밀도 대발생 형성(bloom formation)에 미치는 생물학적·환경적 영향과 메커니즘을 밝히고자 함 [kim2024_hakashiwo::0002, kim2024_hakashiwo::0017].\n\n---\n\n### 2. 연구 방법\n* **문헌 조사 및 데이터 통합**: 19세기 및 20세기 초부터 축적된 식물플랑크톤 및 동물플랑크톤의 수직 이동 관련 기존 연구 문헌 검토 (Hasle, 1950 등) [kim2024_hakashiwo::0002].\n* **현장 및 실내 관찰 분석**: 유해 래피도조류(*Heterosigma akashiwo*) 등의 대발생 시기 및 수직 프로파일, 엽록소-a 농도 변화, 실내·외(in situ 및 in vitro) 생애 주기 관찰 데이터 종합 [kim2024_hakashiwo::0025, kim2024_hakashiwo::0017].\n\n---\n\n### 3. 주요 발견\n\n#### ① 대발생 형성의 기본 생물학적 메커니즘 (일주 수직 이동, DVM)\n* **빛 자원 확보**: 낮 동안 표층으로 이동해 빛에 접근하는 수직 이동 행동(DVM)은 독립영양 편모조류가 매우 조밀한 대발생(dense blooms)을 형성하게 하는 주요 생물학적 기전임 [kim2024_hakashiwo::0002].\n* **성층화 수역에서의 경쟁 우위**: 염분층/수온층(halocline/thermocline) 등 성층화된 수역을 통과해 이동할 수 있는 능력은 빛과 영양염이 풍부한 표층수에 접근하게 하여 경쟁적 우위를 제공함 (Smayda, 1998) [kim2024_hakashiwo::0017].\n\n#### ② 수직 이동 방향을 결정하는 환경 요인\n* **상향 이동(Upward migration) 촉진 요인**:\n  * 저염분 조건 (Bearon et al., 2006) [kim2024_hakashiwo::0017]\n  * 포식자의 존재 (Harvey and Menden-Deuer, 2012) [kim2024_hakashiwo::0017]\n* **하향 이동(Downward migration) 촉진 요인**:\n  * 낮은 pH 환경 (Kim et al., 2013) [kim2024_hakashiwo::0017]\n  * **야간 하향 이동의 생태적 이점**: 야간에 표층으로 모이는 동물플랑크톤 포식자를 회피하고, 성층화된 유리한 수문학적 구역에 위치를 유지하며, 저층수의 영양염을 섭취해 필요한 영양을 보충함 (Hall et al., 2015; Handy et al., 2005) [kim2024_hakashiwo::0017].\n\n#### ③ 영양염 결핍과 생애 주기 전이\n* **유성생식 및 단계 전환**: 영양염 결핍(nutrient deficiencies)은 식물플랑크톤의 유성생식을 유도하며 (Anderson et al., 2003), 이는 *H. akashiwo* 등의 생애 주기 전환 및 대발생 이후 단계(BA phase 등)로의 이행을 이끎 [kim2024_hakashiwo::0017].",
+  "literature_sources": [
+    "kim2024_hakashiwo::0025",
+    "kim2024_hakashiwo::0002",
+    "kim2024_hakashiwo::0017"
+  ],
+  "recommendations": null,
+  "final_response": "제공된 데이터 계산 결과와 문헌 요약 내용을 바탕으로 통합 작성한 보고서입니다.\n\n---\n\n### 1. 데이터 계산 결과 (4월 전체 정점 개체 수 합계)\n* **4월 전체 정점 개체 수 합계**: **9,074,685.757896103** (약 907만 4,685.76 개체)\n\n---\n\n### 2. 문헌 근거: 대발생(Bloom Formation)의 생물학적 배경\n제공된 문헌에 따르면, 식물플랑크톤의 대발생 형성 및 고밀도 개체 수 증가는 다음과 같은 생물학적·환경적 메커니즘을 바탕으로 이루어집니다.\n\n#### ① 일주 수직 이동(DVM) 및 빛 자원 확보\n* 독립영양 편모조류 등 식물플랑크톤은 낮 동안 표층으로 이동하는 **일주 수직 이동(Diel Vertical Migration, DVM)** 행동을 통해 빛 자원에 접근하며, 이는 조밀한 대발생(dense blooms)을 형성하는 핵심 생물학적 기전입니다 [kim2024_hakashiwo::0002].\n\n#### ② 성층화 수역에서의 경쟁적 우위\n* 식물플랑크톤은 염분층 및 수온층(halocline/thermocline) 등 성층화된 수역을 통과하여 이동함으로써 표층수의 풍부한 빛과 영양염에 접근할 수 있어 타 종 대비 경쟁적 우위를 점합니다 (Smayda, 1998) [kim2024_hakashiwo::0017].\n\n#### ③ 환경 요인에 따른 수직 이동 및 회피 행동\n* **상향 이동 촉진**: 저염분 조건(Bearon et al., 2006) 및 포식자의 존재(Harvey and Menden-Deuer, 2012) 시 표층 방향 이동이 촉진됩니다 [kim2024_hakashiwo::0017].\n* **야간 하향 이동**: 표층의 포식자(동물플랑크톤)를 회피하는 동시에, 심층/저층수의 영양염을 섭취해 필요한 영양을 보충함으로써 유휴 성층 구역에서 위치를 유지합니다 (Hall et al., 2015; Handy et al., 2005) [kim2024_hakashiwo::0017].\n\n#### ④ 영양염 결핍과 생애 주기 전이\n* 대발생 진행 중 영양염 결핍(nutrient deficiencies)이 발생하면 유성생식이 유도되며 (Anderson et al., 2003), 이는 *Heterosigma akashiwo* 등의 생애 주기 전환 및 대발생 이후 단계(BA phase 등)로의 이행을 이끌게 됩니다 [kim2024_hakashiwo::0017].\n\n---\n\n### 종합 요약\n4월에 관측된 **약 907만 개체(9,074,685.76)** 규모의 개체 수 합계는, 수계 내 성층 형성 환경에서 식물플랑크톤이 일주 수직 이동(DVM)을 통해 표층의 빛과 하층의 영양염을 효율적으로 이용하고 포식자를 회피하며 형성한 고밀도 대발생 결과로 설명할 수 있습니다."
+}

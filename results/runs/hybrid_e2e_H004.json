@@ -1,0 +1,41 @@
+{
+  "qid": "H004",
+  "system": "proposed_e2e",
+  "query": "전체 기간 중 최댓값이 관측된 정점을 찾고, 수직 이동 연구가 정점 간 편차를 어떻게 설명하는지 서술하라.",
+  "gold_value": {
+    "station": "J9",
+    "value": 1675955
+  },
+  "gold_route": "hybrid",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "routed_to": "hybrid",
+  "decomposition": {
+    "data_subquery": "전체 기간 중 최댓값이 관측된 정점 찾기",
+    "literature_subquery": "수직 이동 연구가 정점 간 편차를 어떻게 설명하는지 서술하기"
+  },
+  "selected_dataset": "jeju",
+  "generated_code": "import json\nimport pandas as pd\n\nstation_cols = [f\"J{i}\" for i in range(1, 13) if f\"J{i}\" in df.columns]\nmax_station = df[station_cols].max().idxmax()\nmax_value = df[station_cols].max().max()\n\nresult = {\n    \"정점\": max_station,\n    \"최댓값\": round(float(max_value), 2)\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "final_ok": true,
+  "sandbox_value": {
+    "정점": "J9",
+    "최댓값": 1675954.77
+  },
+  "paper_route": "A",
+  "complexity": {
+    "dim1": 3.2,
+    "dim2": 7.5566,
+    "dim3": 3.3333,
+    "total": 14.0899
+  },
+  "literature_response": "제시된 발췌문을 바탕으로 식물플랑크톤의 수직 이동 연구 목적, 방법, 그리고 정점 및 연구 간 편차에 대한 주요 발견 및 설명을 요약하면 다음과 같습니다.\n\n---\n\n### 1. 연구 목적\n* 식물플랑크톤(*Heterosigma akashiwo*)이 일주 수직 이동(DVM)을 넘어 교배 및 생활사 전환(life-cycle transitions)을 위해 상위 영양 단계 생물과 유사한 수직 이동 행태를 보이는지 규명하고, 이에 영향을 미치는 환경적 요인을 분석하고자 했습니다 [kim2024_hakashiwo::0017, kim2024_hakashiwo::0018].\n\n### 2. 연구 방법 및 접근\n* 현장 및 시·공간적 수직 분포(수심별 변동)를 관찰하고, 기존 선행 연구(Nagasaki et al., 1996 등)의 수직 이동 데이터와 비교하였습니다 [kim2024_hakashiwo::0017, kim2024_hakashiwo::0018].\n* 추가 실험을 시행하여 수직 이동 활동에 영향을 주는 요인들을 확인하였습니다 [kim2024_hakashiwo::0018].\n\n### 3. 주요 발견 및 정점·연구 간 편차 설명\n\n* **세포 밀도(Cell Density)에 따른 정점/연구 간 편차 설명**\n  * 선행 연구(Nagasaki et al., 1996)에서는 낮 동안 *H. akashiwo* 개체군이 중층부터 저층까지 넓게 풍부하게 관찰된 반면, 본 연구에서는 개체군이 저층(bottom layer)에만 집중되어 관찰되는 차이점이 나타났습니다 [kim2024_hakashiwo::0018].\n  * 수직 이동 연구에서는 이와 같은 연구/정점 간 편차의 원인을 **각 환경에서의 '세포 밀도 차이'**로 설명합니다 [kim2024_hakashiwo::0018].\n  * 세포 밀도가 높은 환경에서는 **잦은 세포 간 상호작용(frequent cell interactions)**이 일어나므로 굳이 저층에 집적(bottom accumulation)될 필요성이 감소하여 수직 이동 행태 및 분포 층에 차이가 생기는 것으로 가설화되며, 추가 실험을 통해 수직 이동 활동이 영향을 받음을 확인하였습니다 [kim2024_hakashiwo::0018].\n\n* **환경 요인 및 생활사 단계에 따른 편차 요인**\n  * 영양염 결핍(Nutrient deficiencies)은 수직 이동 중 저층 축적(BA) 단계와 유성 생식을 유도합니다 [kim2024_hakashiwo::0017].\n  * 환경 요인에 따라서도 이동 방향이 달라지는데, 낮은 염분 및 포식자의 존재는 상향 이동을 촉진하고, 낮은 pH 조건은 하향 이동을 유도하여 관찰되는 수직 위치 편차를 발생시킵니다 [kim2024_hakashiwo::0017].",
+  "literature_sources": [
+    "kim2024_hakashiwo::0018",
+    "kim2024_hakashiwo::0017",
+    "kim2024_hakashiwo::0002"
+  ],
+  "recommendations": null,
+  "final_response": "**1. 전체 기간 중 최댓값 관측 정점 [데이터 계산 결과]**\n* **관측 정점:** J9\n* **최댓값:** 1,675,954.77\n\n---\n\n**2. 수직 이동 연구를 통한 정점 및 연구 간 편차 설명 [문헌 근거]**\n\n식물플랑크톤(*Heterosigma akashiwo*)의 수직 이동 연구에서는 정점 및 연구 간에 나타나는 수직 분포 편차를 다음과 같은 환경적·생물학적 요인으로 설명합니다.\n\n* **세포 밀도(Cell Density) 차이에 따른 편차**\n  * 연구/정점 간 수직 분포 위치의 차이는 **각 환경에서의 '세포 밀도 차이'**에 기인합니다 [kim2024_hakashiwo::0018].\n  * 세포 밀도가 높은 환경에서는 **세포 간 상호작용(frequent cell interactions)**이 자주 발생하여 저층에 집적(bottom accumulation)될 필요성이 줄어듭니다. 이로 인해 정점별로 세포가 집중되는 수직 층과 수직 이동 행태에 편차가 발생합니다 [kim2024_hakashiwo::0018].\n\n* **환경 요인 및 생활사 단계에 따른 편차**\n  * **영양염 결핍:** 영양염이 부족한 조건은 수직 이동 중 저층 축적(BA) 및 유성 생식을 유도하여 정점 간 분포 차이를 만듭니다 [kim2024_hakashiwo::0017].\n  * **이동 방향 자극 요인:** 낮아진 염분이나 포식자의 존재는 식물플랑크톤의 상향 이동을 촉진하는 반면, 낮은 pH 조건은 하향 이동을 유도합니다. 이러한 환경 요인의 정점별 차이가 수직 관측 위치의 편차를 유발합니다 [kim2024_hakashiwo::0017]."
+}

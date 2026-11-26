@@ -1,0 +1,18 @@
+{
+  "qid": "S008",
+  "system": "pot_pal",
+  "query": "3월(Mar.) 전체 정점의 개체 수 합계는 얼마인가?",
+  "final_response": "3월 전체 정점의 개체 수 합계는 337339.41051634727입니다.",
+  "sandbox_value": {
+    "합계": 337339.41051634727
+  },
+  "final_ok": true,
+  "gold_value": {
+    "month": "Mar.",
+    "total": 337339
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

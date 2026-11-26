@@ -1,0 +1,18 @@
+{
+  "qid": "ADV038",
+  "system": "proposed_unmasked",
+  "query": "제9관측점의 전기간 평균 개체수?",
+  "final_response": "제9관측점의 전기간 평균 개체수는 279118.51280057227입니다.",
+  "sandbox_value": {
+    "제9관측점 전기간 평균 개체수": 279118.51280057227
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J9",
+    "mean": 279118.51
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

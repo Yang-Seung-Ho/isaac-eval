@@ -1,0 +1,28 @@
+{
+  "qid": "S020",
+  "query": "6월(Jun.) 전체 정점의 개체 수 합계는 얼마인가?",
+  "generated_code": "import json\n\njune_data = df[df[\"Month\"].str.startswith(\"Jun\", na=False)]\ncols = [f\"J{i}\" for i in range(1, 13)]\ntotal_sum = june_data[cols].sum(axis=1).sum()\nresult = {\"합계\": float(total_sum)}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 410
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "합계": 1683451.2766246307
+  },
+  "final_response": "6월 전체 정점의 개체 수 합계는 1683451.2766246307입니다.",
+  "gold_value": {
+    "month": "Jun.",
+    "total": 1683451
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

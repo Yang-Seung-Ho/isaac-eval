@@ -1,0 +1,40 @@
+{
+  "qid": "U028",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "등록된 논문들 전반에서 사용된 정량 평가 방법론을 비교하고, 분야에 따라 어떤 검증 설계가 선호되는지 종합하라.",
+  "gold_route": "literature",
+  "gold_paper_route": "C",
+  "complexity_label": "high",
+  "paper_route": "C",
+  "complexity": {
+    "dim1": 5.6,
+    "dim2": 9.156,
+    "dim3": 0.0,
+    "total": 14.756
+  },
+  "top1_cos": 0.5753,
+  "degraded": false,
+  "degraded_reason": null,
+  "scope_kw_multi": true,
+  "scope_llm_multi": true,
+  "selected_papers": [
+    "plhn_dermal_penetration",
+    "etv4_breast_cancer",
+    "kang2026_algae_restoration"
+  ],
+  "sources": [
+    "plhn_dermal_penetration::0025",
+    "etv4_breast_cancer::0017",
+    "etv4_breast_cancer::0055",
+    "kang2026_algae_restoration::0008"
+  ],
+  "final_response": "제공된 논문 발췌본을 바탕으로 각 연구에서 사용된 정량 평가 방법론을 분석하고, 학문 분야에 따라 선호되는 검증 설계를 비교·종합한 결과는 다음과 같습니다.\n\n---\n\n### 1. 논문별 정량 평가 방법론 및 검증 설계\n\n#### ① 유방암 및 종양학 분야 (`etv4_breast_cancer`)\n*   **정량 평가 방법론**:\n    *   **종양 이미지 분석**: 종양 주위에 관심 영역(ROI)을 설정하고 비종양 영역의 배경 신호를 감산한 뒤, 총 방사 휘도(Total radiance)를 `photons/s/cm²/steradian` 단위로 계산하여 정량화합니다.\n    *   **세포 효능 및 사멸 평가**: 트라메티닙(Trametinib) 등 약물의 치료 효능을 검증하기 위해 크리스탈 바이올렛 분석(Crystal violet assay)을 수행합니다. 또한, 세포 사멸(Apoptosis) 지표인 미토콘드리아 막 전위 및 카스파제-3(Caspase-3) 활성화를 측정하기 위해 NucView® 488 및 MitoView™ 633 염색법을 사용합니다.\n*   **통계 검증 설계**:\n    *   세포선(Cell line) 실험 데이터는 **평균 ± 표준오차(SEM)**로 표기하고, 동물 실험 데이터는 **평균 ± 표준편차(SD)**로 제시합니다.\n    *   다중 군 간의 유의성 비교를 위해 **일원배치 또는 이원배치 분산분석(One-way or Two-way ANOVA)**을 수행하며, 통계 분석 소프트웨어로 **GraphPad Prism**(version 10.6.1)을 활용합니다. ($p < 0.05$ 수준에서 유의성 판정)\n\n#### ② 해양 생태 및 환경 복원 분야 (`kang2026_algae_restoration`)\n*   **정량 평가 방법론**:\n    *   **성장도 측정**: 이식된 엽상체(Thallus)의 길이를 수중 자(Underwater ruler)를 사용하여 cm 단위로 직접 측정합니다. 해조류 종류에 따라 측정 기준(stipe 기부에서 primary blade 끝까지, 또는 holdfast 기부에서 가장 긴 primary branch 끝까지)을 다르게 적용하여 매월 성장 변화를 기록합니다.\n    *   **생존율 및 형태 변화**: 에폭시 패널에 단단히 부착되어 살아남은 개체 수를 매월 계수하여 생존율을 평가하고, 사진 촬영을 통해 생식기탁(Receptacle) 형성 및 부착기(Holdfast) 발달 상태를 모니터링합니다.\n*   **통계 검증 설계**:\n    *   단일종 집단(Monospecific group)과 혼합종 집단(Mixed group) 간의 평균 엽상체 길이 차이를 비교하기 위해 **T-검정(T-test)** 또는 비모수 검정인 **맨-휘트니 U 검정(Mann–Whitney U test)**을 수행합니다. 통계 분석 소프트웨어로는 **SPSS Statistics**(version 21)를 사용합니다.\n\n#### ③ 피부 침투 및 생체 재료 분야 (`plhn_dermal_penetration`)\n*   **정량 평가 방법론**:\n    *   **표적 결합 활성 분석**: CRISPR-Cas 이펙터 복합체의 표적 결합 활성을 정량적으로 분석하기 위해 **바이오 레이어 간섭계(Bio-Layer Interferometry, BLI)** 분석법을 활용합니다.\n    *   **피부 분포 및 물리화학적 특성 평가**: 나일 레드(Nile red)가 로딩된 나노구조 지질 캐리어(NLC)를 활용하여 오일 함량이 물리화학적 특성 및 피부 분포에 미치는 영향을 평가합니다.\n\n---\n\n### 2. 분야별 선호되는 검증 설계 종합 비교\n\n| 구분 | 유방암 및 종양학 분야 (`etv4_breast_cancer`) | 해양 생태 및 환경 복원 분야 (`kang2026_algae_restoration`) | 피부 침투 및 생체 재료 분야 (`plhn_dermal_penetration`) |\n| :--- | :--- | :--- | :--- |\n| **주요 평가 대상** | 세포 생존율, 세포 사멸 분자 활성, 종양 크기(방사 휘도) | 해조류의 길이 성장, 생존 개체 수, 형태학적 발달 | 표적 결합 활성, 약물/캐리어의 피부 분포 및 물리화학적 특성 |\n| **측정 도구 및 기술** | ROI 기반 형광/발광 이미징, 크리스탈 바이올렛, NucView/MitoView 염색 | 수중 자(cm 측정), 현장 사진 촬영 및 육안 계수 | 바이오 레이어 간섭계(BLI), 나일 레드 로딩 캐리어(NLC) |\n| **선호되는 통계 설계** | **ANOVA (One-way / Two-way)**<br>- 다중 실험군 간 비교에 적합<br>- 세포 실험(SEM)과 동물 실험(SD)의 오차 표기 이원화 | **T-test 또는 Mann-Whitney U test**<br>- 단일종 vs 혼합종 등 두 집단 간의 평균 비교에 적합 | 분자 수준의 결합력(BLI) 및 물리화학적 분포 특성 분석 중심 |\n| **사용 소프트웨어** | GraphPad Prism | SPSS Statistics | (제시되지 않음) |\n\n*   **종합 요약**: \n    *   **의학/종양학 분야**는 통제된 실험실 환경(In vitro)과 동물 모델(In vivo)을 병행하므로, 다수의 실험군을 비교하기 위해 **ANOVA 분석**과 **GraphPad Prism**을 선호하며 오차 범위 표현(SEM vs SD)을 엄격히 구분합니다.\n    *   **해양 생태학 분야**는 자연 환경에서의 장기 모니터링을 기반으로 하므로, 직접적인 물리적 측정(길이, 개체 수)을 수행하고 두 처리군 간의 유의미한 차이를 검증하기 위해 **T-검정 또는 비모수 검정(SPSS)**을 선호합니다.\n    *   **피부 침투 및 생체 재료 분야**는 분자 간 상호작용(BLI)이나 나노 입자를 통한 물질 전달(NLC 피부 분포)과 같은 정밀한 물리화학적·생물리학적 분석법을 검증 설계에 주로 활용합니다.",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

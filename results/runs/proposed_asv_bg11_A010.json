@@ -1,0 +1,29 @@
+{
+  "qid": "A010",
+  "query": "12개 전 샘플의 총 read 수 합계(grand total)는 얼마인가?",
+  "generated_code": "import pandas as pd\nimport json\n\nsample_cols = [\n    \"BG11_1_D0\", \"BG11_2_D0\", \"BG11_3_D0\",\n    \"BG11_1_D4\", \"BG11_2_D4\", \"BG11_3_D4\",\n    \"BG11_1_D8\", \"BG11_2_D8\", \"BG11_3_D8\",\n    \"BG11_1_D12\", \"BG11_2_D12\", \"BG11_3_D12\"\n]\n\ngrand_total = int(df[sample_cols].sum().sum())\n\nresult = {\n    \"grand_total\": grand_total\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 523
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "grand_total": 1630992
+  },
+  "final_response": "총 read 수 합계(grand total)는 1630992입니다.",
+  "gold_value": {
+    "total": 1630992
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_bg11.xlsx",
+    "sheet": "BG11"
+  }
+}

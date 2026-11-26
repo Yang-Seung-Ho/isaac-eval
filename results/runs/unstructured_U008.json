@@ -1,0 +1,37 @@
+{
+  "qid": "U008",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "What does ETV4 stand for?",
+  "gold_route": "literature",
+  "gold_paper_route": "A",
+  "complexity_label": "low",
+  "paper_route": "A",
+  "complexity": {
+    "dim1": 1.2,
+    "dim2": 4.9439,
+    "dim3": 3.3333,
+    "total": 9.4773
+  },
+  "top1_cos": 0.7017,
+  "degraded": false,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "etv4_breast_cancer"
+  ],
+  "sources": [
+    "etv4_breast_cancer::0057",
+    "etv4_breast_cancer::0052",
+    "etv4_breast_cancer::0004"
+  ],
+  "final_response": "제시된 발췌록에 근거한 ETV4의 풀네임과 관련 연구 요약은 다음과 같습니다.\n\n### 1. ETV4의 의미\nETV4는 **ETS variant transcription factor 4**를 의미합니다 `[etv4_breast_cancer::0004]`. 이는 ETS 전사 인자의 PEA3 서브패밀리(subfamily)에 속하는 구성원입니다 `[etv4_breast_cancer::0004]`.\n\n---\n\n### 2. 연구 목적, 방법 및 주요 발견 요약\n\n#### **연구 목적**\n암세포의 증식, 침윤, 전이, 대사 재편성 및 약물 저항성 과정에서 전사 인자인 ETV4의 역할과 그 상하위 조절 메커니즘을 규명하고자 합니다 `[etv4_breast_cancer::0004, 0057]`.\n\n#### **연구 방법 및 메커니즘**\n* **상위 조절 경로 분석:** ERK/MAPK 신호전달 활성화가 ETV4의 전사 억제자인 Capicua(CIC)를 분해·비활성화하여 ETV4의 발현을 증가시키는 조절 축을 분석합니다 `[etv4_breast_cancer::0004]`.\n* **유전자 조절 및 녹다운(Knockdown):** ETV4의 발현을 억제(녹다운)하거나, ETV4가 하위 표적 유전자(MMP1, MMP9, SLC12A5 등)의 전사 활성화에 미치는 영향을 관찰합니다 `[etv4_breast_cancer::0004, 0057]`.\n\n#### **주요 발견 (Key Findings)**\n* **암세포 증식 및 전이 촉진:** ETV4는 암세포 증식을 강력하게 유도하며, 기질 금속단백분해효소인 MMP1과 MMP9을 직접 전사 활성화하여 세포외 기질 리모델링을 촉진하고 암세포의 침윤 및 전이를 돕습니다 `[etv4_breast_cancer::0004]`.\n* **유방암에서의 대사 및 줄기세포능 조절:** 유방암 세포에서 당분해(glycolysis)와 CXCR4 매개 sonic Hedgehog 신호전달을 활성화하여 암세포의 줄기세포능(stemness)을 촉진합니다 `[etv4_breast_cancer::0057]`. 또한, SLC12A5를 전사 활성화함으로써 포도당 대사 재편성을 유도하고 페로프토시스(ferroptosis) 저항성을 악화시킵니다 `[etv4_breast_cancer::0057]`.\n* **예후 및 세포 사멸 유도:** ETV4의 고발현은 다양한 암종에서 불량한 예후와 연관되어 있으며, ETV4를 녹다운(억제)할 경우 자가포식 의존성 세포 사멸(autophagy-dependent cell death)이 유도됩니다 `[etv4_breast_cancer::0004]`.",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

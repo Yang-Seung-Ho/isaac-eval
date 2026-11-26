@@ -1,0 +1,43 @@
+{
+  "qid": "H001",
+  "system": "proposed_e2e",
+  "query": "제주 연안 데이터에서 식물플랑크톤이 가장 많이 발생한 달과 정점을 찾고, Heterosigma akashiwo 연구에 비추어 그 시기에 적조가 발생하기 쉬운 이유를 설명하라.",
+  "gold_value": {
+    "max_month": "Apr.",
+    "max_site": "J9",
+    "max_value": 1675955
+  },
+  "gold_route": "hybrid",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "routed_to": "hybrid",
+  "decomposition": {
+    "data_subquery": "제주 연안 관측 데이터에서 식물플랑크톤 출현량이 가장 많은 달과 관측 정점 조회",
+    "literature_subquery": "Heterosigma akashiwo 연구 문헌을 바탕으로 해당 시기에 적조가 발생하기 쉬운 환경적 요인 및 원인 조사"
+  },
+  "selected_dataset": "jeju",
+  "generated_code": "import json\nimport pandas as pd\n\nstations = [f\"J{i}\" for i in range(1, 13)]\ndf_melted = df.melt(id_vars=[\"Month\"], value_vars=stations, var_name=\"관측 정점\", value_name=\"개체 수\")\nmax_row = df_melted.loc[df_melted[\"개체 수\"].idxmax()]\n\nresult = {\n    \"Month\": max_row[\"Month\"],\n    \"관측 정점\": max_row[\"관측 정점\"],\n    \"개체 수\": round(float(max_row[\"개체 수\"]), 2)\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "final_ok": true,
+  "sandbox_value": {
+    "Month": "Apr.",
+    "관측 정점": "J9",
+    "개체 수": 1675954.77
+  },
+  "paper_route": "A",
+  "complexity": {
+    "dim1": 6.0,
+    "dim2": 0.6394,
+    "dim3": 6.6667,
+    "total": 13.306
+  },
+  "literature_response": "제시된 발췌 문헌을 바탕으로 *Heterosigma akashiwo*의 적조(유해 수조류 대발생, HABs) 발생 및 형성 환경 요인, 관련 원인을 연구 목적, 방법, 주요 발견 중심으로 정리한 내용은 다음과 같습니다.\n\n---\n\n### 1. 해양 산성화 및 pH 변화\n* **출처**: Kim et al. (2013) [`kim2024_hakashiwo::0025`]\n* **연구 목적**: 산성화된 해양 조건에서 pH 변화가 라피도포자충류인 *Heterosigma akashiwo*의 수영 행동 및 적조 형성에 미치는 영향 조사.\n* **주요 내용 및 발견**: pH의 변화가 *H. akashiwo*의 수영 행동(swimming behaviors)을 변형시키며, 이는 산성화되는 해양 환경 내에서 적조 형성(bloom formation) 메커니즘에 중요한 영향을 미침을 제시함.\n\n### 2. 기후 변화 및 부영양화 (Eutrophication)\n* **출처**: Mardones et al. (2023) [`kim2024_hakashiwo::0026`]\n* **연구 목적**: 파타고니아 피오르드(Patagonian fjords)에서 발생한 예외적인 *Heterosigma akashiwo* 어류 폐사 사건을 바탕으로 극심한 유해 수조류 대발생, 기후 변화, 부영양화의 잠재적 위험 분석.\n* **주요 내용 및 발견**: 기후 변화와 수계의 부영양화 위험이 파타고니아 피오르드 지역과 같은 환경에서 *H. akashiwo*의 치명적인 대발생을 유발하는 주요 환경적 요인으로 작용함.\n\n### 3. 영양염(질소원) 공급 및 변동\n* **출처**: Kok et al. (2015) [`kim2024_hakashiwo::0025`]\n* **연구 목적**: 다양한 질소원(nitrogen sources) 조건에 따른 싱가포르 해역 열대 독성 미세조류 *Heterosigma akashiwo*의 성장 및 생리적 반응 조사.\n* **주요 내용 및 발견**: 수계 내 질소원의 종류 및 변동이 *H. akashiwo*의 성장 속도와 생리적 상태를 조절하여 대발생 환경을 조성하는 데 기여함을 밝힘.\n\n### 4. 만(Bay) 지형 및 적조 개시 메커니즘\n* **출처**: Yamochi & Abe (1984) [`kim2024_hakashiwo::0028`]\n* **연구 목적**: 일본 오사카만(Osaka Bay)에서 *Heterosigma akashiwo* 적조가 개시(initiate)되는 해양 환경적 메커니즘 규명.\n* **주요 내용 및 발견**: 닫힌 만 형태의 구역에서 적조가 초기에 유발되고 형성되는 구체적인 환경 요인과 초기 발생 메커니즘을 조사함.\n\n### 5. 생물 간 상호작용 (종 간 경쟁 및 상호작용)\n* **출처**: Shikata et al. / Wang et al. et al. (2010) [`kim2024_hakashiwo::0028`]\n* **연구 목적**: *Prorocentrum minimum*과 *Heterosigma akashiwo* 간의 종 간 상호작용이 적조 형성 과정에서 갖는 역할 조사.\n* **주요 내용 및 발견**: 타 조류 종과의 생물학적 상호작용 및 세력 변화가 *H. akashiwo* 적조 형성(bloom formation)에 중요한 영향을 미침.\n\n---\n\n### [참고] 적조의 소멸 및 붕괴 요인 (생물학적 요인)\n발췌 문헌에서는 적조 발생 조건 외에도 대발생이 종료·붕괴되는 원인으로 다음 환경/생물적 요인을 제시하고 있습니다.\n* **살조 세균 (Algicidal bacteria)**: Hiroshima Bay에서 살조 세균의 출현이 *H. akashiwo* 적조 종결과 밀접한 연관이 있음 (Kim et al., 1998 [`kim2024_hakashiwo::0025`]).\n* **바이러스 입자 (Virus-like particles)**: 바이러스 감염이 적조의 해체 및 붕괴(disintegration) 메커니즘으로 작용함 (Nagasaki et al., 1994, 1996 [`kim2024_hakashiwo::0026`]).",
+  "literature_sources": [
+    "kim2024_hakashiwo::0026",
+    "kim2024_hakashiwo::0025",
+    "kim2024_hakashiwo::0028"
+  ],
+  "recommendations": null,
+  "final_response": "제주 연안 데이터 분석 결과와 *Heterosigma akashiwo* 관련 연구 문헌을 통합하여 작성한 보고입니다.\n\n---\n\n### 1. 제주 연안 데이터 계산 결과\n제주 연안 관측 데이터에서 식물플랑크톤이 가장 많이 발생한 조건은 다음과 같습니다.\n\n* **최대 발생 달**: **4월 (Apr.)**\n* **관측 정점**: **J9**\n* **개체 수**: **1,675,954.77**\n\n---\n\n### 2. *Heterosigma akashiwo* 연구 기반의 적조 발생 요인 분석\n\n4월 J9 정점과 같이 식물플랑크톤 개체 수가 폭발적으로 증가하는 시기에 적조(유해 수조류 대발생)가 발생하기 쉬운 이유는 *Heterosigma akashiwo* 연구 문헌을 통해 다음과 같은 환경적·생물학적 요인으로 설명할 수 있습니다.\n\n#### ① 영양염 공급 및 부영양화 (Nutrients & Eutrophication)\n* **질소원 변동**: 수계 내 질소원(nitrogen sources)의 종류와 변동은 *H. akashiwo*의 성장 속도와 생리적 상태를 직접 조절하여 대발생 환경을 조성합니다 (Kok et al., 2015).\n* **부영양화 및 기후 영향**: 수계의 부영양화 위험과 기후 변화는 극심한 *H. akashiwo* 대발생을 유발하는 주요 환경적 원인으로 작용합니다 (Mardones et al., 2023).\n\n#### ② pH 변화 및 수영 행동 변형 (pH & Swimming Behaviors)\n* **산성화 및 수영 메커니즘**: 해양 환경 내 pH 변화는 *H. akashiwo*의 수영 행동(swimming behaviors)을 변형시키며, 이는 적조 형성(bloom formation) 메커니즘에 핵심적인 영향을 미칩니다 (Kim et al., 2013).\n\n#### ③ 지형적 환경 요인 (Bay Topography)\n* **적조 개시 조건**: 닫힌 만(bay) 형태의 지형적 구역은 적조가 초기에 유발(initiate)되고 형성되는 환경을 제공합니다 (Yamochi & Abe, 1984).\n\n#### ④ 종 간 상호작용 (Biological Interactions)\n* **생물학적 세력 변화**: *Prorocentrum minimum* 등 타 조류 종과의 생물학적 상호작용 및 세력 변화가 적조 형성 과정에서 주요한 역할을 합니다 (Shikata et al. / Wang et al., 2010).\n\n---\n\n### 3. 종합 결론\n\n제주 연안 **J9 정점**에서 **4월**에 식물플랑크톤 개체 수가 **1,675,954.77**로 최고치에 달한 것은, 문헌에서 제시된 **질소원 변동 및 부영양화**, **pH 변화에 따른 수영 행동 변형**, **지형적 요인**, **종 간 상호작용** 등 *H. akashiwo* 대발생을 유발하는 주요 환경 조건들이 해당 시기와 장소에 적조가 형성되기 용이한 환경을 제공했기 때문으로 해석할 수 있습니다."
+}

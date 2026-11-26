@@ -1,0 +1,31 @@
+{
+  "qid": "A011",
+  "query": "배양 12일차(D12) 합산 read 수에서 0일차(D0) 합산 read 수를 뺀 변화량은 얼마인가?",
+  "generated_code": "import json\n\nd12_cols = [\"BG11_1_D12\", \"BG11_2_D12\", \"BG11_3_D12\"]\nd0_cols = [\"BG11_1_D0\", \"BG11_2_D0\", \"BG11_3_D0\"]\n\nsum_d12 = df[d12_cols].sum().sum()\nsum_d0 = df[d0_cols].sum().sum()\ndiff = sum_d12 - sum_d0\n\nresult = {\"변화량\": int(diff)}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 515
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "변화량": 133632
+  },
+  "final_response": "변화량은 133632입니다.",
+  "gold_value": {
+    "day_minuend": "D12",
+    "day_subtrahend": "D0",
+    "diff": 133632
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_bg11.xlsx",
+    "sheet": "BG11"
+  }
+}

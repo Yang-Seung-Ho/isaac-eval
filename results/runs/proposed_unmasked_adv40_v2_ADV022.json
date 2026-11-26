@@ -1,0 +1,18 @@
+{
+  "qid": "ADV022",
+  "system": "proposed_unmasked",
+  "query": "시월 전체 정점 셀카운트 합?",
+  "final_response": "시월 전체 정점 셀카운트 합은 921292.6177566022입니다.",
+  "sandbox_value": {
+    "시월 전체 정점 셀카운트 합": 921292.6177566022
+  },
+  "final_ok": true,
+  "gold_value": {
+    "month": "Oct.",
+    "total": 921293
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

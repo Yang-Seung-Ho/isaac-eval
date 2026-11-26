@@ -1,0 +1,31 @@
+{
+  "qid": "A011",
+  "query": "배양 12일차(D12) 합산 read 수에서 0일차(D0) 합산 read 수를 뺀 변화량은 얼마인가?",
+  "generated_code": "import json\nimport pandas as pd\n\nd12_cols = ['OHM_1_D12', 'OHM_2_D12', 'OHM_3_D12']\nd0_cols = ['OHM_1_D0', 'OHM_2_D0', 'OHM_3_D0']\n\nd12_sum = df[d12_cols].sum().sum()\nd0_sum = df[d0_cols].sum().sum()\n\ndiff = float(d12_sum - d0_sum)\n\nresult = {\n    \"difference\": diff\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 508
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "difference": -112435.0
+  },
+  "final_response": "배양 12일차(D12) 합산 read 수에서 0일차(D0) 합산 read 수를 뺀 변화량은 -112435.0입니다.",
+  "gold_value": {
+    "day_minuend": "D12",
+    "day_subtrahend": "D0",
+    "diff": -112435
+  },
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_ohm.xlsx",
+    "sheet": "OHM"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "qid": "ADV040",
+  "system": "proposed",
+  "query": "전 구간에서 세포 수가 최저였던 조사 지점?",
+  "final_response": "조사 지점은 J8입니다.",
+  "sandbox_value": {
+    "조사지점": "J8"
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J8",
+    "value": 7426
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

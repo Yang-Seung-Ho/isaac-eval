@@ -1,0 +1,37 @@
+{
+  "qid": "U006",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "Which species were transplanted in the algae restoration study?",
+  "gold_route": "literature",
+  "gold_paper_route": "A",
+  "complexity_label": "low",
+  "paper_route": "A",
+  "complexity": {
+    "dim1": 2.0,
+    "dim2": 2.601,
+    "dim3": 3.3333,
+    "total": 7.9343
+  },
+  "top1_cos": 0.772,
+  "degraded": false,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "kang2026_algae_restoration"
+  ],
+  "sources": [
+    "kang2026_algae_restoration::0013",
+    "kang2026_algae_restoration::0018",
+    "kang2026_algae_restoration::0007"
+  ],
+  "final_response": "제시된 문헌에 근거하여, 해당 해조류 복원 연구에서 이식된 종과 연구의 목적, 방법, 주요 발견을 요약한 내용은 다음과 같습니다.\n\n### 이식된 대상 종\n본 연구에서 이식된 해조류 종은 **에클로니아 카바(*Ecklonia cava*)**와 **사르가숨 마크로카르품(*Sargassum macrocarpum*)** 두 가지 갈조류 종입니다 `[kang2026_algae_restoration::0013]`, `[kang2026_algae_restoration::0007]`.\n\n---\n\n### 연구 요약\n\n#### 1. 연구 목적\n* **복원 적합성 검증:** 캐노피(canopy)를 형성하는 갈조류인 *E. cava*와 *S. macrocarpum*이 제안된 이식 방법을 통해 복원 대상 종으로서 적합한지 평가하고자 했습니다 `[kang2026_algae_restoration::0013]`.\n* **혼합 이식의 효과 검증:** 생물 간의 긍정적 상호작용이 생존율을 높일 것이라는 가설에 기반하여, 단일 종 이식 그룹과 두 종을 혼합한 그룹(Mixed-group) 간의 생존 및 성장 차이를 비교·분석하고자 했습니다 `[kang2026_algae_restoration::0018]`.\n\n#### 2. 연구 방법\n* **이식 준비:** 해조류의 부착기(holdfast)를 깨끗이 정리하고 건조한 후, 순간접착제와 나사못을 사용해 에폭시 패널에 고정했습니다 `[kang2026_algae_restoration::0007]`.\n* **이식 구역 조성:** 암반에서 해조류와 무척추동물을 긁어내어 간섭 요인을 최소화한 $1\\text{ m}^2$ 크기의 이식 패치 3개를 마련하고, 공압 드릴로 구멍을 뚫어 플라스틱 앵커를 삽입했습니다 `[kang2026_algae_restoration::0007]`.\n* **실험 처리군 구성:** 준비된 패널을 수중 암반의 앵커에 고정하여 다음과 같이 세 가지 실험군을 구성했습니다 `[kang2026_algae_restoration::0007]`.\n  1. **Ecklonia-group:** *E. cava* 27개체 이식\n  2. **Sargassum-group:** *S. macrocarpum* 27개체 이식\n  3. **Mixed-group:** *E. cava* 14개체와 *S. macrocarpum* 13개체 혼합 이식\n\n#### 3. 주요 발견\n* **복원 가능성 확인:** 두 종 모두 제안된 이식 방식을 통한 복원 적합성을 보여주었습니다. 특히 암반에 자연적으로 부착기가 결합하는 방식은 물리적 교란 조건에서 생존율을 높이는 강력한 전략임이 확인되었습니다 `[kang2026_algae_restoration::0013]`.\n* **혼합 이식 결과:** 가설과 달리, 혼합 이식 그룹(Mixed-group)이 단일 종 이식 그룹에 비해 생존이나 성장 측면에서 유의미한 이점을 나타내지는 않았습니다. 다만, 혼합 이식으로 인한 부정적인 영향 역시 관찰되지 않았습니다 `[kang2026_algae_restoration::0018]`.\n* **최적 이식 시기 제안:** 태풍으로 인한 유실을 피하고 부착기 발달, 초기 성장, 번식 준비 등을 극대화하기 위해 태풍 시즌 이후인 **10월~11월**이 이식의 최적 시기인 것으로 제안되었습니다 `[kang2026_algae_restoration::0018]`.",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

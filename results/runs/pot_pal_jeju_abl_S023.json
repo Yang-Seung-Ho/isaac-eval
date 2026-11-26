@@ -1,0 +1,17 @@
+{
+  "qid": "S023",
+  "system": "pot_pal",
+  "query": "4월(Apr.)의 전 정점 평균값(데이터에 기재된 '평균' 열 값)은 얼마인가?",
+  "final_response": "코드 실행에 3회 시도 후 실패: execution failed",
+  "sandbox_value": null,
+  "final_ok": false,
+  "gold_value": {
+    "month": "Apr.",
+    "field": "평균",
+    "value": 756223.8132
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

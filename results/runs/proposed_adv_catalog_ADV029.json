@@ -1,0 +1,18 @@
+{
+  "qid": "ADV029",
+  "system": "proposed",
+  "query": "6번째 관측점의 평균 개체수?",
+  "final_response": "6번째 관측점의 평균 개체수는 162785.27입니다.",
+  "sandbox_value": {
+    "6번째 관측점 평균 개체수": 162785.27
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J6",
+    "mean": 162785.27
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

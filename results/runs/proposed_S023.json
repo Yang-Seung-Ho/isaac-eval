@@ -1,0 +1,29 @@
+{
+  "qid": "S023",
+  "query": "4월(Apr.)의 전 정점 평균값(데이터에 기재된 '평균' 열 값)은 얼마인가?",
+  "generated_code": "import json\n\napr_mean = df.loc[df[\"Month\"].str.strip() == \"Apr.\", \"평균\"].values[0]\nresult = {\"평균\": float(apr_mean)}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 404
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "평균": 756223.8131580086
+  },
+  "final_response": "4월의 전 정점 평균값은 756223.8131580086입니다.",
+  "gold_value": {
+    "month": "Apr.",
+    "field": "평균",
+    "value": 756223.8132
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

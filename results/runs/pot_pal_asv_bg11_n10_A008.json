@@ -1,0 +1,20 @@
+{
+  "qid": "A008",
+  "system": "pot_pal",
+  "kind": "structured",
+  "query": "BG11_2_D12 샘플에서 read 수가 가장 큰 단일 ASV의 read 수는 얼마인가?",
+  "final_response": "BG11_2_D12 샘플에서 read 수가 가장 큰 단일 ASV의 read 수는 1546입니다.",
+  "sandbox_value": null,
+  "final_ok": true,
+  "attempts_used": 0,
+  "gold_value": {
+    "sample": "BG11_2_D12",
+    "max": 1546
+  },
+  "context_text": "| Kingdom   | Phylum         | Class               | Order           | Family           | Genus         |   BG11_1_D0 |   BG11_2_D0 |   BG11_3_D0 |   BG11_1_D4 |   BG11_2_D4 |   BG11_3_D4 |   BG11_1_D8 |   BG11_2_D8 |   BG11_3_D8 |   BG11_1_D12 |   BG11_2_D12 |   BG11_3_D12 |\n|:----------|:---------------|:--------------------|:----------------|:-----------------|:--------------|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|-------------:|-------------:|-------------:|\n| Bacteria  | Proteobacteria | Gammaproteobacteria | Pseudomonadales | Pseudomonadaceae | Pseudomonas   |        1091 |         512 |        1162 |         645 |        1396 |        2416 |        1026 |        2014 |         921 |         2475 |         1546 |          735 |\n| Bacteria  | Proteobacteria | Gammaproteobacteria | Burkholderiales | Methylophilaceae | Methylophilus |         121 |          30 |         681 |         271 |        1304 |        2702 |         636 |        1357 |        1347 |          791 |          856 |          858 |\n| Bacteria  | Proteobacteria | Gammaproteobacteria | Pseudomonadales | Pseudomonadaceae | Pseudomonas   |         989 |         468 |        1167 |         663 |        1288 |        2137 |         962 |        1876 |         923 |         2309 |         1499 |          671 |\n| Bacteria  | Proteobacteria | Gammaproteobacteria | Pseudomonadales | Pseudomonadaceae | Pseudomonas   |         961 |         521 |        1105 |         619 |        1194 |        1974 |         936 |        1850 |         860 |         2118 |         1435 |          623 |\n| Bacteria  | Proteobacteria | Gammaproteobacteria | Pseudomonadales | Pseudomonadaceae | Pseudomonas   |         928 |         449 |         993 |         582 |        1133 |        2096 |         842 |        1708 |         824 |         2072 |         1344 |          606 |\n| Bacteria  | Proteobacteria | Gammaproteobacteria | Burkholderiales | Methylophilaceae | Methylophilus |         113 |          52 |         597 |         244 |        1051 |        2361 |         543 |        1241 |        1180 |          728 |          722 |          811 |\n| Bacteria  | Proteobacteria | Gammaproteobacteria | Pseudomonadales | Pseudomonadaceae | Pseudomonas   |         820 |         394 |         981 |         510 |        1039 |        1993 |         770 |        1588 |         788 |         2036 |         1257 |          616 |\n| Bacteria  | Proteobacteria | Gammaproteobacteria | Burkholderiales | Methylophilaceae | Methylophilus |         118 |          32 |         610 |         227 |        1023 |        2260 |         564 |        1172 |        1093 |          672 |          742 |          718 |\n| Bacteria  | Proteobacteria | Gammaproteobacteria | Pseudomonadales | Pseudomonadaceae | Pseudomonas   |         892 |         426 |         994 |         553 |        1052 |        1843 |         824 |        1550 |         780 |         1773 |         1231 |          581 |\n| Bacteria  | Proteobacteria | Gammaproteobacteria | Pseudomonadales | Pseudomonadaceae | Pseudomonas   |         832 |         433 |         912 |         536 |        1031 |        1833 |         764 |        1565 |         709 |         1930 |         1227 |          571 |",
+  "sources": [],
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "qid": "H006",
+  "system": "proposed",
+  "kind": "hybrid",
+  "query": "개체 수가 500000을 초과한 관측 건수를 세고, 그 수준이 문헌에서 대발생으로 간주되는지 검토하라.",
+  "gold_route": "hybrid",
+  "decomposition": {
+    "data_subquery": "개체 수가 500000을 초과한 관측 건수를 세어라.",
+    "literature_subquery": "개체 수가 500000을 초과하는 수준이 문헌에서 대발생으로 간주되는지 검토하라."
+  },
+  "expected_data_subquery": "500000 초과 관측 건수",
+  "expected_literature_subquery": "대발생 판단 기준",
+  "generated_code": "import json\nimport pandas as pd\n\nstation_cols = [f\"J{i}\" for i in range(1, 13)]\ncount = int((df[station_cols] > 500000).sum().sum())\n\nresult = {\n    \"count\": count\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "count": 8
+  },
+  "gold_value": {
+    "count": 8
+  },
+  "literature_sources": [
+    "kim2024_hakashiwo::0020",
+    "kim2024_hakashiwo::0025",
+    "kim2024_hakashiwo::0015"
+  ],
+  "final_response": "제공된 계산 결과와 문헌 근거를 바탕으로 질의에 대한 검토 결과는 다음과 같습니다.\n\n* **개체 수 500,000 초과 관측 건수:** 데이터 계산 결과에 따르면, 개체 수가 500,000을 초과한 관측 건수는 **8건**(`count: 8`)입니다.\n* **문헌 검토:** 제공된 문헌 발췌 내용(`kim2024_hakashiwo::0020`, `0025`, `0015`)에는 개체 수 500,000 초과 수준이 '대발생(bloom)'으로 간주되는지 여부를 판단할 수 있는 구체적인 임계값이나 기준 수치가 언급되어 있지 않습니다. 문헌은 *Heterosigma akashiwo*의 수직 이동, BA 단계(소실 및 재출현), 유성생식 및 포낭 형성 등의 생태적 특성과 군집 동태를 다루고 있으나, 특정 개체 수 수준이 대발생에 해당한다는 정의는 포함되어 있지 않습니다. \n\n따라서 계산된 8건의 관측치가 문헌상에서 대발생으로 간주되는지에 대해서는 제공된 문헌 근거만으로는 확정하여 검토할 수 없습니다.",
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

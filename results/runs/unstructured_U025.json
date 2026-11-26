@@ -1,0 +1,35 @@
+{
+  "qid": "U025",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "경구 나노제형이 염증성 장질환 치료에서 기존 전신 투여 대비 갖는 이점과 한계를 약물동태·표적 특이성·안전성 세 축으로 나누어 종합 평가하라.",
+  "gold_route": "literature",
+  "gold_paper_route": "B",
+  "complexity_label": "high",
+  "paper_route": "B",
+  "complexity": {
+    "dim1": 8.4,
+    "dim2": 2.3975,
+    "dim3": 10.0,
+    "total": 20.7975
+  },
+  "top1_cos": 0.7781,
+  "degraded": true,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "rebamipide_ibd_nanoformulation",
+    "plhn_dermal_penetration",
+    "etv4_breast_cancer"
+  ],
+  "sources": [],
+  "final_response": "질의의 복잡도가 임계값을 초과하여 직접 요약을 생성하지 않았습니다. 대신 관련성이 높은 등록 논문을 추천합니다.\n- rebamipide_ibd_nanoformulation (관련도 0.718)\n- plhn_dermal_penetration (관련도 0.6507)\n- etv4_breast_cancer (관련도 0.4905)",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

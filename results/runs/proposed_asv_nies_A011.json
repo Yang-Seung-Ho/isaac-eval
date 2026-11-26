@@ -1,0 +1,33 @@
+{
+  "qid": "A011",
+  "query": "배양 12일차(D12) 합산 read 수에서 0일차(D0) 합산 read 수를 뺀 변화량은 얼마인가?",
+  "generated_code": "import json\nimport pandas as pd\n\nd0_cols = [col for col in df.columns if col.endswith('_D0')]\nd12_cols = [col for col in df.columns if col.endswith('_D12')]\n\nsum_d0 = df[d0_cols].sum().sum()\nsum_d12 = df[d12_cols].sum().sum()\n\ndiff = float(sum_d12 - sum_d0)\n\nresult = {\n    \"d0_sum\": float(sum_d0),\n    \"d12_sum\": float(sum_d12),\n    \"difference\": diff\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 496
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "d0_sum": 399975.0,
+    "d12_sum": 428580.0,
+    "difference": 28605.0
+  },
+  "final_response": "배양 0일차(D0) 합산 read 수는 399975.0이고, 12일차(D12) 합산 read 수는 428580.0입니다. 이 두 값의 차이인 변화량은 28605.0입니다.",
+  "gold_value": {
+    "day_minuend": "D12",
+    "day_subtrahend": "D0",
+    "diff": 28605
+  },
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_nies.xlsx",
+    "sheet": "NIES"
+  }
+}

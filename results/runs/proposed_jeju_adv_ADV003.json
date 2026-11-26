@@ -1,0 +1,30 @@
+{
+  "qid": "ADV003",
+  "query": "4월(April) 모든 관측점 개체수 총합은?",
+  "generated_code": "import json\n\napril_df = df[df[\"Month\"].str.contains(\"Apr\", na=False, case=False)]\ncols = [f\"J{i}\" for i in range(1, 13)]\ntotal_sum = float(april_df[cols].sum().sum())\n\nresult = {\"4월 모든 관측점 개체수 총합\": total_sum}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 332
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "4월 모든 관측점 개체수 총합": 9074685.757896103
+  },
+  "final_response": "4월 모든 관측점 개체수 총합은 9074685.757896103입니다.",
+  "gold_value": {
+    "month": "Apr.",
+    "total": 9074686
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/jeju_phytoplankton.xlsx",
+    "sheet": "식.플 정량분석"
+  }
+}

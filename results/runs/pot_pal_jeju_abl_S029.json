@@ -1,0 +1,21 @@
+{
+  "qid": "S029",
+  "system": "pot_pal",
+  "query": "정점 J12가 가장 낮은 개체 수를 기록한 달은 언제이며 그 값은 얼마인가?",
+  "final_response": "가장 낮은 개체 수를 기록한 달은 0이며, 그 값은 15441.176470588236입니다.",
+  "sandbox_value": {
+    "달": "0",
+    "값": 15441.176470588236
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J12",
+    "mode": "min",
+    "month": "Mar.",
+    "value": 15441
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

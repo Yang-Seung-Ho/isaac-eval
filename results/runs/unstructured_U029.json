@@ -1,0 +1,39 @@
+{
+  "qid": "U029",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "이 코퍼스에서 제주 지역 연구기관이 참여한 연구들은 어떤 주제를 다루고 있으며 공통 관심사는 무엇인가?",
+  "gold_route": "literature",
+  "gold_paper_route": "C",
+  "complexity_label": "high",
+  "paper_route": "C",
+  "complexity": {
+    "dim1": 4.4,
+    "dim2": 7.8351,
+    "dim3": 3.3333,
+    "total": 15.5684
+  },
+  "top1_cos": 0.6149,
+  "degraded": false,
+  "degraded_reason": null,
+  "scope_kw_multi": true,
+  "scope_llm_multi": true,
+  "selected_papers": [
+    "kang2026_algae_restoration",
+    "kim2024_hakashiwo",
+    "plhn_dermal_penetration"
+  ],
+  "sources": [
+    "kang2026_algae_restoration::0020",
+    "kang2026_algae_restoration::0024",
+    "kim2024_hakashiwo::0002"
+  ],
+  "final_response": "제공된 발췌록을 바탕으로 제주 지역 연구기관이 참여한 연구의 주제와 공통 관심사를 정리한 내용은 다음과 같습니다.\n\n### 1. 제주 지역 연구기관 참여 논문 및 연구 주제\n*   **관련 논문**: `kang2026_algae_restoration`\n*   **참여 기관**: **제주대학교 기초과학연구소(Research Institute for Basic Sciences, RIBS)**가 교육부 및 한국연구재단(NRF)의 지원을 받아 한국수산자원공단(FIRA) 등과 함께 연구에 참여하였습니다.\n*   **주요 연구 주제**:\n    *   **해중림 및 해조류 복원**: 사라진 해중림(underwater forests) 및 거대조류 숲(macroalgal forests)을 복원하기 위한 방안과 로드맵을 다룹니다.\n    *   **해조류 이식 및 해조장 조성 기술**: 곰피(*Ecklonia stolonifera*), 괭생이모자반(*Sargassum horneri*), 감태(*Ecklonia cava*) 등의 해조류를 인공어초(artificial seaweed reef) 등에 성공적으로 이식하기 위한 크기 결정, 이식 기법, 안정성 계산 등을 연구합니다.\n    *   **해양 생태계 영향 및 탄소 저감**: 해조류의 구조적 특성이 저서 생태계에 미치는 영향과 온대 해중림의 이산화탄소 제거(CDR, Carbon dioxide removal) 잠재력(화학적 및 생물학적 순생태계 생산량 비교)을 다룹니다.\n\n*(※ 또 다른 논문인 `kim2024_hakashiwo`는 한양대학교, 에코토피아 등 서울 및 세종 지역 기관이 수행한 식물플랑크톤 수직 이동 관련 연구로, 제주 지역 연구기관의 참여 사실이 확인되지 않습니다.)*\n\n---\n\n### 2. 종합 및 공통 관심사\n이 코퍼스에서 제주 지역 연구기관(제주대학교 기초과학연구소)이 참여한 연구의 핵심 공통 관심사는 **\"해조류 및 해중림의 복원과 보전\"**입니다. \n\n구체적으로는 **해조류(감태, 곰피 등)의 효과적인 이식 기술 및 인공어초 조성 방안**을 모색하고, 이를 통해 **해양 저서 생태계를 복원**하는 동시에 **해중림의 이산화탄소 흡수 및 제거(CDR) 잠재력을 극대화**하는 데 깊은 관심을 두고 있습니다.",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

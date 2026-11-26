@@ -1,0 +1,37 @@
+{
+  "qid": "U005",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "폴리머-지질 하이브리드 나노입자란 무엇인가?",
+  "gold_route": "literature",
+  "gold_paper_route": "A",
+  "complexity_label": "low",
+  "paper_route": "A",
+  "complexity": {
+    "dim1": 1.6,
+    "dim2": 4.9651,
+    "dim3": 3.3333,
+    "total": 9.8984
+  },
+  "top1_cos": 0.701,
+  "degraded": false,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "plhn_dermal_penetration"
+  ],
+  "sources": [
+    "plhn_dermal_penetration::0000",
+    "plhn_dermal_penetration::0009",
+    "plhn_dermal_penetration::0004"
+  ],
+  "final_response": "제시된 문헌에 기초한 폴리머-지질 하이브리드 나노입자(PLN)의 정의와 연구 목적, 방법, 주요 발견은 다음과 같습니다.\n\n### 1. 정의\n**폴리머-지질 하이브리드 나노입자(PLN)**는 양친매성 블록 공중합체(예: POx-b-PCL)와 지질(예: 레시틴)의 공동 조립(coassembly)을 통해 형성되는 나노 구조의 약물 전달체입니다 [plhn_dermal_penetration::0000, 0009]. 양이온성 표면 화학 특성과 약물 방출 제어 능력을 동시에 갖춘 생체 적합성 플랫폼입니다 [plhn_dermal_penetration::0000].\n\n---\n\n### 2. 연구 목적\n* **독성 극복:** 기존 양이온성 계면활성제가 가진 세포독성 한계를 극복하고자 합니다 [plhn_dermal_penetration::0000].\n* **효능 향상:** 피부 침투 효율을 높이고, 탑재된 약물의 방출을 정밀하게 조절(지속 방출)할 수 있는 전달체를 개발하는 것이 목적입니다 [plhn_dermal_penetration::0000].\n\n---\n\n### 3. 연구 방법\n* **공중합체 합성:** 개환 중합(ring-opening polymerization)을 통해 양친매성 블록 공중합체인 POx-b-PCL을 합성합니다 [plhn_dermal_penetration::0000].\n* **나노입자 제조 (나노침전법):** POx-b-PCL과 레시틴(그리고 탑재할 약물인 커큐민)을 유기용매(THF)에 녹인 후, 탈이온수를 점적하여 자가조립을 유도합니다. 이후 감압 증발기를 통해 유기용매를 제거하여 하이브리드 나노입자를 제조합니다 [plhn_dermal_penetration::0004, 0009].\n* **특성 평가:** 동적 광산란법(DLS)으로 입자 크기와 제타 전위를 측정하고, 투과 전자 현미경(TEM)으로 형태를 관찰하며, 시차 주사 열량계(DSC) 및 NMR 완화측정법 등을 통해 열적·물리적 특성을 분석합니다 [plhn_dermal_penetration::0000, 0004].\n\n---\n\n### 4. 주요 발견\n* **안정적인 나노 구조 형성:** POx-b-PCL과 레시틴은 콜로이드 안정성을 유지하면서 약 120 nm 크기의 균일한 구형 나노입자를 형성합니다 [plhn_dermal_penetration::0000, 0009].\n* **강직성 증가 및 방출 제어:** POx-b-PCL의 도입은 나노입자 코어의 결정성과 강직성(rigidity)을 증가시킵니다. 이로 인해 히구치(Higuchi) 방출 속도 상수가 2배 감소하여, 탑재된 커큐민의 지속적인 방출이 가능해집니다 [plhn_dermal_penetration::0000, 0009].\n* **결합력 및 세포 흡수 향상:** 다가 정전기적 상호작용을 통해 음전하를 띤 알부민에 대한 결합 친화도가 10배 향상되었으며, HaCaT 각질형성세포 내로의 세포 내입(internalization)이 크게 개선되었습니다 [plhn_dermal_penetration::0000].\n* **피부 침투 깊이 증가:** 돼지 피부를 이용한 ex vivo 실험 결과, 피부 투과 깊이가 70% 증가하였으며 각질층 아래 30~40 μm 깊이에서 최대 형광 강도가 관찰되었습니다 [plhn_dermal_penetration::0000].",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

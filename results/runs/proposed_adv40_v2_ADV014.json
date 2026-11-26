@@ -1,0 +1,18 @@
+{
+  "qid": "ADV014",
+  "system": "proposed",
+  "query": "열 번째 정점의 평균 셀 수는?",
+  "final_response": "열 번째 정점의 평균 셀 수는 350319.8869773246입니다.",
+  "sandbox_value": {
+    "J10_평균_셀_수": 350319.8869773246
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J10",
+    "mean": 350319.89
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

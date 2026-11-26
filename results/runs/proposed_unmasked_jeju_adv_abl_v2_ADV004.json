@@ -1,0 +1,18 @@
+{
+  "qid": "ADV004",
+  "system": "proposed_unmasked",
+  "query": "12번 관측지점의 평균 플랑크톤 수치는?",
+  "final_response": "12번 관측지점의 평균 플랑크톤 수치는 168136.5382385178입니다.",
+  "sandbox_value": {
+    "12번 관측지점 평균 플랑크톤 수치": 168136.5382385178
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J12",
+    "mean": 168136.54
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

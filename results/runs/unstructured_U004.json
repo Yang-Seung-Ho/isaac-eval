@@ -1,0 +1,37 @@
+{
+  "qid": "U004",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "What is rebamipide used for?",
+  "gold_route": "literature",
+  "gold_paper_route": "A",
+  "complexity_label": "low",
+  "paper_route": "A",
+  "complexity": {
+    "dim1": 0.8,
+    "dim2": 4.2672,
+    "dim3": 3.3333,
+    "total": 8.4005
+  },
+  "top1_cos": 0.722,
+  "degraded": false,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "rebamipide_ibd_nanoformulation"
+  ],
+  "sources": [
+    "rebamipide_ibd_nanoformulation::0003",
+    "rebamipide_ibd_nanoformulation::0005",
+    "rebamipide_ibd_nanoformulation::0032"
+  ],
+  "final_response": "제시된 발췌문에 근거한 레바미피드(Rebamipide)의 용도와 관련 연구의 목적, 방법, 주요 발견은 다음과 같습니다.\n\n### 1. 레바미피드의 용도 (What is rebamipide used for?)\n* **위궤양 치료**: 레바미피드는 임상적으로 승인된 위궤양 치료제입니다 `[rebamipide_ibd_nanoformulation::0003]`.\n* **점막 보호 및 항염증 작용**: 항염증, 항산화 및 점막 보호 활성을 가지고 있으며, 술잔세포(goblet cell)의 증식과 뮤신(mucin) 분비를 촉진하고 염증 신호 전달 경로를 억제하는 역할을 합니다 `[rebamipide_ibd_nanoformulation::0003]`.\n* **대장 염증성 질환 치료 연구**: 대장 손상 및 염증을 완화하고 장 상피 장벽의 무결성을 보존하는 효과가 있어, 염증성 장질환(IBD) 및 대장염 치료를 위한 후보 물질로 연구되고 있습니다 `[rebamipide_ibd_nanoformulation::0003]`, `[rebamipide_ibd_nanoformulation::0032]`.\n\n---\n\n### 2. 연구 목적\n레바미피드는 우수한 치료 효능에도 불구하고, 경구 투여 시 생체이용률이 낮고 하부 대장 내 체류 시간이 부족하여 대장 염증성 질환 치료에는 효과적으로 활용되지 못했습니다. 본 연구는 이러한 한계를 극복하기 위해 점막 흡착성 및 위산 저항성을 갖추어 장내 체류 시간을 늘리고, 염증이 발생한 장 부위에 레바미피드를 효과적으로 전달할 수 있는 최적의 나노전달체 시스템(M@D@Re-SCNPs)을 개발하고자 하였습니다 `[rebamipide_ibd_nanoformulation::0003]`.\n\n---\n\n### 3. 연구 방법\n* **나노입자 제조**: 레바미피드를 6-스테아로일 아스코르브산(6-stearoyl ascorbic acid) 및 카프릴산(caprylic acid) 혼합물과 함께 클로로포름:메탄올 용매에 용해시킨 후, 감압 증발을 통해 얇은 지질 필름을 형성했습니다. 이 필름을 인산염 완충 식염수(PBS)로 수화하고 초음파 처리(sonication)를 거쳐 균일한 나노입자 현탁액을 제조하였으며, 캡슐화되지 않은 레바미피드는 원심분리로 제거하였습니다 `[rebamipide_ibd_nanoformulation::0005]`.\n* **효능 평가**: 덱스트란 황산나트륨(DSS)으로 대장염을 유도한 마우스 모델을 대상으로 H&E 염색, 알시안 블루(Alcian blue) 염색, HID-AB 염색 등을 실시하여 대장 조직의 형태학적 변화, 술잔세포 보존 상태 및 뮤신 분비 양상을 평가했습니다 `[rebamipide_ibd_nanoformulation::0032]`.\n\n---\n\n### 4. 주요 발견\n* **대장 손상 및 조직학적 개선**: 레바미피드는 대장 손상과 염증을 완화하는 데 기여합니다. 특히 레바미피드가 탑재된 나노입자(M@D@Re-SCNPs) 투여군은 대장염 마우스 모델에서 은와(crypt) 구조를 보존하고, 염증 세포 침윤을 감소시키며, 상피 내벽을 복구하는 등 현저한 조직학적 개선을 보였습니다 `[rebamipide_ibd_nanoformulation::0032]`.\n* **술잔세포 및 뮤신 장벽 보호**: 대장염으로 인해 감소하는 술잔세포의 보존을 돕습니다. 일반 레바미피드 치료군도 일부 회복을 보였으나, 나노입자 제형(M@D@Re-SCNPs)은 훨씬 더 많은 술잔세포를 보존하고 손상되지 않은 연속적인 뮤신 내벽을 형성하여 장 상피의 무결성을 유지하는 데 뛰어난 효과를 나타냈습니다 `[rebamipide_ibd_nanoformulation::0032]`.",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

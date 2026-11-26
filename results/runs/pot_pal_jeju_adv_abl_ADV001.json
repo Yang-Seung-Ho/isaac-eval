@@ -1,0 +1,18 @@
+{
+  "qid": "ADV001",
+  "system": "pot_pal",
+  "query": "제9정점(station 9)의 전체 기간 평균 개체 수는?",
+  "final_response": "제9정점의 전체 기간 평균 개체 수는 279118.51280057227입니다.",
+  "sandbox_value": {
+    "평균 개체 수": 279118.51280057227
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J9",
+    "mean": 279118.51
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

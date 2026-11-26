@@ -1,0 +1,18 @@
+{
+  "qid": "ADV011",
+  "system": "proposed",
+  "query": "여섯 번째 정점의 평균 세포 밀도는?",
+  "final_response": "여섯 번째 정점의 평균 세포 밀도는 162785.2734390606입니다.",
+  "sandbox_value": {
+    "여섯 번째 정점 평균 세포 밀도": 162785.2734390606
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J6",
+    "mean": 162785.27
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

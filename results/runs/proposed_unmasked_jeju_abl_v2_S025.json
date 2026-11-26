@@ -1,0 +1,19 @@
+{
+  "qid": "S025",
+  "system": "proposed_unmasked",
+  "query": "3월(Mar.)의 전 정점 표준편차('표준편차' 열 값)는 얼마인가?",
+  "final_response": "3월의 전 정점 표준편차는 0.0976516795100908입니다.",
+  "sandbox_value": {
+    "표준편차": 0.0976516795100908
+  },
+  "final_ok": true,
+  "gold_value": {
+    "month": "Mar.",
+    "field": "표준편차",
+    "value": 0.0977
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

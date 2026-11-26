@@ -1,0 +1,18 @@
+{
+  "qid": "ADV026",
+  "system": "pot_pal",
+  "query": "세 번째 관측지의 평균은?",
+  "final_response": "세 번째 관측지의 평균은 91865.04입니다.",
+  "sandbox_value": {
+    "세 번째 관측지 평균": 91865.04
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J3",
+    "mean": 91865.04
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

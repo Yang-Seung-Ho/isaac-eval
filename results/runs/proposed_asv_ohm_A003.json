@@ -1,0 +1,30 @@
+{
+  "qid": "A003",
+  "query": "이 데이터셋에서 분류·명명된 서로 다른 Genus(속)는 몇 개인가?",
+  "generated_code": "import json\nimport pandas as pd\n\nunique_genera = df['Genus'].dropna().unique()\nnum_genera = len(unique_genera)\n\nresult = {\n    \"count\": int(num_genera)\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 498
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "count": 57
+  },
+  "final_response": "이 데이터셋에서 분류·명명된 서로 다른 Genus(속)는 총 57개입니다.",
+  "gold_value": {
+    "rank": "Genus",
+    "n": 57
+  },
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_ohm.xlsx",
+    "sheet": "OHM"
+  }
+}

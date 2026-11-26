@@ -1,0 +1,30 @@
+{
+  "qid": "A001",
+  "query": "NIES_1_D0 샘플의 총 read 수(전체 ASV 합계)는 얼마인가?",
+  "generated_code": "import json\n\ntotal_reads = int(df['NIES_1_D0'].sum())\nresult = {\"total_reads\": total_reads}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 493
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "total_reads": 103574
+  },
+  "final_response": "NIES_1_D0 샘플의 총 read 수는 103574입니다.",
+  "gold_value": {
+    "sample": "NIES_1_D0",
+    "total": 103574
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_nies.xlsx",
+    "sheet": "NIES"
+  }
+}

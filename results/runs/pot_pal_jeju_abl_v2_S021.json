@@ -1,0 +1,18 @@
+{
+  "qid": "S021",
+  "system": "pot_pal",
+  "query": "7월(Jul.) 전체 정점의 개체 수 합계는 얼마인가?",
+  "final_response": "7월 전체 정점의 개체 수 합계는 843,676.42입니다.",
+  "sandbox_value": {
+    "합계": 843676.42
+  },
+  "final_ok": true,
+  "gold_value": {
+    "month": "Jul.",
+    "total": 843676
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

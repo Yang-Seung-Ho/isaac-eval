@@ -1,0 +1,37 @@
+{
+  "qid": "U012",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "나노입자의 피부 침투를 향상시키는 이유는 무엇인가?",
+  "gold_route": "literature",
+  "gold_paper_route": "A",
+  "complexity_label": "low",
+  "paper_route": "A",
+  "complexity": {
+    "dim1": 2.0,
+    "dim2": 4.7832,
+    "dim3": 6.6667,
+    "total": 13.4499
+  },
+  "top1_cos": 0.7065,
+  "degraded": false,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "plhn_dermal_penetration"
+  ],
+  "sources": [
+    "plhn_dermal_penetration::0016",
+    "plhn_dermal_penetration::0000",
+    "plhn_dermal_penetration::0015"
+  ],
+  "final_response": "제시된 문헌을 바탕으로 양이온성 고분자-지질 하이브리드 나노입자(PLN)의 피부 침투 향상 원인과 연구 목적, 방법, 주요 발견을 요약한 내용은 다음과 같습니다.\n\n### 1. 연구 목적\n* **독성 극복 및 약물 전달 효율화:** 기존 계면활성제의 세포 독성 한계를 극복하는 동시에, 피부 침투력을 향상시키고 약물 방출을 조절할 수 있는 안전한 나노전달체를 개발하고자 하였습니다 [plhn_dermal_penetration::0000].\n* **피부 장벽 극복:** 각질층 장벽을 통과하여 항산화제, 항노화 성분 및 치료 약물을 피부 깊숙한 표피층까지 효과적으로 전달할 수 있는 플랫폼을 구축하는 것이 목적입니다 [plhn_dermal_penetration::0016].\n\n### 2. 연구 방법\n* **나노입자 제조:** 개환 중합(ring-opening polymerization)을 통해 POx-b-PCL 공중합체를 합성한 후, 나노침전법(nanoprecipitation)을 통해 레시틴과 공동 조립하여 약 120 nm 크기의 구형 하이브리드 나노입자(PLN)를 제조하였습니다 [plhn_dermal_penetration::0000].\n* **피부 침투 평가:** ex vivo 돼지 피부 모델을 사용하여 나노입자의 침투력을 평가하였으며, 공초점 레이저 주사 현미경(CLSM)의 z-스택 교차 단면 이미지와 3차원 재구성 이미지를 통해 피부 조직 내 공간적 분포와 침투 깊이를 분석하였습니다 [plhn_dermal_penetration::0015].\n\n### 3. 주요 발견 및 피부 침투 향상 원인\n* **피부 침투가 향상되는 원인:** \n  * **정전기적 상호작용:** 나노입자 표면의 양이온성 POx 코로나(corona) 성분과 음전하를 띤 세포막 성분 사이의 강력한 다가 정전기적 상호작용(multivalent electrostatic interactions)이 발생합니다 [plhn_dermal_penetration::0000, plhn_dermal_penetration::0015]. 이 상호작용이 세포막과의 결합 및 세포 내 흡수를 촉진하고, 결과적으로 각질층 장벽을 통과하여 하부 표피층으로의 확산 및 침투를 용이하게 만듭니다 [plhn_dermal_penetration::0015, plhn_dermal_penetration::0016].\n* **주요 연구 발견:**\n  * **구조적 안정성 및 방출 조절:** POx-b-PCL의 도입으로 나노입자 코어의 결정성과 강성(rigidity)이 증가하여, 약물 방출 속도를 2배 감소시키고 지속적인 약물 방출을 가능하게 했습니다 [plhn_dermal_penetration::0000, plhn_dermal_penetration::0016].\n  * **결합 친화도 및 세포 흡수 증가:** 음전하를 띤 알부민에 대한 결합 친화도가 10배 향상되었으며, HaCaT 각질형성세포 내로의 흡수 효율이 크게 개선되었습니다 [plhn_dermal_penetration::0000, plhn_dermal_penetration::0016].\n  * **경피 침투 깊이 증가:** ex vivo 돼지 피부 모델 실험 결과, POx-b-PCL 함량이 증가함에 따라 경피 침투 깊이가 약 70% 향상되었습니다 [plhn_dermal_penetration::0000, plhn_dermal_penetration::0015]. 특히 각질층 아래 약 30~40 μm 깊이의 생존 표피층에서 최대 형광 강도가 관찰되어, 나노입자가 피부 장벽을 넘어 깊은 조직까지 도달하여 축적될 수 있음을 확인하였습니다 [plhn_dermal_penetration::0000, plhn_dermal_penetration::0015].",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

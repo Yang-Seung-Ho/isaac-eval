@@ -1,0 +1,37 @@
+{
+  "qid": "U001",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "What is Heterosigma akashiwo and why is it studied?",
+  "gold_route": "literature",
+  "gold_paper_route": "A",
+  "complexity_label": "low",
+  "paper_route": "A",
+  "complexity": {
+    "dim1": 1.2,
+    "dim2": 2.1473,
+    "dim3": 3.3333,
+    "total": 6.6806
+  },
+  "top1_cos": 0.7856,
+  "degraded": false,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "kim2024_hakashiwo"
+  ],
+  "sources": [
+    "kim2024_hakashiwo::0003",
+    "kim2024_hakashiwo::0025",
+    "kim2024_hakashiwo::0026"
+  ],
+  "final_response": "제시된 문헌에 근거한 *Heterosigma akashiwo*의 정의와 연구 목적, 방법, 주요 발견은 다음과 같습니다.\n\n### 1. *Heterosigma akashiwo*의 정의\n* **개념**: 단세포 침편모조류(unicellular raphidophyte alga)로, 전 세계 해양에서 중요한 일차 생산자 역할을 하는 미세조류입니다 [kim2024_hakashiwo::0003].\n* **주요 특징**: 낮에는 광합성을 위해 수면 위로 올라오고 밤에는 아래로 내려가는 활발한 '일주기 수직 이동(Diel Vertical Migration, DVM)' 능력을 갖추고 있습니다 [kim2024_hakashiwo::0003]. 또한, 전 세계 해안(남북 아메리카, 유럽, 남아프리카, 호주, 아시아 등)에서 대규모 적조(bloom)를 형성하는 것으로 잘 알려져 있습니다 [kim2024_hakashiwo::0003].\n\n---\n\n### 2. 연구 목적, 방법 및 주요 발견\n\n#### ① 수직 이동(DVM) 메커니즘 규명\n* **연구 목적**: 이 조류의 수직 이동 특성과 가변성을 명확히 이해하기 위함입니다.\n* **주요 발견**: *H. akashiwo*는 전형적인 DVM 능력을 보여주지만, 때때로 수직 이동 패턴에 가변성(plasticity)이 관찰되어 이들의 이동 행동이 아직 완전히 이해되지 않았음이 밝혀졌습니다 [kim2024_hakashiwo::0003].\n\n#### ② 유해 적조(HAB) 발생 원인 및 환경적 반응 분석\n* **연구 목적**: 적조 형성 원인을 규명하고, 기후 변화 및 해양 산성화 등 환경 변화에 이 조류가 어떻게 반응하는지 파악하기 위함입니다.\n* **연구 방법 및 발견**: \n  * 질소원과 빛 조건의 변화에 따른 성장 및 생리적 반응을 분석하였습니다 [kim2024_hakashiwo::0025, kim2024_hakashiwo::0026].\n  * pH 변화 실험을 통해, 해양 산성화 조건에서 pH가 *H. akashiwo*의 수영 행동을 변화시켜 적조 형성에 영향을 미칠 수 있음을 발견했습니다 [kim2024_hakashiwo::0025].\n  * 이 조류의 대규모 적조는 극단적인 물고기 폐사 사건(fish-killing event)을 유발하여 수산업에 심각한 피해를 줍니다 [kim2024_hakashiwo::0026].\n\n#### ③ 모니터링 기술 및 적조 소멸 메커니즘 연구\n* **연구 목적**: 적조를 예측·제어하고 생태계 피해를 최소화하기 위함입니다.\n* **연구 방법 및 발견**:\n  * **모니터링**: 시스트(cyst, 휴면포자)의 형태와 발아 과정을 분석하고, DNA 잔해 제거법을 결합한 실시간 PCR(qPCR) 분석법을 개선하여 시스트 개체수를 정량화하는 기술을 개발했습니다 [kim2024_hakashiwo::0025].\n  * **소멸 메커니즘**: 살조 세균(algicidal bacteria)과의 밀접한 관계 및 바이러스 유사 입자(virus-like particles)의 작용이 *H. akashiwo* 적조를 자연적으로 소멸시키는 붕괴 메커니즘이 될 수 있음을 발견했습니다 [kim2024_hakashiwo::0025, kim2024_hakashiwo::0026].",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

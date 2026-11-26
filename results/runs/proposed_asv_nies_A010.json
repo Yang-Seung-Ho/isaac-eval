@@ -1,0 +1,29 @@
+{
+  "qid": "A010",
+  "query": "12개 전 샘플의 총 read 수 합계(grand total)는 얼마인가?",
+  "generated_code": "sample_cols = [col for col in df.columns if col.startswith('NIES_')]\ngrand_total = int(df[sample_cols].sum().sum())\nresult = {\"grand_total\": grand_total}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 502
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "grand_total": 2094013
+  },
+  "final_response": "12개 전 샘플의 총 read 수 합계(grand total)는 2,094,013입니다.",
+  "gold_value": {
+    "total": 2094013
+  },
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_nies.xlsx",
+    "sheet": "NIES"
+  }
+}

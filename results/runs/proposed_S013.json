@@ -1,0 +1,28 @@
+{
+  "qid": "S013",
+  "query": "정점 J4의 전체 기간 평균 개체 수는 얼마인가?",
+  "generated_code": "import json\n\nmean_j4 = df[\"J4\"].mean()\nresult = {\"평균 개체 수\": mean_j4}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 434
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "평균 개체 수": 132901.79420021697
+  },
+  "final_response": "정점 J4의 전체 기간 평균 개체 수는 132901.79420021697입니다.",
+  "gold_value": {
+    "station": "J4",
+    "mean": 132901.79
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

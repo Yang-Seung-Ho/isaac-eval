@@ -1,0 +1,30 @@
+{
+  "qid": "A001",
+  "query": "OHM_1_D0 샘플의 총 read 수(전체 ASV 합계)는 얼마인가?",
+  "generated_code": "import json\nimport pandas as pd\n\ntotal_reads = int(df['OHM_1_D0'].sum())\n\nresult = {\n    \"total_reads\": total_reads\n}\n\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 517
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "total_reads": 130190
+  },
+  "final_response": "OHM_1_D0 샘플의 총 read 수는 130,190개입니다.",
+  "gold_value": {
+    "sample": "OHM_1_D0",
+    "total": 130190
+  },
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_ohm.xlsx",
+    "sheet": "OHM"
+  }
+}

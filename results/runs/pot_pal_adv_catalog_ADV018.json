@@ -1,0 +1,16 @@
+{
+  "qid": "ADV018",
+  "system": "pot_pal",
+  "query": "삼월 전 정점 개체 수 총합은?",
+  "final_response": "코드 실행에 3회 시도 후 실패: execution failed",
+  "sandbox_value": null,
+  "final_ok": false,
+  "gold_value": {
+    "month": "Mar.",
+    "total": 337339
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

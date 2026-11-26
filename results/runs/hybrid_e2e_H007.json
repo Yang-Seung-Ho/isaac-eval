@@ -1,0 +1,42 @@
+{
+  "qid": "H007",
+  "system": "proposed_e2e",
+  "query": "정점 J1이 최고치를 기록한 달을 찾고, 해당 계절의 환경 요인을 문헌으로 해석하라.",
+  "gold_value": {
+    "station": "J1",
+    "mode": "max",
+    "month": "Apr.",
+    "value": 372692
+  },
+  "gold_route": "hybrid",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "routed_to": "hybrid",
+  "decomposition": {
+    "data_subquery": "정점 J1이 최고치를 기록한 달 찾기",
+    "literature_subquery": "해당 계절의 환경 요인에 대한 문헌 해석"
+  },
+  "selected_dataset": "jeju",
+  "generated_code": "import json\n\nmax_idx = df['J1'].idxmax()\nbest_month = str(df.loc[max_idx, 'Month'])\nresult = {\"Month\": best_month}\nprint(json.dumps(result, ensure_ascii=False))",
+  "final_ok": true,
+  "sandbox_value": {
+    "Month": "Apr."
+  },
+  "paper_route": "A",
+  "complexity": {
+    "dim1": 2.4,
+    "dim2": 6.7029,
+    "dim3": 3.3333,
+    "total": 12.4362
+  },
+  "literature_response": "제공된 문헌 발췌를 바탕으로 해당 연구의 목적, 방법, 주요 발견 및 환경 요인에 대한 문헌 해석을 정리한 내용은 다음과 같습니다.\n\n---\n\n### 1. 연구 목적 (Research Purpose)\n* 동물플랑크톤과 달리 기존에 일주일간 수직 이동(DVM, Diel Vertical Migration) 위주로만 인식되어 있던 식물플랑크톤(*Heterosigma akashiwo*)의 수직 이동 행동, 생활사 전이(life-cycle transitions) 및 바닥 누적(BA, Bottom Accumulation) 단계에 영향을 미치는 환경 요인을 문헌과 관찰 데이터를 통해 해석하고 분석하고자 함 `[kim2024_hakashiwo::0002, 0017]`.\n\n### 2. 연구 방법 (Research Methodology)\n* **기존 문헌 고찰**: 식물플랑크톤의 수직 이동(상승·하강)과 관련된 환경 변수(염분, 포식자, pH, 영양염 등) 및 기존 생물학적 가설에 대한 기재 문헌 해석 `[kim2024_hakashiwo::0002, 0017]`.\n* **주성분 분석 (PCA)**: 정규 대발생(bloom) 시기와 바닥 누적(BA) 단계 동안 질소원 및 인산염을 포함한 4가지 영양염 수준의 특성을 분석하고 비교함 `[kim2024_hakashiwo::0023]`.\n\n### 3. 주요 발견 및 문헌 해석 (Key Findings & Literature Interpretation)\n\n* **수직 이동에 영향을 미치는 환경 요인 (문헌 해석)**\n  * **상승 이동 (Upward Migration)**: 낮은 염분(low salinity)과 포식자(predators) 존재가 상승 이동을 촉진함 `[kim2024_hakashiwo::0017]`.\n  * **하강 이동 (Downward Migration)**: 낮은 pH 값에 의해 하강 이동이 유발됨 `[kim2024_hakashiwo::0017]`. 야간 하강 이동은 수면에 모이는 동물플랑크톤을 피하고, 유리한 수문학적 조건(성층화된 고보유 구역)을 유지하며, 바닥층 수역의 영양염을 섭취해 필요한 영양을 보충하는 데 도움을 줌 `[kim2024_hakashiwo::0017]`.\n  * **성층화 수역 이동의 이점**: 밀도약층/수온약층 등 성층화된 수역을 수직 이동하는 능력은 빛과 영양염이 풍부한 표층수에 접근할 수 있게 하여 종의 경쟁적 우위를 제공함 `[kim2024_hakashiwo::0017]`.\n\n* **영양 염류 및 생활사 전이**\n  * 영양 결핍(Nutrient deficiencies)은 식물플랑크톤의 유성 생식을 유도하며, 이는 *H. akashiwo*의 바닥 누적(BA) 단계와 생활사 전이를 유발하는 주요 환경 요인으로 해석됨 `[kim2024_hakashiwo::0017]`.\n\n* **식물플랑크톤 수직 이동 연구의 한계와 고찰**\n  * 동물플랑크톤 연구에서는 일주일간 수직 이동(DVM)뿐만 아니라 계절적 수직 이동(SVM) 등 다양한 행동 형태가 규명되어 온 반면, 식물플랑크톤은 20세기 초 이후 표층의 빛을 이용하기 위한 DVM 행동 위주로만 인식되어 옴 `[kim2024_hakashiwo::0002]`.\n  * 본 연구 이전에는 DVM 범주를 벗어난 식물플랑크톤의 수직 이동 패턴에 대한 문헌적 증거가 보고된 바 없었음 `[kim2024_hakashiwo::0017]`.",
+  "literature_sources": [
+    "kim2024_hakashiwo::0017",
+    "kim2024_hakashiwo::0002",
+    "kim2024_hakashiwo::0023"
+  ],
+  "recommendations": null,
+  "final_response": "계산 결과와 문헌 근거를 통합한 보고서 내용은 다음과 같습니다.\n\n---\n\n### 1. 정점 J1 최고치 기록 달 (데이터 계산 결과)\n* **최고치 기록 달**: **4월 (Apr.)**\n* 계산 결과에 따르면 정점 J1의 개체수/수치가 최고치를 기록한 달은 4월(봄 계절)로 확인되었습니다.\n\n---\n\n### 2. 해당 계절의 환경 요인 및 문헌 해석 (문헌 근거)\n제공된 문헌에 따르면 식물플랑크톤(*Heterosigma akashiwo*)의 생태적 특성 및 수직 이동(상승·하강)과 관련된 주요 환경 요인은 다음과 같이 해석됩니다.\n\n* **상승 이동 촉진 요인**:\n  * **낮은 염분(low salinity)** 및 **포식자(predators)의 존재**가 수평/수직적 상승 이동을 촉진합니다 `[kim2024_hakashiwo::0017]`.\n\n* **하강 이동 유발 및 이점**:\n  * **낮은 pH 값**에 의해 하강 이동이 유발됩니다 `[kim2024_hakashiwo::0017]`.\n  * 야간 하강 이동은 수면에 집중되는 동물플랑크톤 회피, 성층화된 고보유 구역의 유리한 수문학적 조건 유지, 바닥층 수역에서의 영양염 섭취 및 영양 보충을 용이하게 합니다 `[kim2024_hakashiwo::0017]`.\n\n* **성층화 수역 접근과 경쟁 우위**:\n  * 밀도약층 및 수온약층 등 성층화된 수역을 수직 이동하는 능력은 빛과 영양염이 풍부한 표층수에 효율적으로 접근할 수 있게 하여 타 종에 대한 경쟁적 우위를 제공합니다 `[kim2024_hakashiwo::0017]`.\n\n* **영양 염류 상태 및 생활사 전이**:\n  * **영양 결핍(Nutrient deficiencies)**은 식물플랑크톤의 유성 생식을 유도하며, 이는 바닥 누적(BA, Bottom Accumulation) 단계 및 생활사 전이(life-cycle transitions)를 유발하는 핵심 환경 요인으로 작동합니다 `[kim2024_hakashiwo::0017]`."
+}

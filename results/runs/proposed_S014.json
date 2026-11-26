@@ -1,0 +1,28 @@
+{
+  "qid": "S014",
+  "query": "정점 J6의 전체 기간 평균 개체 수는 얼마인가?",
+  "generated_code": "import json\nimport pandas as pd\n\nmean_j6 = df[\"J6\"].mean()\nresult = {\"정점 J6 평균 개체 수\": mean_j6}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 342
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "정점 J6 평균 개체 수": 162785.2734390606
+  },
+  "final_response": "정점 J6의 전체 기간 평균 개체 수는 162785.2734390606입니다.",
+  "gold_value": {
+    "station": "J6",
+    "mean": 162785.27
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

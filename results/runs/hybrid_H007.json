@@ -1,0 +1,36 @@
+{
+  "qid": "H007",
+  "system": "proposed",
+  "kind": "hybrid",
+  "query": "정점 J1이 최고치를 기록한 달을 찾고, 해당 계절의 환경 요인을 문헌으로 해석하라.",
+  "gold_route": "hybrid",
+  "decomposition": {
+    "data_subquery": "정점 J1에서 측정값이 최고치를 기록한 달을 찾아라.",
+    "literature_subquery": "해당 달이 속한 계절의 환경 요인을 문헌으로 해석하라."
+  },
+  "expected_data_subquery": "J1 최고치 월",
+  "expected_literature_subquery": "계절별 환경 요인",
+  "generated_code": "max_month = df.loc[df['J1'].idxmax(), 'Month']\nresult = {\"Month\": max_month}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "Month": "Apr."
+  },
+  "gold_value": {
+    "station": "J1",
+    "mode": "max",
+    "month": "Apr.",
+    "value": 372692
+  },
+  "literature_sources": [
+    "kim2024_hakashiwo::0023",
+    "kim2024_hakashiwo::0002",
+    "kim2024_hakashiwo::0017"
+  ],
+  "final_response": "제공된 계산 결과와 문헌 근거를 바탕으로 한 답변은 다음과 같습니다.\n\n* **정점 J1이 최고치를 기록한 달:** \n  * 계산 결과에 따르면 정점 J1이 최고치를 기록한 달은 **4월(Apr.)**입니다. (출력 데이터: `{'Month': 'Apr.'}`)\n\n* **해당 계절(4월, 봄철)의 환경 요인에 대한 문헌 해석:**\n  * 제공된 문헌(`kim2024_hakashiwo::0023`, `kim2024_hakashiwo::0002`, `kim2024_hakashiwo::0017`)에서는 4월이라는 특정 계절의 기후나 환경 요인에 대해 직접적으로 수치화하여 설명하고 있지 않습니다. \n  * 다만 문헌에 따르면, 해당 연구에서 다루는 편모조류(*Heterosigma akashiwo* 등)의 번식 및 적조(bloom) 시기 또는 바닥 축적(bottom accumulation, BA) 단계와 관련하여 영양염류(질소원 및 인산염 수준, 주성분 분석 인용)와 수직 이동 행동이 언급되어 있습니다. 또한 상층부의 빛 접근, 염분 구조(저염분 등), 수온약층/염분약층에 따른 성층화 현상 등이 식물플랑크톤의 생태와 이동에 영향을 미치는 주요 환경 요인으로 제시되어 있습니다. \n\n*(주어진 계산 결과 및 문헌 데이터에 4월의 구체적인 기상·환경 수치가 포함되어 있지 않으므로, 지어낸 수치 없이 위 내용으로만 답변을 구성합니다.)*",
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

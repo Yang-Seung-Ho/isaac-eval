@@ -1,0 +1,30 @@
+{
+  "qid": "A003",
+  "query": "이 데이터셋에서 분류·명명된 서로 다른 Genus(속)는 몇 개인가?",
+  "generated_code": "import json\n\ndistinct_genus = df[\"Genus\"].dropna().nunique()\nresult = {\"result\": int(distinct_genus)}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 578
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "result": 57
+  },
+  "final_response": "이 데이터셋에서 분류·명명된 서로 다른 Genus(속)는 57개입니다.",
+  "gold_value": {
+    "rank": "Genus",
+    "n": 57
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_nies.xlsx",
+    "sheet": "NIES"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "qid": "U022",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "자가포식 유도가 항암제 내성에서 세포 보호적으로 작용하는 조건과 세포 사멸을 촉진하는 조건을 구분하고, 이 연구의 결과가 어느 쪽을 지지하는지 근거와 함께 논하라.",
+  "gold_route": "literature",
+  "gold_paper_route": "B",
+  "complexity_label": "high",
+  "paper_route": "B",
+  "complexity": {
+    "dim1": 8.4,
+    "dim2": 3.1415,
+    "dim3": 6.6667,
+    "total": 18.2082
+  },
+  "top1_cos": 0.7558,
+  "degraded": true,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "etv4_breast_cancer",
+    "rebamipide_ibd_nanoformulation",
+    "plhn_dermal_penetration"
+  ],
+  "sources": [],
+  "final_response": "질의의 복잡도가 임계값을 초과하여 직접 요약을 생성하지 않았습니다. 대신 관련성이 높은 등록 논문을 추천합니다.\n- etv4_breast_cancer (관련도 0.6943)\n- rebamipide_ibd_nanoformulation (관련도 0.5193)\n- plhn_dermal_penetration (관련도 0.5192)",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

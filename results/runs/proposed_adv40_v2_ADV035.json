@@ -1,0 +1,18 @@
+{
+  "qid": "ADV035",
+  "system": "proposed",
+  "query": "십이번 정점의 평균 개체 수?",
+  "final_response": "십이번 정점의 평균 개체 수는 168136.54입니다.",
+  "sandbox_value": {
+    "십이번 정점 평균 개체 수": 168136.54
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J12",
+    "mean": 168136.54
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "qid": "H002",
+  "system": "proposed_e2e",
+  "query": "정점 J9의 평균 개체 수를 계산하고, 이 수준의 개체 밀도가 문헌에서 보고된 유해 조류 대발생 기준과 어떻게 비교되는지 논하라.",
+  "gold_value": {
+    "station": "J9",
+    "mean": 279118.51
+  },
+  "gold_route": "hybrid",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "routed_to": "hybrid",
+  "decomposition": {
+    "data_subquery": "정점 J9의 평균 개체 수를 계산하라.",
+    "literature_subquery": "문헌에 보고된 유해 조류 대발생(HAB) 기준 개체 밀도를 조사하라."
+  },
+  "selected_dataset": "jeju",
+  "generated_code": "import json\n\nresult = {\"J9 평균 개체 수\": df[\"J9\"].mean()}\nprint(json.dumps(result, ensure_ascii=False))",
+  "final_ok": true,
+  "sandbox_value": {
+    "J9 평균 개체 수": 279118.51280057227
+  },
+  "paper_route": "C",
+  "complexity": {
+    "dim1": 4.0,
+    "dim2": 6.2849,
+    "dim3": 0.0,
+    "total": 10.2849
+  },
+  "literature_response": "제시된 발췌문(`[kim2024_hakashiwo / kim2024_hakashiwo::0026]`, `[kim2024_hakashiwo / kim2024_hakashiwo::0025]`)을 검토한 결과는 다음과 같습니다.\n\n* **[kim2024_hakashiwo / kim2024_hakashiwo::0026 및 0025]**: 두 발췌문은 모두 논문의 **참고문헌 목록(Bibliographical References)** 서지 정보만을 포함하고 있습니다.\n\n따라서 제공된 발췌문 내에는 유해 조류 대발생(HAB)의 기준 개체 밀도(예: cells/mL, cells/L 등의 구체적 수치 데이터나 판단 기준)에 관한 구체적인 정보가 포함되어 있지 않습니다.",
+  "literature_sources": [
+    "kim2024_hakashiwo::0026",
+    "kim2024_hakashiwo::0025"
+  ],
+  "recommendations": null,
+  "final_response": "제공된 계산 결과에 따른 정점 J9의 평균 개체 수는 다음과 같습니다.\n\n* **정점 J9 평균 개체 수:** 약 **279,118.51** (정확한 계산값: `279118.51280057227`)\n\n또한, 유해 조류 대발생(HAB) 기준과 관련된 문헌 근거 정보는 제공된 데이터에 포함되어 있지 않으므로, 지침에 따라 지어내지 않고 제시된 계산 결과만 명시합니다.\n\n[문헌 리뷰(경로 C)]\n제시된 발췌문(`[kim2024_hakashiwo / kim2024_hakashiwo::0026]`, `[kim2024_hakashiwo / kim2024_hakashiwo::0025]`)을 검토한 결과는 다음과 같습니다.\n\n* **[kim2024_hakashiwo / kim2024_hakashiwo::0026 및 0025]**: 두 발췌문은 모두 논문의 **참고문헌 목록(Bibliographical References)** 서지 정보만을 포함하고 있습니다.\n\n따라서 제공된 발췌문 내에는 유해 조류 대발생(HAB)의 기준 개체 밀도(예: cells/mL, cells/L 등의 구체적 수치 데이터나 판단 기준)에 관한 구체적인 정보가 포함되어 있지 않습니다."
+}

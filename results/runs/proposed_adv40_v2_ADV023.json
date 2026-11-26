@@ -1,0 +1,18 @@
+{
+  "qid": "ADV023",
+  "system": "proposed",
+  "query": "십일월 모든 지점 총합?",
+  "final_response": "십일월 모든 지점 총합은 115063.11781993054입니다.",
+  "sandbox_value": {
+    "십일월 모든 지점 총합": 115063.11781993054
+  },
+  "final_ok": true,
+  "gold_value": {
+    "month": "Nov.",
+    "total": 115063
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

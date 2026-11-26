@@ -1,0 +1,19 @@
+{
+  "qid": "ADV005",
+  "system": "pot_pal",
+  "query": "전 기간을 통틀어 가장 높은 단일 지점 관측치와 그 지점은?",
+  "final_response": "전 기간을 통틀어 가장 높은 단일 지점은 **J9**이며, 해당 지점의 최대 관측치는 **1675954.7738693468**입니다.",
+  "sandbox_value": {
+    "지점": "J9",
+    "최대 관측치": 1675954.7738693468
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J9",
+    "value": 1675955
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

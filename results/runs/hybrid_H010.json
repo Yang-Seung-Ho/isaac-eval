@@ -1,0 +1,34 @@
+{
+  "qid": "H010",
+  "system": "proposed",
+  "kind": "hybrid",
+  "query": "정점 J11의 전체 기간 평균을 계산하고, 연안 정점의 개체 수 변동을 다루는 문헌 논의와 연결하라.",
+  "gold_route": "hybrid",
+  "decomposition": {
+    "data_subquery": "정점 J11의 전체 기간 평균 계산",
+    "literature_subquery": "연안 정점의 개체 수 변동을 다루는 문헌 논의"
+  },
+  "expected_data_subquery": "J11 평균 개체 수",
+  "expected_literature_subquery": "연안 정점의 개체 수 변동",
+  "generated_code": "import pandas as pd\nimport json\n\nmean_val = float(df['J11'].mean())\nresult = {\"J11_mean\": mean_val}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "J11_mean": 411881.54096920404
+  },
+  "gold_value": {
+    "station": "J11",
+    "mean": 411881.54
+  },
+  "literature_sources": [
+    "kang2026_algae_restoration::0024",
+    "kang2026_algae_restoration::0025",
+    "kang2026_algae_restoration::0021"
+  ],
+  "final_response": "제공된 데이터 계산 결과와 문헌 근거를 바탕으로 한 답변은 다음과 같습니다.\n\n* **정점 J11의 전체 기간 평균:** 데이터 계산 결과에 따르면, 정점 J11의 전체 기간 평균은 **411,881.54096920404**입니다.\n* **문헌 논의와의 연결:** 제공된 문헌 발췌 내용에는 해양 데이터 그리드 프레임워크(KHOA 2025), 조류 복원(kang2026), 대형 해조류 숲의 탄소 제거 잠재력(Kim et al. 2025), 개체 생물량 산정(Kim et al. 2017), 인공 해조초 및 암반 생태계 연구(Kim YD et al. 2013; Chung et al. 1998) 등 연안 정점의 생태계 및 서식 환경과 관련된 다양한 선행 연구와 데이터베이스가 언급되어 있습니다. 다만, 제공된 문헌 발췌 본문 내에 정점 J11의 구체적인 개체 수 변동 양상에 대한 직접적인 서술은 포함되어 있지 않습니다. \n\n*(주어진 계산 결과에 없는 수치나 문헌에 명시되지 않은 구체적 변동 원인은 임의로 지어내지 않았습니다.)*",
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

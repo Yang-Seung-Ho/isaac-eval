@@ -1,0 +1,35 @@
+{
+  "qid": "U021",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "적조 발생 예측에서 개체군 동태 모형이 갖는 구조적 한계를 유성생식 유발 수직 이동 관측 결과에 비추어 비판적으로 평가하고, 관측 설계 측면의 개선 방향을 제안하라.",
+  "gold_route": "literature",
+  "gold_paper_route": "B",
+  "complexity_label": "high",
+  "paper_route": "B",
+  "complexity": {
+    "dim1": 9.6,
+    "dim2": 3.2098,
+    "dim3": 3.3333,
+    "total": 16.1432
+  },
+  "top1_cos": 0.7537,
+  "degraded": true,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "kim2024_hakashiwo",
+    "kang2026_algae_restoration",
+    "plhn_dermal_penetration"
+  ],
+  "sources": [],
+  "final_response": "질의의 복잡도가 임계값을 초과하여 직접 요약을 생성하지 않았습니다. 대신 관련성이 높은 등록 논문을 추천합니다.\n- kim2024_hakashiwo (관련도 0.7533)\n- kang2026_algae_restoration (관련도 0.6039)\n- plhn_dermal_penetration (관련도 0.5097)",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

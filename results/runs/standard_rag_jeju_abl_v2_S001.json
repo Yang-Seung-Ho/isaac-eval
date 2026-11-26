@@ -1,0 +1,17 @@
+{
+  "qid": "S001",
+  "system": "standard_rag",
+  "query": "봄철(3~5월) 데이터 중 식물플랑크톤이 가장 많이 발생한 달과 가장 심각했던 정점은?",
+  "final_response": "제시된 데이터셋을 바탕으로 봄철(3~5월) 데이터를 분석한 결과는 다음과 같습니다.\n\n* **가장 많이 발생한 달**: **4월 (Apr.)** (평균값 756,224로 가장 높음)\n* **가장 심각했던 정점**: **J9** (4월에 1.67595e+06으로 가장 높은 수치를 기록)",
+  "sandbox_value": null,
+  "final_ok": true,
+  "gold_value": {
+    "max_month": "Apr.",
+    "max_site": "J9",
+    "max_value": 1675955
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "qid": "A008",
+  "query": "BG11_2_D12 샘플에서 read 수가 가장 큰 단일 ASV의 read 수는 얼마인가?",
+  "generated_code": "import json\n\nmax_read = int(df['BG11_2_D12'].max())\nresult = {\"read_count\": max_read}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 562
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "read_count": 1546
+  },
+  "final_response": "BG11_2_D12 샘플에서 read 수가 가장 큰 단일 ASV의 read 수는 1546입니다.",
+  "gold_value": {
+    "sample": "BG11_2_D12",
+    "max": 1546
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_bg11.xlsx",
+    "sheet": "BG11"
+  }
+}

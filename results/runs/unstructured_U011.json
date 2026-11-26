@@ -1,0 +1,35 @@
+{
+  "qid": "U011",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "Which cell lines were used in the ETV4 breast cancer study?",
+  "gold_route": "literature",
+  "gold_paper_route": "A",
+  "complexity_label": "low",
+  "paper_route": "B",
+  "complexity": {
+    "dim1": 3.2,
+    "dim2": 1.9643,
+    "dim3": 10.0,
+    "total": 15.1643
+  },
+  "top1_cos": 0.7911,
+  "degraded": true,
+  "degraded_reason": null,
+  "scope_kw_multi": false,
+  "scope_llm_multi": false,
+  "selected_papers": [
+    "etv4_breast_cancer",
+    "plhn_dermal_penetration",
+    "kim2024_hakashiwo"
+  ],
+  "sources": [],
+  "final_response": "질의의 복잡도가 임계값을 초과하여 직접 요약을 생성하지 않았습니다. 대신 관련성이 높은 등록 논문을 추천합니다.\n- etv4_breast_cancer (관련도 0.7455)\n- plhn_dermal_penetration (관련도 0.5014)\n- kim2024_hakashiwo (관련도 0.4846)",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

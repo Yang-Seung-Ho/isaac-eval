@@ -1,0 +1,18 @@
+{
+  "qid": "ADV033",
+  "system": "proposed_unmasked",
+  "query": "10번 관측지의 평균 개체수?",
+  "final_response": "10번 관측지의 평균 개체수는 350319.8869773246입니다.",
+  "sandbox_value": {
+    "10번 관측지 평균 개체수": 350319.8869773246
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J10",
+    "mean": 350319.89
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

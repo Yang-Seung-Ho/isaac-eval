@@ -1,0 +1,40 @@
+{
+  "qid": "U026",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "이 코퍼스에 포함된 나노제형 연구들이 공통적으로 채택한 약물 전달 전략은 무엇이며, 표적 조직(피부 대 장관)에 따라 설계가 어떻게 달라지는가?",
+  "gold_route": "literature",
+  "gold_paper_route": "C",
+  "complexity_label": "high",
+  "paper_route": "C",
+  "complexity": {
+    "dim1": 7.2,
+    "dim2": 4.6224,
+    "dim3": 6.6667,
+    "total": 18.4891
+  },
+  "top1_cos": 0.7113,
+  "degraded": false,
+  "degraded_reason": null,
+  "scope_kw_multi": true,
+  "scope_llm_multi": true,
+  "selected_papers": [
+    "plhn_dermal_penetration",
+    "rebamipide_ibd_nanoformulation",
+    "etv4_breast_cancer"
+  ],
+  "sources": [
+    "plhn_dermal_penetration::0000",
+    "plhn_dermal_penetration::0016",
+    "rebamipide_ibd_nanoformulation::0047",
+    "rebamipide_ibd_nanoformulation::0002"
+  ],
+  "final_response": "제시된 문헌들을 바탕으로, 나노제형 연구들이 공통적으로 채택한 약물 전달 전략과 표적 조직(피부 대 장관)에 따른 설계 차이를 분석한 결과는 다음과 같습니다.\n\n---\n\n### 1. 공통적으로 채택한 약물 전달 전략\n두 연구가 공통적으로 채택한 전략은 **\"나노제형(Nanoparticles)을 활용하여 생체 내 물리·화학적 장벽을 극복하고, 약물의 방출을 제어하며, 표적 부위에서의 체류성 및 흡수율을 극복하는 것\"**입니다. 두 연구 모두 기존 약물이 가진 한계(피부 장벽 투과 저하, 소화기관 내 빠른 배출 및 분해)를 극복하기 위해 나노입자 기반의 전달체를 설계하였습니다.\n\n---\n\n### 2. 논문별 설계 특징 및 표적 조직에 따른 차이\n\n#### ① 피부 표적 설계 (`plhn_dermal_penetration` 논문)\n*   **표적 부위 및 장벽**: 피부(표피 깊은 곳 및 각질층 장벽)\n*   **주요 설계 전략**: **양이온성 고분자-지질 하이브리드 나노입자(PLN)**\n    *   **정전기적 상호작용 유도**: 나노입자 표면에 양이온성 POx 코로나(Cationic POx corona)를 형성하여, 음전하를 띠는 세포막 및 알부민과의 정전기적 인력을 극복하고 결합력(10배 향상)과 세포 내 흡수를 높였습니다.\n    *   **구조적 강도 조절을 통한 서방형 방출**: POx-b-PCL 공중합체와 레시틴을 공동 조립하여 나노입자 코어의 결정성과 강성(rigidity)을 높임으로써, 약물(커큐민)의 방출 속도를 2배 감소시켜 지속 방출(Sustained release)을 유도했습니다.\n    *   **투과 깊이 향상**: 각질층 장벽을 극복하고 피부 투과 깊이를 70% 향상시켜 표피 깊숙이 약물을 전달하도록 설계되었습니다.\n\n#### ② 장관 표적 설계 (`rebamipide_ibd_nanoformulation` 논문)\n*   **표적 부위 및 장벽**: 위장관 및 대장(염증성 장질환 부위, 위산, 소화효소, 점막 턴오버, 장 운동)\n*   **주요 설계 전략**: **경구 투여용 다기능성/생체접착성 나노제형**\n    *   **가혹한 위장관 환경 극복**: 강한 위산, 소화 효소, 빠른 위장관 통과 및 설사로 인한 과다운동성을 극복할 수 있는 설계가 필요합니다.\n    *   **생체 접착 및 체류 시간 연장**: 염증 부위에서의 부족한 체류 시간을 극복하기 위해 '생체접착성 코아세르베이트 코팅(Bioadhesive coacervate coating)' 등을 활용하여 장관 내 체류 시간을 연장합니다.\n    *   **순차적/표적 지향적 방출**: 장내 pH 변화 및 염증 부위의 활성산소(ROS)에 순차적으로 반응하는 'pH 및 ROS 반응성 나노-인-마이크로 복합체(pH and ROS-sequential responsive nano-in-micro composite)'나 '폴리페놀 보강 나노의약품(Polyphenol-armored nanomedicine)' 기술을 통해 염증이 있는 대장 부위에 선택적으로 약물을 방출하도록 설계됩니다.\n\n---\n\n### 3. 종합 비교 (설계의 차이점)\n\n| 구분 | 피부 표적 설계 (`plhn_dermal_penetration`) | 장관 표적 설계 (`rebamipide_ibd_nanoformulation`) |\n| :--- | :--- | :--- |\n| **주요 장벽** | 각질층(Stratum corneum), 세포막 투과 저하 | 위산, 소화효소, 빠른 장 통과 속도, 점막 배출 |\n| **전달 경로** | 국소 도포 (Topical/Transdermal) | 경구 투여 (Oral) |\n| **표면/화학적 설계** | **양이온성 표면(Cationic corona)**을 통한 음전하 세포막과의 정전기적 인력 및 흡수 촉진 | **생체접착성(Bioadhesive) 코팅** 및 **pH/ROS 감응성** 설계를 통한 장내 체류 시간 극복 및 염증 부위 표적화 |\n| **방출 제어 방식** | 나노입자 코어의 강성(Rigidity) 조절을 통한 물리적 서방형 방출 | 위장관 환경(pH, ROS 등)에 반응하는 화학적 방출 제어 |",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

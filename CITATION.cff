@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ISAAC-Eval: Reproducibility Package"
+version: "2.0"
+type: software
+authors:
+  - family-names: Yang
+    given-names: Seungho
+    affiliation: Jeju National University
+  - family-names: Kim
+    given-names: Seong Baeg
+    affiliation: Jeju National University
+license: MIT
+repository-code: "https://github.com/Yang-Seung-Ho/isaac-eval"

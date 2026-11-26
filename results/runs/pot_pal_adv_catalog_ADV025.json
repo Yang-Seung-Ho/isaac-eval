@@ -1,0 +1,18 @@
+{
+  "qid": "ADV025",
+  "system": "pot_pal",
+  "query": "정점 2번의 평균 셀 수?",
+  "final_response": "정점 2번의 평균 셀 수는 74914.17입니다.",
+  "sandbox_value": {
+    "정점 2번 평균 셀 수": 74914.17
+  },
+  "final_ok": true,
+  "gold_value": {
+    "station": "J2",
+    "mean": 74914.17
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

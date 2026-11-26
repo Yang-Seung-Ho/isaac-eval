@@ -1,0 +1,42 @@
+{
+  "qid": "U030",
+  "system": "proposed",
+  "kind": "unstructured",
+  "query": "여러 논문에 걸쳐 나타나는 '전달 효율 향상'이라는 목표가 나노의약과 생태 복원 분야에서 각각 어떻게 조작적으로 정의되는지 대조하라.",
+  "gold_route": "literature",
+  "gold_paper_route": "C",
+  "complexity_label": "high",
+  "paper_route": "C",
+  "complexity": {
+    "dim1": 6.8,
+    "dim2": 6.9401,
+    "dim3": 3.3333,
+    "total": 17.0734
+  },
+  "top1_cos": 0.6418,
+  "degraded": false,
+  "degraded_reason": null,
+  "scope_kw_multi": true,
+  "scope_llm_multi": true,
+  "selected_papers": [
+    "kang2026_algae_restoration",
+    "plhn_dermal_penetration",
+    "rebamipide_ibd_nanoformulation"
+  ],
+  "sources": [
+    "kang2026_algae_restoration::0004",
+    "kang2026_algae_restoration::0025",
+    "plhn_dermal_penetration::0024",
+    "plhn_dermal_penetration::0022",
+    "rebamipide_ibd_nanoformulation::0002",
+    "rebamipide_ibd_nanoformulation::0046"
+  ],
+  "final_response": "제시된 학술 발췌문에 나타난 '전달 효율 향상'이라는 목표는 나노의약 분야와 생태 복원 분야에서 각각 다음과 같이 조작적으로 정의되며 대조를 이룹니다.\n\n---\n\n### 1. 나노의약 분야 (Nanomedicine)\n나노의약 분야에서 전달 효율 향상은 **\"생리적 장벽을 극복하고, 표적 부위(조직 또는 세포)에 약물을 선택적으로 도달시켜 체류 시간 및 흡수율을 극복하는 것\"**으로 조작적 정의됩니다.\n\n*   **경구 약물 전달 측면 (`rebamipide_ibd_nanoformulation`):**\n    *   **조작적 정의:** 위산, 분해 효소, 빠른 위장관 통과, 점막 전환(mucus turnover) 등의 생리적 장벽을 극복하고, 대장 등 염증 부위에 약물이 소실되지 않고 국소적으로 도달하여 충분히 머무르게(retention) 하는 것입니다.\n    *   **구현 방법:** 생체 점착성(biomucoadhesive) 나노입자나 자극 감응성 분해 접합부를 가진 나노하이드로겔 등을 활용하여 약물의 전달 효율을 높입니다.\n*   **경피 약물 전달 측면 (`plhn_dermal_penetration`):**\n    *   **조작적 정의:** 피부 장벽을 통과하여 표적 단백질이나 세포에 약물을 선택적으로 결합시키고 세포 내 흡수를 촉진하는 것입니다.\n    *   **구현 방법:** 프롤린 풍부 단백질(proline-rich proteins)에 선택적으로 결합하는 탄닌산 접합 지질 나노소포체를 통해 지용성 항산화제의 경피 전달을 강화하거나, 섬유아세포 표적 나노전달체를 통해 수용체 매개 세포내섭취(endocytosis)를 촉진하는 방식으로 정의됩니다.\n\n---\n\n### 2. 생태 복원 분야 (Ecological Restoration)\n생태 복원 분야에서 전달(이식) 효율 향상은 **\"인공 구조물에 대한 의존도를 낮추고, 간소화된 물리적 결합 방식을 통해 대상 생물(해조류)을 자연 서식지에 직접 안정적으로 안착시키는 것\"**으로 조작적 정의됩니다.\n\n*   **해조숲 복원 측면 (`kang2026_algae_restoration`):**\n    *   **조작적 정의:** 기존의 고비용 인공어초와 로프 기반 이식 방식에서 벗어나, 자연 암반(natural seabed)에 해조류를 직접 이식하여 생존 및 안착 성공률을 높이고 이식 과정을 간소화하는 것입니다.\n    *   **구현 방법:** 원추형 부착기를 가진 모자반류(*Sargassum macrocarpum*) 등의 해조류를 폴리에틸렌 로프, 에폭시 수지, 순간접착제 등의 단순한 재료 조합을 활용해 수중에서 자연 암반에 직접 이식하는 기술적 개선으로 정의됩니다. 이를 통해 인공어초 설치로 인한 환경적·항행적·생태적 부작용을 배제하고 복원 대상 종을 다양화합니다.\n\n---\n\n### 종합 대조\n\n| 구분 | 나노의약 분야 (`plhn_dermal_penetration`, `rebamipide_ibd_nanoformulation`) | 생태 복원 분야 (`kang2026_algae_restoration`) |\n| :--- | :--- | :--- |\n| **전달 대상** | 치료용 약물 (지용성 항산화제, 소염제 등) | 해조류 개체 (모자반류 등) |\n| **전달 공간** | 생체 내 표적 조직/세포 (염증 부위, 피부 세포 등) | 자연 해저 암반 (natural seabed) |\n| **극복 대상 (장벽)** | 위산, 효소, 빠른 위장관 배출, 피부 장벽 등 생리적 요인 | 인공어초 설치의 고비용 및 환경적·생태적 부작용 |\n| **조작적 정의** | **생리적 장벽 극복을 통한 표적 부위 체류(Retention) 및 세포 내 흡수(Endocytosis) 극복 효율 극대화** | **간편한 화학·물리적 접착 방식을 통한 자연 암반 직접 이식 및 안착 성공률 극대화** |",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "complexity_version": "v3",
+    "threshold": 14.6343
+  }
+}

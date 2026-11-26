@@ -1,0 +1,28 @@
+{
+  "qid": "S016",
+  "query": "정점 J8의 전체 기간 평균 개체 수는 얼마인가?",
+  "generated_code": "import json\n\nmean_value = df[\"J8\"].mean()\nresult = {\"평균\": round(mean_value, 2)}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 373
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "평균": 216791.36
+  },
+  "final_response": "정점 J8의 전체 기간 평균 개체 수는 216791.36입니다.",
+  "gold_value": {
+    "station": "J8",
+    "mean": 216791.36
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811
+  }
+}

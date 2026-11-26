@@ -1,0 +1,18 @@
+{
+  "qid": "ADV020",
+  "system": "proposed_unmasked",
+  "query": "유월 전체 관측점 총 개체수?",
+  "final_response": "유월 전체 관측점 총 개체수는 1683451.2766246307입니다.",
+  "sandbox_value": {
+    "유월 전체 관측점 총 개체수": 1683451.2766246307
+  },
+  "final_ok": true,
+  "gold_value": {
+    "month": "Jun.",
+    "total": 1683451
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "qid": "A007",
+  "query": "12개 전 샘플 합산 read 수가 가장 많은 Phylum(문)은 무엇이며 그 합계는 얼마인가?",
+  "generated_code": "sample_cols = [col for col in df.columns if col.startswith(\"OHM_\")]\nphylum_sums = df.groupby(\"Phylum\")[sample_cols].sum().sum(axis=1)\nmax_phylum = phylum_sums.idxmax()\nmax_sum = float(phylum_sums.max())\nresult = {\"Phylum\": max_phylum, \"Total_Reads\": max_sum}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 519
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "Phylum": "Proteobacteria",
+    "Total_Reads": 1106088.0
+  },
+  "final_response": "12개 샘플의 합산 read 수가 가장 많은 Phylum은 **Proteobacteria**이며, 그 합계는 **1,106,088.0**입니다.",
+  "gold_value": {
+    "rank": "Phylum",
+    "taxon": "Proteobacteria",
+    "total": 1106088
+  },
+  "config_snapshot": {
+    "model": "gemini-flash-lite-latest",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_ohm.xlsx",
+    "sheet": "OHM"
+  }
+}

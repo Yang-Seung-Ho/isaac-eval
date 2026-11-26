@@ -1,0 +1,31 @@
+{
+  "qid": "A004",
+  "query": "Pseudomonas 속(Genus)에 속한 ASV들의 12개 전 샘플 합산 총 read 수는 얼마인가?",
+  "generated_code": "import json\n\npseudo_df = df[df[\"Genus\"] == \"Pseudomonas\"]\nsample_cols = [\n    \"BG11_1_D0\", \"BG11_2_D0\", \"BG11_3_D0\",\n    \"BG11_1_D4\", \"BG11_2_D4\", \"BG11_3_D4\",\n    \"BG11_1_D8\", \"BG11_2_D8\", \"BG11_3_D8\",\n    \"BG11_1_D12\", \"BG11_2_D12\", \"BG11_3_D12\"\n]\ntotal_sum = int(pseudo_df[sample_cols].sum().sum())\n\nresult = {\"total_reads\": total_sum}\nprint(json.dumps(result, ensure_ascii=False))",
+  "attempts": [
+    {
+      "attempt": 1,
+      "ok": true,
+      "error": null,
+      "elapsed_ms": 536
+    }
+  ],
+  "attempts_used": 1,
+  "final_ok": true,
+  "sandbox_value": {
+    "total_reads": 541641
+  },
+  "final_response": "Pseudomonas 속 ASV들의 합산 총 read 수는 541641입니다.",
+  "gold_value": {
+    "rank": "Genus",
+    "value": "Pseudomonas",
+    "total": 541641
+  },
+  "config_snapshot": {
+    "model": "gemini-3.5-flash",
+    "temperature": 0.0,
+    "seed": 20260811,
+    "dataset": "data/datasets/microbiome_asv_bg11.xlsx",
+    "sheet": "BG11"
+  }
+}

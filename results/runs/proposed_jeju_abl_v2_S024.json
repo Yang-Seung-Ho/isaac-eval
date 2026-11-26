@@ -1,0 +1,19 @@
+{
+  "qid": "S024",
+  "system": "proposed",
+  "query": "8월(Aug.)의 클로로필-a 평균 농도('Chl. 평균' 열 값)는 얼마인가?",
+  "final_response": "8월의 클로로필-a 평균 농도는 2.055입니다.",
+  "sandbox_value": {
+    "Chl. 평균": 2.055
+  },
+  "final_ok": true,
+  "gold_value": {
+    "month": "Aug.",
+    "field": "Chl. 평균",
+    "value": 2.055
+  },
+  "context_text": "",
+  "config_snapshot": {
+    "model": "gemini-3.5-flash"
+  }
+}
